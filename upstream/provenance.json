@@ -1,0 +1,35 @@
+{
+  "upstream": "https://github.com/pokeclicker/pokeclicker-translations",
+  "contributionFork": "https://github.com/Axxxxpirine/pokeclicker-translations",
+  "game": {
+    "repository": "https://github.com/pokeclicker/pokeclicker",
+    "commit": "f89273636070501da575c70d2a080372fbb63402",
+    "version": "0.10.26"
+  },
+  "namespaces": {
+    "pokemon": {
+      "ref": "origin/develop",
+      "commit": "47195e47e419b7bcbe9f9cdfad09065b00a55bb8"
+    },
+    "settings": {
+      "ref": "origin/develop",
+      "commit": "47195e47e419b7bcbe9f9cdfad09065b00a55bb8"
+    },
+    "logbook": {
+      "ref": "origin/develop",
+      "commit": "47195e47e419b7bcbe9f9cdfad09065b00a55bb8"
+    },
+    "questlines": {
+      "ref": "fr-questlines",
+      "commit": "f55104a020fc634227026708a42065d1f13744f7"
+    },
+    "npcs": {
+      "ref": "npc-dialog",
+      "commit": "742f2d107898fe42b9be737be696fb39c874e523"
+    },
+    "ui": {
+      "ref": "fr-ui",
+      "commit": "56ac6d5d81f2fcb53286c9bbf4981924740be16c"
+    }
+  }
+}

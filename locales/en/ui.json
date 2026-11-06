@@ -1,0 +1,1512 @@
+{
+  "achievementTracker": {
+    "selectAchievement": "Select an achievement to track!",
+    "title": "Achievement Tracker"
+  },
+  "achievements": {
+    "bonus": "Achievements Bonus:",
+    "bonusTooltip": "As you earn achievements, you gain up to: 150% (global), 100% (per region), 25% (events), and from 25% to 75% (per special subregion). Earning bonuses to Click Attack, Flute Effects, Pokédollar / Dungeon Token gains, and Experience earned from all sources.",
+    "category": "Category",
+    "sort": "Sort",
+    "sortAscending": "Ascending (lowest value first)",
+    "sortDescending": "Descending (highest value first)"
+  },
+  "badgeCase": {
+    "maxLevelTooltip": "Earning badges raises the maximum possible level of your Pokémon, up to 100.<br>The max level your Pokémon can currently reach is <b>{{level}}</b>.",
+    "title": "Badge Case"
+  },
+  "battle": {
+    "catchChance": "Catch Chance:",
+    "clickAttack": "Click Attack:",
+    "clickAttackTooltip": "See the Click Attack tab in the Start → Statistics menu for details.",
+    "dungeonChestsTooltip": "Chests opened in current dungeon",
+    "dungeonEncountersTooltip": "Encounters won in current dungeon",
+    "dungeonGuideAttempts": "Attempts remaining: {{clears}}",
+    "pokemonDefeated": "Pokémon defeated",
+    "routeCompleted": "You have captured all Pokémon on this route!",
+    "routeCompletedShiny": "You have captured all Pokémon shiny on this route!",
+    "routeInfoTooltip": "See the Pokémon available on this route."
+  },
+  "battleCafe": {
+    "clockwise": "Clockwise",
+    "costPerSpin": "Cost Per Spin",
+    "counterClockwise": "Counter-Clockwise",
+    "maxSpins": "Maximum Spins",
+    "owned": "Owned",
+    "remainingSpins": "Remaining Spin Attempts: {{spins}} / {{max}}",
+    "selectSweet": "Select a Sweet",
+    "spin": "Spin!",
+    "spinDuration": "Spin Duration (seconds):",
+    "spinsAccumulate": "Spin Attempts Accumulate At Midnight",
+    "title": "Battle Café"
+  },
+  "battleFrontier": {
+    "allRewardsReceived": "You've received every available reward. Congratulations!",
+    "attackAgainst": "{{attack}} against {{types}}",
+    "intro": "Here you will be battling through many stages to earn Battle Points.<br> There is no regional attack debuff or weather effects.<br> You can leave early and return to your checkpoint later on.<br> You'll get special items if you reach special milestone stages.<br> When you are ready, click Start!<br> <i>Note: there is no click damage in the Battle Frontier.</i>",
+    "leave": "Leave",
+    "pokemonAttack": "Pokémon Attack:",
+    "quitBattle": "Quit Battle",
+    "reward": "Reward",
+    "stage": "Stage {{stage}} / {{highest}}",
+    "stageHeader": "Stage",
+    "start": "Start",
+    "startCheckpoint": "Start at latest checkpoint (Stage {{stage}})",
+    "title": "Battle Frontier",
+    "upcomingRewards": "Upcoming Rewards",
+    "welcome": "Welcome to the Battle Frontier!"
+  },
+  "battleItems": {
+    "allTypes": "All Types",
+    "consumes": "Consumes:",
+    "controls": "Controls",
+    "controlsHelp": "Left/right click to cycle amount<br/>Click on item image to use",
+    "disabled": "Battle Items are disabled.",
+    "fluteBoostTo": "+0.5% boost to:",
+    "flutes": "Flutes",
+    "flutesControlsHelp": "Click to see your total gems<br/>Click on flutes to toggle effects",
+    "timeLeft": "{{time}} left",
+    "timeRemaining": "Time Remaining:",
+    "title": "Battle Items",
+    "typeGems": "{{type}} gems",
+    "zCrystals": "Z-Crystals",
+    "zMoveBonus": "{{bonus}} Attack to all your {{type}}-type Pokémon",
+    "zMovesDisabled": "Z-Moves are disabled."
+  },
+  "berryDex": {
+    "attractedByAll": "Attracted by all Berries",
+    "attractedByBerry": "Attracted to {{berry}} Berry",
+    "attractedByColor": "Attracted to {{color}}-Colored Berries",
+    "aura": "Aura",
+    "auraEffectAtStage": "Aura Effect at Stage",
+    "berryColor": "Berry Color",
+    "berryStageDuration": "Berry Stage Duration",
+    "bitter": "Bitter",
+    "currentAmount": "Current Amount",
+    "data": "Data",
+    "dry": "Dry",
+    "farmPointsPerHarvest": "Farm Points per Harvest",
+    "farmingInfo": "Farming Info",
+    "firmness": "Firmness",
+    "flavor": "Flavor",
+    "form": "Form",
+    "growthDuration": "Growth Duration",
+    "growthStages": "Growth Stages",
+    "harvestAmount": "Harvest Amount",
+    "hint": "Hint",
+    "length": "Length",
+    "moreInfo": "More Info",
+    "overview": "Overview",
+    "replantRate": "Replant Rate",
+    "size": "Size",
+    "sour": "Sour",
+    "spicy": "Spicy",
+    "stage": {
+      "berry": "Berry",
+      "bloom": "Bloom",
+      "sprout": "Sprout",
+      "taller": "Taller"
+    },
+    "statistic": "Statistic",
+    "sweet": "Sweet",
+    "time": "Time",
+    "totalHarvested": "Total Harvested",
+    "totalLifeSpan": "Total Life Span",
+    "totalObtained": "Total Obtained",
+    "totalTimeUntilStage": "Total Time until Stage",
+    "wanderingPokemon": "Wandering Pokémon"
+  },
+  "berryMaster": {
+    "inv": "Inv",
+    "item": "Item",
+    "shop": "Shop",
+    "trade": "Trade",
+    "trades": "Trades"
+  },
+  "breeding": {
+    "addAll": "Add All",
+    "addAllTooltip": "Add all Pokémon matching the current filters to this category.",
+    "all": "All",
+    "allCategories": "All Categories",
+    "attackEfficiency": "Attack Efficiency:",
+    "categorized": "Categorized",
+    "category": "Category:",
+    "categoryModeTooltip": "Use Category Mode to quickly assign and remove Pokémon from categories. Select a category then click the desired Pokémon to add or remove.",
+    "clear": "Clear",
+    "clearQueue": "Clear Queue",
+    "clearQueueTooltip": "Remove all Pokémon from the queue.",
+    "costPerHatch": "Cost / Hatch:",
+    "disableCategoryMode": "Disable Category Mode",
+    "editCategories": "Edit Categories",
+    "efficiencyBonus": "Bonus to Efficiency:",
+    "eggAmount": "Amount: {{amount}}",
+    "eggInfo": {
+      "attackBoost": "Hatching a Pokémon you've already caught will give it a small attack boost.",
+      "odds": "Eggs have a 50% chance to hatch a Pokémon from your highest region, with the odds continuing to be halved for each prior region. Kanto and Johto pools will always have equal odds.<br><br>For example: in Sinnoh, there is a 50% chance to obtain Pokémon from the Sinnoh egg pool, a 25% chance to obtain Pokémon from the Hoenn egg pool, and a 12.5% chance to obtain Pokémon from both the Kanto and Johto egg pools.",
+      "purchase": "Pokémon Eggs can be purchased or traded for in shops throughout each region and can be hatched to obtain exclusive Pokémon. Click on an egg below to view its hatching pool."
+    },
+    "eggInfoTitle": "Egg Information & Hatching Odds",
+    "eggs": "Eggs",
+    "enableCategoryMode": "Enable Category Mode",
+    "filtersAndSettings": "Filters and Settings",
+    "fire": "Fire!",
+    "fireAll": "Fire All",
+    "hatch": "Hatch",
+    "hatchReady": "Hatch!",
+    "hatched": "Hatched:",
+    "hatchery": "Hatchery",
+    "hatcheryHelpers": "Hatchery Helpers",
+    "hatchesProgress": "{{current}} / {{total}} hatches",
+    "help": {
+      "attackBonus": "Once an egg hatches, your Pokémon will gain a bonus of {{bonus}}% of their base attack and have a higher chance of becoming shiny!",
+      "baseAttackNote": "NOTE: Base attack is the value your Pokémon originally has at level 100, before any breeding buffs.",
+      "calciums": "Any Calciums applied to Pokémon will give them an additional 1% of their base attack per hatch, but require 20 more steps.",
+      "carbos": "Any Carbos applied to Pokémon will reduce the steps required per hatch.",
+      "helpersAttackEfficiency": "They each also have different attack efficiencies, which will determine how much attack you gain compared to manually hatching the Pokémon yourself.",
+      "helpersBonus": "These efficiencies will gain a bonus based on how many times you've used the helper to hatch eggs.",
+      "helpersCost": "The cost displayed is how much you will be charged per hatch.",
+      "helpersFilters": "They will only breed Pokémon based on your current Hatchery filters.",
+      "helpersIntro": "Hatchery Helpers will help out by automatically breeding your Pokémon for you.",
+      "helpersMore": "More Hatchery Helpers can be unlocked through shops and hatching more Pokémon",
+      "helpersStepEfficiency": "All of the Helpers have different step efficiencies and will hatch eggs faster or slower depending on their value.",
+      "helpersUnlock": "(unlocked after hatching 100 total Pokémon)",
+      "intro": "You can leave your level 100 Pokémon here in the hatchery to gain an egg of the same Pokémon.",
+      "noLimit": "There is no limit to breeding, so this will be your main source of attack gain.",
+      "proteins": "Any Proteins applied to Pokémon will give them an additional 1 attack per hatch, but require 20 more steps.",
+      "queue": "You will gain access to a queue in the hatchery once you reach the Johto region, and more queue slots for each new region reached after that.",
+      "queueTitle": "Queue",
+      "shinyBonus": "Hatching a shiny Pokémon will grant it 5 times the usual attack gain. Note that this bonus does not apply to every hatch of existing shiny pokemon. In other words, if you breed a shiny Pokémon, it will only receive the bonus if it hatches shiny again."
+    },
+    "helperTooltip": {
+      "attackEfficiency": "Attack Efficiency: {{value}}%",
+      "cost": "Cost: {{currency}}&nbsp;{{amount}}/hatch",
+      "hatched": "Hatched: {{value}}",
+      "stepEfficiency": "Step Efficiency: {{value}}%"
+    },
+    "helpers": "Helpers",
+    "hire": "Hire!",
+    "maxBonus": "MAX BONUS!",
+    "mysteryEggInfo": "Mystery Eggs can hatch Pokémon from both their own exclusive pool and all other typed egg pools. The exclusive Pokémon are listed below.",
+    "nameOrId": "Name or ID",
+    "nextPokemon": "Next Pokémon",
+    "noFreeEggSlot": "You don't have any free egg slots.",
+    "noMaxLevelPokemon": "Unfortunately, you don't have any Pokémon of level 100 to breed.",
+    "noNextPokemon": "None! Check filters & settings.",
+    "odds": "Odds",
+    "pattern": "Pattern",
+    "queueDisabled": "Your breeding queue is disabled.",
+    "queueFull": "Your breeding queue is full.",
+    "queueLimited": "Queue is currently limited by your Queue Size setting.",
+    "removeAll": "Remove All",
+    "removeAllTooltip": "Remove all Pokémon matching the current filters from this category.",
+    "resetAllFilters": "Reset All Filters",
+    "searchPlaceholder": "{{pokemon}} or 1",
+    "selectedCategory": "Selected Category",
+    "selectedCount": "{{count}} selected",
+    "sort": "Sort:",
+    "sortAscending": "Ascending (lowest value first)",
+    "sortDescending": "Descending (highest value first)",
+    "stepEfficiency": "Step Efficiency:",
+    "toggleLockedHelpers": "Show/Hide Locked Hatchery Helpers",
+    "types": "Types",
+    "unlock": "Unlock",
+    "unlockRequirement": "Unlock Requirement",
+    "useHatcheryFilters": "Use Hatchery Filters",
+    "useHatcheryFiltersTooltip": "When this option is enabled Hatchery Helpers will use the filters and settings selected in the Hatchery in addition to their own settings. Disabling this option will allow them to work independently and ignore the Hatchery filters."
+  },
+  "bulletinBoard": {
+    "accept": "Accept",
+    "noQuests": "No new quests available.",
+    "previouslyStarted": "Previously Started",
+    "resume": "Resume",
+    "started": "Started",
+    "step": "Step: {{current}} / {{total}}",
+    "title": "Bulletin Board"
+  },
+  "categories": {
+    "addNew": "+ New",
+    "color": "Color",
+    "movePokemonTo": "Move Pokémon To:",
+    "moveTooltip": "Move Pokémon from this category to another category.",
+    "removeCategory": "Remove Category",
+    "resetMessage": "Are you sure you want to reset all of your categories to defaults?",
+    "resetTitle": "Reset Categories",
+    "title": "Categories"
+  },
+  "challenges": {
+    "activate": "ACTIVATE",
+    "active": "ACTIVE",
+    "disabled": "DISABLED",
+    "done": "Done!",
+    "firstTime": "If this is your first time playing we highly recommend not changing these so you can get a feel for the game.",
+    "intro": "<strong>Activate in-game challenge modes!</strong><br> Challenges can be disabled later, but <u>cannot</u> be re-enabled.",
+    "recommended": "Recommended challenges are enabled by default; the game is designed and balanced around these.",
+    "title": "Challenge Modes"
+  },
+  "changelog": {
+    "message": "Message",
+    "title": "Changelog",
+    "viewFullNotes": "View full changelog notes"
+  },
+  "common": {
+    "amount": "Amount",
+    "buy": "Buy",
+    "close": "Close",
+    "cost": "Cost",
+    "description": "Description",
+    "filters": "Filters",
+    "help": "Help",
+    "inventory": "Inventory",
+    "list": "List",
+    "max": "Max",
+    "name": "Name",
+    "next": "Next",
+    "pokemon": "Pokémon",
+    "region": "Region",
+    "reset": "Reset",
+    "search": "Search",
+    "sell": "Sell",
+    "status": "Status",
+    "type": "Type"
+  },
+  "consumable": {
+    "attack": "Attack"
+  },
+  "credits": {
+    "codeContributions": "Code Contributions",
+    "contributedSprites": "Contributed sprites",
+    "creditedIndividual": "Credited individual",
+    "title": "Credits"
+  },
+  "currency": {
+    "battlePointTooltip": "Battle Points<br /><br />Gained at the Battle Frontier.",
+    "contestTokenTooltip": "Contest Tokens<br /><br />Gained by competing in Contests.",
+    "diamondTooltip": "Diamonds<br /><br />Gained by selling treasure found in the Underground.",
+    "dungeonTokenTooltip": "Dungeon Tokens<br /><br />Gained by catching wild Pokémon.",
+    "farmPointTooltip": "Farm Points<br /><br />Gained by harvesting berries on the Farm.",
+    "moneyTooltip": "Pokédollars<br /><br />Gained by defeating Pokémon and trainers in battle.",
+    "questPointTooltip": "Quest Points<br /><br />Gained by completing Quests.",
+    "title": "Currency"
+  },
+  "damageCalculator": {
+    "baseAttackOnly": "Base Attack Only",
+    "damage": "Damage",
+    "helpTooltip": "Check how much damage you are doing against a particular Pokémon type, and see a breakdown of where that damage is coming from by your Pokémon types.",
+    "ignoreLevel": "Ignore Level",
+    "includeBreeding": "Include Breeding",
+    "none": "None",
+    "subregion": "Subregion",
+    "title": "Damage Calculator",
+    "totalDamage": "Total Damage: {{damage}}",
+    "type1": "Type 1",
+    "type2": "Type 2",
+    "typeDamage": "{{type}} Damage: {{damage}}",
+    "typeDetail": "Type Detail",
+    "weather": "Weather"
+  },
+  "devBanner": {
+    "letsGo": "Let's GO!",
+    "reimport": "Bringing your save back over to the main game will very likely cause problems, whenever testing something new please re-import a fresh save file to avoid any bugs.",
+    "title": "Welcome to the development site!",
+    "warning": "This is the development version of the game, do not take your save from this version to the main game!"
+  },
+  "dreamOrbs": {
+    "open": "Open",
+    "openedMessage": "You opened {{amount}} {{color}} Dream Orbs and received:",
+    "openedTitle": "Dream Orbs Opened",
+    "orbsLeft": "Orbs left: {{amount}}",
+    "title": "Open Dream Orbs"
+  },
+  "dungeon": {
+    "allCaught": "You have captured all Pokémon in this dungeon!",
+    "allCaughtShiny": "You have captured all Pokémon shiny in this dungeon!",
+    "catchChance": "Catch Chance: {{chance}}%",
+    "chestEnemyHp": "(+20% Enemy HP)",
+    "clears": "{{count}} Clears",
+    "clickAttack": "Click Attack: {{value}}",
+    "debuffPreservedTooltip": "The odds for this item are preserved despite the dungeon being debuffed.",
+    "leave": "Leave Dungeon",
+    "nextFloor": "Go to next floor",
+    "openChest": "Open {{tier}} chest",
+    "startBossfight": "Start Bossfight"
+  },
+  "dungeonGuides": {
+    "attemptsRemaining": "Attempts Remaining",
+    "costPerRun": "Cost / Run",
+    "currencies": "Currencies",
+    "dungeonAttempts": "Dungeon Attempts",
+    "dungeonGuide": "Dungeon Guide",
+    "entryCost": "Dungeon Entry Cost",
+    "exploreDungeon": "Explore Dungeon",
+    "fire": "Fire!",
+    "guideCost": "Guide Cost",
+    "help": {
+      "betaNote": "NOTE: This is a <strong>beta</strong> feature, so things are likely to change in future updates;<br>feel free to post any feedback/bugs in the <a href=\"https://discord.gg/a6DFe4p\" target=\"_blank\">Discord</a>.",
+      "cost": "You must pay an upfront cost for however many attempts you want to run of the dungeon <span class=\"text-danger\">(non refundable)</span>, they will however give you a discount the more runs you purchase in one go.",
+      "intro": "Dungeon guides will automatically guide you through the dungeon, opening any chest they come accross, go down ladders they find and start boss battles.",
+      "noGuarantee": "They do not guarantee a successful dungeon clear, and will charge regardless of the outcome.",
+      "speed": "Each guide operates at their own speed, with some possessing a sense for specific dungeon tiles and others actively avoiding particular tiles whenever possible."
+    },
+    "hire": "Hire!",
+    "hireTab": "Hire",
+    "movementSpeed": "Movement Speed",
+    "nonRefundable": "ALL CHARGES NON REFUNDABLE",
+    "seconds": "{{seconds}} seconds",
+    "start": "Start!",
+    "statistics": "Statistics",
+    "title": "Hire a Dungeon Guide (BETA)",
+    "toggleLocked": "Show/Hide Locked Dungeon Guides",
+    "totalAttempts": "Total Attempts: {{count}}",
+    "totalClears": "Total Clears: {{count}}",
+    "totalCost": "Total Cost",
+    "unlockRequirement": "Unlock Requirement"
+  },
+  "events": {
+    "activate": "Activate",
+    "endTime": "End Time",
+    "event": "Event",
+    "startTime": "Start Time",
+    "timeLeft": "Time left:",
+    "title": "Events"
+  },
+  "externalLinks": {
+    "companionTool": "Companion Tool:",
+    "companionToolText": "Check out the Companion Tool for more information about your save file: <a href=\"https://companion.pokeclicker.com/\" target=\"_blank\">https://companion.pokeclicker.com/</a>",
+    "discord": "Discord:",
+    "discordText": "Join the Discord server to join the conversation: <a href=\"https://discord.gg/a6DFe4p\" target=\"_blank\">https://discord.gg/a6DFe4p</a>",
+    "github": "Github:",
+    "githubText": "Help make Pokeclicker even better! Contribute to the project by sharing your ideas on our Github: <a href=\"https://github.com/pokeclicker/pokeclicker\" target=\"_blank\">https://github.com/pokeclicker/pokeclicker</a>",
+    "subreddit": "Subreddit:",
+    "subredditText": "Check out some of the trending posts from the PokéClicker community: <a href=\"https://www.reddit.com/r/PokeClicker/\" target=\"_blank\">https://www.reddit.com/r/PokeClicker/</a>",
+    "title": "External Links",
+    "wiki": "Wiki:",
+    "wikiText": "Check out the community wiki to learn more information about PokéClicker: <a href=\"https://wiki.pokeclicker.com/\" target=\"_blank\">https://wiki.pokeclicker.com/</a>"
+  },
+  "faq": {
+    "challengeModes": {
+      "noBattleItems": {
+        "answer": "Disables the usage of X Attack, X Click, Lucky Egg, Token Collector, Dowsing Machine, and Lucky Incense.<br> You can still buy or find these items even if you can't use them.",
+        "title": "No Battle Items"
+      },
+      "noClickAttack": {
+        "answer": "Disables the ability to use click attacks.<br> You still can click in the very first battle of the game.",
+        "title": "No Click Attack"
+      },
+      "noGemUpgrades": {
+        "answer": "Disables the usage of Gems to increase damage multipliers.<br> You can still get gems and use them to buy items such as flutes or Pokémon.",
+        "title": "No Gem Upgrades"
+      },
+      "noMasterBalls": {
+        "answer": "Disables the usage of Master Balls.<br> You still can buy them, so you can complete the related achievements.",
+        "title": "No Master Balls"
+      },
+      "noOakItems": {
+        "answer": "Disables the usage of all Oak items.<br> The achievements related to leveling up these items will disappear, and the percentages will be distributed among the other general achievements.<br> In order to get the berries that mutate while using some Oak Items you can buy them in Johto berry master once you have unlocked the berry that evolves to them.",
+        "title": "No Oak Items"
+      },
+      "noVitamins": {
+        "answer": "Disables the usage of vitamins.<br> You can still buy and find them, so the related achievements can still be completed. After getting them you can get a money refund by inputting the code: \"REFUND-VITAMINS\" (one use only).",
+        "title": "No Vitamins"
+      },
+      "realEvolution": {
+        "answer": "Your Pokémon go away when they evolve.<br> When your Pokémon evolve their stats are carried over to the evolution. This includes times hatched, EVs, and shiny status.<br> If the base Pokémon had a Held Item, it will be carried over to the evolution unless the item is incompatible. For example, Light Ball won't be transferred to a Raichu but a Magnet will.<br> Baby Pokémon aren't considered evolutions but gifts.",
+        "title": "Real Evolution"
+      },
+      "regionalDebuff": {
+        "answer": "Lowers the attack of Pokémon that aren't native to the current region.<br> The strength of the debuff is based on your highest region, not the region you are battling in.<br> Pokémon retain 20% of their attack in Johto and this value raises by 10% each region.<br> <strong>Note:</strong> This challenge is activated by default.",
+        "title": "Regional Attack Debuff"
+      },
+      "requireDex": {
+        "answer": "Requires a complete regional Pokédex before moving on to the next region.<br> You only need <strong>one of each Pokémon</strong> to be able to move to the next region. Any form of the Pokémon is valid even if it isn't the base form.<br> <strong>Note:</strong> This challenge is activated by default.",
+        "title": "Require Complete Pokédex"
+      },
+      "rewards": {
+        "answer": "You don't get anything special for having challenges active, but each challenge will give you a ribbon on your trainer profile.",
+        "question": "What do I get for activating challenge modes?"
+      },
+      "slowEvs": {
+        "answer": "Gain EVs 10x times slower.<br> If the challenge is deactivated, the EVs will get multiplied back.",
+        "title": "Slow EVs"
+      },
+      "title": "Challenge Modes",
+      "whatAre": {
+        "answer": "They are options you can select <strong>when starting a new save</strong> to make the game harder or more complex by modifying mechanics.<br> <strong>Note:</strong> You can deactivate the challenges at any point, but they cannot be activated later.",
+        "question": "What are challenge modes?"
+      }
+    },
+    "development": {
+      "developers": {
+        "answer": "The original game was developed by @IshaD#1866, who has since decided to stop work on this project.<br> Since then, lots of people have helped by contributing code via GitHub.",
+        "question": "Who are the awesome people developing this game?"
+      },
+      "help": {
+        "answer": "The GitHub repo is located here:<br> <a href=\"https://github.com/pokeclicker/pokeclicker\" target=\"_blank\">https://github.com/pokeclicker/pokeclicker</a><br> Any new issues, suggestions or code contributions are always welcomed.<br> You may even earn the @Poké Crew, @Code Contributor or @Developer roles in Discord.",
+        "question": "How can I help with development?"
+      },
+      "moreRegions": {
+        "answer": "This is a current priority, but there are no set timelines; it will be ready when it is ready.",
+        "question": "When will more regions be added?"
+      },
+      "release": {
+        "answer": "There are currently no plans for a \"final release\".<br> Maybe once all the regions are added that will be version <code>1.0.0</code>.",
+        "question": "When will the development version be fully released?"
+      },
+      "title": "Development"
+    },
+    "gameplay": {
+      "autoBattle": {
+        "answer": "You must defeat the Gym Leader manually 10 times.",
+        "question": "How do I unlock the Auto Battle option for Gyms?"
+      },
+      "breeding": {
+        "answer": "Some Pokémon can only be obtained by breeding.<br> When a Pokémon is hatched, its attack will increase by 25% of the base amount.<br> Breeding has higher odds of obtaining a shiny Pokémon <code>(1/1024)</code>.",
+        "question": "Why should I be breeding Pokémon?"
+      },
+      "clickAttack": {
+        "answer": "New Pokémon you capture, shinies obtained, Pokémon made resistant to Pokérus, and Purified Pokémon all increase your click attack.",
+        "question": "How do I increase my Click Attack?"
+      },
+      "dayCycle": {
+        "end": "End",
+        "icon": "Icon",
+        "question": "What is the schedule of the day cycle?",
+        "start": "Start",
+        "timeOfDay": "Time of Day"
+      },
+      "dungeonFloors": {
+        "answer": "Dungeons can't get bigger than 10x10, instead they get a second floor of at least 5x5. The boss tile is always in the second floor, the first floor has a stairs tile instead. When you reach the second floor, time stops and you get 10 extra seconds.",
+        "question": "How do the floors in dungeons work?"
+      },
+      "dungeonGuides": {
+        "answer": "You need to have cleared the dungeon at least 10 times in order to make use of Dungeon Guides.",
+        "question": "How do I unlock Dungeon Guides (BETA) for dungeons?"
+      },
+      "evMultipliers": {
+        "andSoOn": "..and so on",
+        "damage": "{{multiplier}}x Damage",
+        "damageMultiplier": "Damage Multiplier",
+        "evAmount": "{{evs}} EVs",
+        "evs": "EVs",
+        "question": "What are the EV damage multipliers?"
+      },
+      "flash": {
+        "answer": "<code>Tier 1:</code> 100 clears<br> <code>Tier 2:</code> 250 clears<br> <code>Tier 3:</code> 400 clears",
+        "question": "How do I unlock Flash in dungeons?"
+      },
+      "howToUnlock": {
+        "answer": "<code>Underground:</code> Buy the <strong>Explorer Kit</strong> from <strong>Cinnabar Island</strong>.<br> <code>Daycare:</code> Will be unlocked after reaching <strong>Route 3</strong>.<br> <code>Farm:</code> Will be unlocked after reaching <strong>route 11</strong> and obtaining <strong>Berries</strong>",
+        "question": "How do I unlock the.."
+      },
+      "multipleQuests": {
+        "answer": "Yes, you can unlock up to 4 quest slots.<br> <code>Quest Level 5:</code> 2 slots<br> <code>Quest Level 10:</code> 3 slots<br> <code>Quest Level 15:</code> 4 slots",
+        "question": "Can I progress towards more than 1 quest at a time?"
+      },
+      "nextRegion": {
+        "answer": "You must defeat the league champion of the current region. If you have regional Pokedex challenge active you must obtain all Pokémon available in the current region.<br> <strong>Note:</strong> Once you go to the next region, you will not be able to go back to previous regions until you reach the dock.",
+        "question": "How do I get to the next region?"
+      },
+      "obtainPokemon": {
+        "answer": "Check that you have completed every <strong>route</strong>.<br> Check that each <strong>dungeon</strong> has been completed.<br> Some Pokémon only come from <strong>Eggs</strong>.<br> Some can only be obtained by using an <strong>Evolution Item</strong>.<br> Some can only be found in the <strong>Safari Zone</strong>.<br> <strong>Fossil Pokémon</strong> can only be obtained with the correlating <strong>Fossil</strong> from the <strong>Underground</strong>.<br> Some can only be purchased from a <strong>Shop</strong>.<br> <strong>(Roamers)</strong> Some legendaries will <strong>randomly</strong> appear on <strong>routes</strong>.<br> <strong>(Babies)</strong> Breed their evolution.<br> Some can only evolve at certain <strong>times of the day</strong>.<br> Some can only evolve in specific <strong>locations</strong>.<br> Some can only appear/evolve in specific <strong>weather</strong>.",
+        "question": "How do I obtain certain Pokémon?"
+      },
+      "regions": {
+        "answer": "Currently Kanto through {{region}} are able to be played.",
+        "question": "How many regions are playable?"
+      },
+      "smallerDungeons": {
+        "answer": "Dungeons will become smaller at 10, 100, 1,000, etc. clears to a minimum of 5x5 tiles.",
+        "question": "How do I make the dungeons smaller?"
+      },
+      "title": "Gameplay",
+      "whereToFind": {
+        "answer": "<code>Underground:</code> Route 14<br> <code>Daycare:</code> Route 5, or click <strong>List</strong> on the hatchery<br> <code>Farm:</code> Route 11",
+        "question": "Where do I find.."
+      }
+    },
+    "general": {
+      "damage": {
+        "answer": "The damage you do against an enemy Pokémon is the sum of the attack of all Pokémon the player has, after type effectiveness, type weakness, and other multipliers are applied.<br> For players' Pokémon with two types, only the most efficient type is applied<br> For enemy Pokémon with two types, effectiveness and weakness is applied once to each type.<br> For enemy Pokémon with one type, effectiveness and weakness is applied twice to that single type.<br> Other factors that will multiply damage value include flutes, battle items, and weather. Gems can be used to change the effectiveness and weakness multipliers as well.<br> Player can check the attack against a specific Pokémon they are fighting by <strong>hovering over Pokémon attack value</strong>.",
+        "question": "How is damage calculated?"
+      },
+      "dungeonTokens": {
+        "answer": "Read the in-game Tutorial.<br> Set the \"Caught\" selector in the top left to Poké Ball to capture Pokémon you have already caught.",
+        "question": "How do I get Dungeon Tokens?"
+      },
+      "inactiveSpeed": {
+        "answer": "This is a setting on browsers that slows down inactive windows.<br> You can change the browser flags, but this is <strong>not </strong>recommended.<br> Otherwise you can download the Windows client from here:<br> <a href=\"https://github.com/RedSparr0w/Pokeclicker-desktop/releases/latest\" target=\"_blank\">https://github.com/RedSparr0w/Pokeclicker-desktop/releases/latest</a>",
+        "question": "My game isn't running at full speed when the window isn't active."
+      },
+      "saveInfo": {
+        "question": "Where can I view more information about my save file?"
+      },
+      "title": "General",
+      "whereToPlay": {
+        "answer": "<a href=\"https://www.pokeclicker.com/\" target=\"_blank\">https://www.pokeclicker.com/</a><br> or download the offline Windows client:<br> <a href=\"https://github.com/RedSparr0w/Pokeclicker-desktop/releases/latest\" target=\"_blank\">https://github.com/RedSparr0w/Pokeclicker-desktop/releases/latest</a>",
+        "question": "Where can I play the latest version?"
+      },
+      "wiki": {
+        "answer": "<a href=\"https://wiki.pokeclicker.com/\" target=\"_blank\">https://wiki.pokeclicker.com/</a><br> The Start Menu also has a button to open the Wiki.",
+        "question": "Where is the wiki?"
+      }
+    },
+    "items": {
+      "berriesUse": {
+        "answer": "These items can be used in the <strong>Farm</strong> to grow more berries and earn farm points.<br> They can be exchanged for different items or Pokémon in Berry Master Shops.<br> They have special Auras that can provide Gameplay bonuses.<br> They can attract wild Pokémon to the Farm that can be captured, some of which can only be obtained this way.",
+        "question": "What are Berries used for?"
+      },
+      "evolutionItems": {
+        "answer": "You can use evolution items by clicking <strong>Items</strong> in the Start Menu.",
+        "question": "How do I evolve Pokémon that require an item to evolve?"
+      },
+      "moreBerries": {
+        "answer": "Some berries can be obtained as Pokémon drops or from dungeon chests, but most are obtained through mutation on the Farm.<br> The Kanto Berry Master in Cerulean City will provide daily hints about how to mutate the various berries.",
+        "question": "How can I get more Berries?"
+      },
+      "oakItemSlots": {
+        "answer": "There is a maximum of 3 active slots.",
+        "question": "How many Oak Item slots are available?"
+      },
+      "restores": {
+        "answer": "They can be used in the underground to restore energy.",
+        "question": "What is the small/medium/large restore used for?"
+      },
+      "title": "Items"
+    },
+    "pokerusEvs": {
+      "evBonus": {
+        "answer": "The EV damage multiplier is multiplicative, and scales linearly until 1.5x (50 EVs). The bonus thereafter has diminishing returns relative to the number of EVs gained, but has no limit.",
+        "question": "What is the EV Attack Bonus?"
+      },
+      "gainEvs": {
+        "answer": "EVs can be gained in a variety of ways, but are primarily gained by capturing (not breeding) Pokémon.<br> You can use the Contagious Poké Ball selector (unlocked after getting Pokérus) to focus catching Pokémon with less than 50 EVs. Note that setting this selector to \"Do not catch\" will prevent you from catching any Contagious Pokémon, even if your Caught selector has a Poké Ball set.<br><br> Base Yield: <code>0.1EV</code><br> Base Wanderer Yield: <code>0.2EV</code><br> Wanderer Yield: <code>1EV</code><br> Evolution Item / Shopmon / Safari Yield: <code>1EV</code><br> Shadow Modifier: <code>2×</code><br> Shiny Modifier: <code>5×</code><br> Dungeon Modifier: <code>3×</code><br> Dungeon Mimic / Dungeon Boss Modifier: <code>10×</code><br> Roamer Modifier: <code>50×</code><br> Repeat Ball Modifier: <code>5×</code><br> Macho Brace Modifier: <code>1.5×</code><br> Power Bracer Modifier: <code>2×</code><br> Rowap Aura Modifier: <code>Multiplier</code> based off Farm Setup<br> Blue Flute Modifier: <code>%</code> based off Achievement Bonus",
+        "question": "How do I gain EVs?"
+      },
+      "spread": {
+        "answer": "Pokérus is spread by Pokémon that are infected, to other Pokémon in the hatchery (not in the queue) that share a type with the infected Pokémon. Neither Pokémon can be ready to hatch, nor can a Hatchery Helper be used on either Pokémon.",
+        "question": "How do I spread Pokérus?"
+      },
+      "statusFilters": {
+        "answer": "<code>None</code>: Pokémon that have not been infected with Pokérus.<br> <img src=\"assets/images/breeding/pokerus/Infected.png\"> <code>Infected</code>: Pokémon has Pokérus, but cannot spread Pokérus or gain EVs until hatching.<br> <img src=\"assets/images/breeding/pokerus/Contagious.png\"> <code>Contagious</code>: Pokémon with less than 50 EVs.<br> <img src=\"assets/images/breeding/pokerus/Resistant.png\"> <code>Resistant</code>: Pokémon with 50 or more EVs. These Pokémon will still be able to spread Pokérus.",
+        "question": "What do the Pokérus status filters mean?"
+      },
+      "title": "Pokérus and EVs",
+      "unlockEvs": {
+        "answer": "EVs are unlocked after defeating the Distortion World dungeon in Sinnoh.",
+        "question": "When do I unlock EVs?"
+      },
+      "whatIs": {
+        "answer": "Pokérus is a beneficial virus your Pokémon can catch. EVs, also called Effort Values, increase the attack of your Pokémon.",
+        "question": "What is Pokérus, and what are EVs?"
+      }
+    },
+    "rareShiny": {
+      "breedShiny": {
+        "answer": "Yes, once a Pokémon is shiny, it will always remain shiny.",
+        "question": "If I breed a shiny Pokémon, will it still stay shiny?"
+      },
+      "evolveShiny": {
+        "answer": "No, you will need to obtain the evolution's shiny via a different method.",
+        "question": "If I evolve a shiny Pokémon, will the evolution be shiny?"
+      },
+      "roamingOdds": {
+        "answer": "The chance to encounter a roaming Pokémon is <code>1/8192</code> for the first route of a region, and increases linearly up to <code>1/4096</code> for the last route of a region.<br> (\"first\" and \"last\" here just being the route difficulty/HP, not necessarily the order you reach the route)",
+        "question": "What are the odds of finding a roaming Pokémon?"
+      },
+      "shinyBonus": {
+        "answer": "Yes, they give an extra 100% bonus to Click Attack.",
+        "question": "Do shiny Pokémon give any bonus to gameplay?"
+      },
+      "shinyOdds": {
+        "answer": "On a Route: <code>1/8192</code><br> In a Dungeon: <code>1/4096</code><br> Using an Evolution Item: <code>1/2048</code><br> In the Safari Zone: <code>1/1024</code><br> From a Shop: <code>1/1024</code><br> From Hatching an Egg: <code>1/1024</code><br> From a Reward: <code>1/1024</code><br> From a Battle Frontier Milestone: <code>1/1024</code><br> Wandering on the Farm: <code>1/1024</code>",
+        "question": "What are the odds of finding a shiny Pokémon?"
+      },
+      "title": "Rare/Shiny Pokémon"
+    },
+    "saveData": {
+      "cloudSaves": {
+        "answer": "No. Your file is saved in your browser data. We recommend making frequent backups of your save data.",
+        "question": "Are there cloud saves or accounts?"
+      },
+      "release": {
+        "answer": "Your save file will likely be compatible with the final release.",
+        "question": "Will my progress be carried over on release?"
+      },
+      "title": "Save Data",
+      "transfer": {
+        "answer": "Yes! Download a copy of the save file from <strong>Start Menu → Save</strong>, transfer it to the other device, and import it from the save selector screen.<br> Note that progress does not automatically carry over between devices.",
+        "question": "Can I transfer my save file between devices?"
+      }
+    },
+    "title": "Frequently Asked Questions"
+  },
+  "farm": {
+    "berries": "Berries",
+    "berry": "Berry",
+    "berryListTooltip": "<u>Growth Duration</u>: {{growthDuration}}<br/>{{harvestAmount}} {{berryImage}} per harvest<br/>{{farmValue}} {{farmPointImage}} per harvest",
+    "berrydex": "Berrydex",
+    "clearMulchTooltip": "Clear a Mulch from a plot.",
+    "clearPlantTooltip": "Clear a Plant from a plot.",
+    "externalAuras": "<u>External Auras</u>",
+    "farmHands": "Farm Hands",
+    "farmPoints": "Farm Points",
+    "flipAll": "Flip All",
+    "flipAllShort": "Flip",
+    "flipAllTooltip": "Flips which plots are locked.",
+    "hands": {
+      "actionPerCycle": "{{actions}} action/cycle",
+      "actionsPerCycle": "{{actions}} actions/cycle",
+      "allowedPlots": "Allowed Plots",
+      "allowedPlotsTooltip": "Select plots where the Farm Hand can perform actions (Green plots are Allowed).",
+      "cost": "Cost:",
+      "costPerHour": "{{cost}}/hour",
+      "costTooltip": "Automatically paid every hour while hired.",
+      "edit": "Edit",
+      "efficiency": "Efficiency:",
+      "efficiencyTooltip": "Number of actions performed each cycle.",
+      "energy": "Energy:",
+      "energyTooltip": "Consumed when they work and recovers after cycles without work.",
+      "fire": "Fire!",
+      "fireAll": "Fire All",
+      "focusNone": "None",
+      "focusRandom": "Random",
+      "focusReplant": "Replant",
+      "harvesting": "Berry Harvesting:",
+      "harvestingTooltip": "Allow Farm Hand to harvest ripe berries.",
+      "hire": "Hire!",
+      "manageWanderers": "Manage Wanderers:",
+      "planting": "Berry Planting:",
+      "plantingTooltip": "Allow Farm Hand to plant berries.",
+      "showLocked": "Show/Hide Locked Farm Hands",
+      "tooltip": "<strong>{{name}}</strong><br/>Energy: {{energy}}/{{maxEnergy}}<br/>Work Cycle: {{workCycle}}<br/>Next Payment: {{nextPayment}}",
+      "unlockRequirement": "Unlock Requirement",
+      "wanderersTooltip": "Allow Farm Hand to catch wanderers, using your catch filters and consuming your Poké Balls.",
+      "workCycle": "Work Cycle:",
+      "workCycleTooltip": "How often they work or recover energy."
+    },
+    "harvestAll": "Harvest All",
+    "help": {
+      "amazeMulch": "A weaker combination of Boost, Rich and Surprise mulch.",
+      "boostMulch": "Increases the growth rate of Berry plants.",
+      "farmHands": "Farm Hands can help around the Farm; they will harvest and plant Berries as needed or catch wild wanderers, and accrue Farm Points while doing so.",
+      "farmHandsEfficiency": "Efficiency refers to how many actions they can do per work cycle.",
+      "farmHandsEnergy": "If they run out of energy, they won't do any work for that cycle, but will regenerate some energy instead. If there's no work to do currently, they will also regenerate some energy. Firing them will allow them to recover energy at the same rate as if they were still hired.",
+      "farmHandsMax": "Up to 3 Farm Hands can be hired at a time.",
+      "farmHandsMore": "<i>More Farm Hands can be unlocked through shops and unlocking unique Berries.</i>",
+      "farmHandsUnlock": "<i>(Unlocked after obtaining 8 unique Berries.)</i>",
+      "freezeMulch": "Stops Berry growth and auras. Mutations will still occur while Berries are frozen.",
+      "gooeyMulch": "Boosts Wanderer catch rate by 10% and increases the chance of non-base Wanderers appearing. Available from Unova.",
+      "growth": "Each Berry type takes a different amount of time to grow. <br>Once fully grown, the Berry plant can be manually harvested with a click or by a hired Farm Hand. Both methods will yield Farm Points.",
+      "intro": "In the farm you can plant and harvest Berries.",
+      "locking": "You can lock specific plots by toggling on the lock with the lock button <br>or using the hotkey <kbd>{{hotkey}}</kbd>. <br>You can also press <kbd>Shift + Click</kbd> while having any tool/Berry selected to safely lock a plot.",
+      "lockingEffect": "Locking a plot prevents you from planting, harvesting,<br>or interacting with the plot in any way.",
+      "lockingIgnore": "<i>Locked plots ignore Harvest All, Plant All, or Mulch All buttons as well as Farm Hand activity.</i>",
+      "lockingTitle": "Locking Plots",
+      "module": "Monitor and interact with the farm in a limited capacity without opening the full modal. Harvest or plant Berries, apply mulch, use shovels, and lock/unlock plots with the extended controls.<br> Hide the extended controls for less clutter while still being able to plant and harvest Berries or disable the module completely in the settings.<br> You can also use <kbd>Shift + Click</kbd> to safely lock/unlock a plot.<br> The Farm shortcut will be hidden when the Farm module is enabled.",
+      "moduleTitle": "Farm Module",
+      "mulchEffects": "They can be used on plots for different effects:",
+      "mulchShovels": "If you want to remove a mulch, you can use Mulch Shovels. Using one will remove the full mulch effect, regardless of the time remaining.",
+      "mulches": "Mulches can be bought in later regions from Berry Masters. They last 5 minutes each and can be stacked. However, you cannot combine multiple types of mulch on the same plot!",
+      "mulchesTitle": "Mulches",
+      "mutationKinds": "<b>Common mutations:</b> They require specific Berries to happen. <i>These mutations only happen at Ripe stage.</i> <br><b>Evolution mutations:</b> They usually require a Berry changing into other and are related with flavour profiles or use of objects. <i>These mutations can start to happen at Taller stage.</i>",
+      "mutationTypes": "There are two types of mutations:",
+      "mutations": "Berries have the chance to cause mutations and create new Berry species in empty plots based on certain conditions. <br><i>(The Berry Master in Kanto will give you daily hints to what these conditions may be.)</i>",
+      "mutationsTitle": "Mutations",
+      "plots": "Additional plots can be unlocked by spending Berries.",
+      "richMulch": "Increases the number of Berries harvested.",
+      "shovels": "If you want to remove a Berry plant before it is fully grown, you can use a Shovel to uproot it. This will consume the Shovel. Using it on a ripe Berry, however, will function the same as a normal harvest, and the Shovel will not be consumed!",
+      "shovelsShop": "<i>(Both types of shovels can be purchased in later regions from Berry Masters.)</i>",
+      "shovelsTitle": "Shovels",
+      "surpriseMulch": "Increases the chances of mutations.",
+      "trades": "Berries can be traded with Berry Masters in later regions for other useful items.",
+      "tradesTitle": "Trades",
+      "unlocking": "You can unlock a plot by using the toggle or pressing <kbd>Shift + Click</kbd> on the plot again.",
+      "wandererAuras": "Some Berry Auras will increase or decrease the chance of encountering Wandering Pokémon.",
+      "wandererCatch": "Your Poké Ball Filters will be used when attempting to capture a Wanderer. Farm Hands can also be used for this by enabling their Manage Wanderers setting.",
+      "wandererReward": "Interacting with a Wanderer will earn you Farm Points whether you catch it or not. Successfully capturing one will net you Dungeon Tokens.",
+      "wandererStay": "When a Pokémon wanders onto your farm they will appear on a plot next to the Berry and will remain there until interacted with or will flee a couple minutes after the Berry is harvested or withers.",
+      "wanderers": "Ripe Berry plants may attract wild Pokémon that you can then capture. Some Pokémon can only be found using certain Berry species.",
+      "wither": "Otherwise, after some time being fully grown, the Berry plant will wither away, dropping half of the expected Berries, though it may also be re-planted automatically. <br><i>(Farm Points are not gained when Berries wither or get replanted!)</i>"
+    },
+    "lockAll": "Lock All",
+    "lockAllShort": "All",
+    "lockAllTooltip": "Lock all plots.",
+    "lockAlt": "Lock",
+    "lockUnlockPlotTooltip": "Lock/Unlock a plot from interaction.",
+    "lockedPlotAlt": "lock",
+    "mulch": "Mulch",
+    "mulchAll": "Mulch All",
+    "mulchShovel": "Mulch Shovel",
+    "multiplier": "Multiplier",
+    "multiplierHelp": "Left/right click to cycle amount<br/>Applies to single and Mulch All",
+    "plantAll": "Plant All",
+    "plot": {
+      "alteredFrom": "(altered from {{time}})",
+      "auraEmitted": "<u>Aura Emitted:</u>",
+      "auraReceived": "<u>Aura Received:</u>",
+      "infiniteUntilDeath": "∞ until death",
+      "mulch": "<u>Mulch</u>",
+      "possibleMutations": "<u>Possible Mutations</u>",
+      "untilBloom": "{{time}} until bloom",
+      "untilDeath": "{{time}} until death",
+      "untilGrown": "{{time}} until grown",
+      "untilRipe": "{{time}} until ripe",
+      "untilSprout": "{{time}} until sprout",
+      "wanderer": "A wild <strong>{{pokemon}}</strong> is wandering around"
+    },
+    "searchTooltip": "Search for berries by name. Use a space to search for multiple berries.",
+    "selectedBerryImage": "selected berry image",
+    "selectedMulchImage": "selected mulch image",
+    "shovel": "Shovel",
+    "title": "Farm",
+    "toggleLockTooltip": "Toggle locking a plot from interaction.",
+    "unlockAll": "Unlock All",
+    "unlockAllShort": "None",
+    "unlockAllTooltip": "Unlock all plots.",
+    "unlockPlotInFarmTooltip": "Unlock this plot in the Farm",
+    "view": "View"
+  },
+  "gemMaster": {
+    "gems": "Gems",
+    "title": "Gem Master"
+  },
+  "gems": {
+    "description": "Use gems to upgrade the type effectiveness of your Pokémon. When you defeat a Pokémon, you get gems based on its type. Each upgrade increases your effectiveness by {{step}}.",
+    "disabled": "Gem Bonuses are disabled.",
+    "immune": "Immune",
+    "maxed": "MAXED",
+    "neutral": "Neutral",
+    "notAvailable": "N / A",
+    "notVery": "Not Very",
+    "selectGem": "Select a Gem",
+    "title": "Gems",
+    "versus": "Versus",
+    "very": "Very"
+  },
+  "gym": {
+    "clears": "{{clears}} Clears",
+    "stopAuto": "Stop Auto"
+  },
+  "hallOfFame": {
+    "alola": "Professor Kukui told me that you just beat the Alola Pokémon League! Congratulations!<br> You are the new Alola League champion!",
+    "completePokedex": "In order to move on you will need to capture all available Pokémon from the current region!",
+    "galar": "Professor Magnolia told me that you just beat the Galar Pokémon League! Congratulations!<br> You are the new Galar League champion!",
+    "hoenn": "Professor Birch told me that you just beat the Hoenn Pokémon League! Congratulations!<br> You are the new Hoenn League champion!",
+    "johto": "I heard from Professor Elm that you had just conquered the Johto Pokémon League! Congratulations!<br> You are the new Johto League champion!",
+    "kalos": "Professor Sycamore just told me. You are unstoppable! Congratulations!<br> You are the new Kalos League champion!",
+    "kanto": "So, you won! Congratulations!<br> You are the new Pokémon League champion!<br> You have grown up so much since you first left with {{starter}}!<br> <br> There are many more regions to explore!",
+    "sinnoh": "I heard from Professor Rowan that you had just conquered the Sinnoh Pokémon League! Congratulations!<br> You are the new Sinnoh League champion!",
+    "unova": "Professor Juniper told me that you also beat the Unova Pokémon League! Congratulations!<br> You are the new Unova League champion!"
+  },
+  "heldItem": {
+    "heldItemColumn": "Held item:",
+    "pokemonColumn": "Pokémon:",
+    "type2": "Type 2"
+  },
+  "items": {
+    "collectibleItems": "Collectible Items",
+    "consumables": "Consumables",
+    "evolutionItem": "Evolution Item",
+    "evolutionItems": "Evolution Items",
+    "fossilPieces": "Fossil Pieces",
+    "fossils": "Fossils",
+    "gemPlates": "Gem Plates",
+    "heldItems": "Held Items",
+    "itemBag": "Item Bag",
+    "keyItems": "Key Items",
+    "megaStones": "Mega Stones",
+    "multipleEvolutionTooltip": "If the requirements for more than one evolution is fulfilled, a random evolution will be selected.",
+    "selectPokemon": "Select a Pokémon",
+    "shards": "Shards",
+    "sortAscending": "Ascending (lowest value first)",
+    "sortDescending": "Descending (highest value first)",
+    "undergroundTreasure": "Underground Treasure",
+    "useEvolutionItems": "Use evolution items!",
+    "useStonesTooltip": "If a shiny is found, the game will stop using evolution items.",
+    "vitamins": "Vitamins"
+  },
+  "keyItem": {
+    "congratulations": "Congratulations!",
+    "newKeyItem": "New key item!",
+    "youGained": "You have gained a"
+  },
+  "logBook": {
+    "date": "Date",
+    "logs": "Logs",
+    "logsSettings": "Logs settings",
+    "message": "Message",
+    "title": "Log Book",
+    "toggleTypes": "Disable or enable types of logs"
+  },
+  "menu": {
+    "achievements": "Achievements",
+    "badgeCase": "Badge Case",
+    "challengeModes": "Challenge Modes",
+    "changelog": "Changelog",
+    "credits": "Credits",
+    "damageCalculator": "Damage Calculator",
+    "events": "Events",
+    "externalLinks": "External Links",
+    "faq": "FAQ",
+    "gems": "Gems",
+    "items": "Items",
+    "logBook": "Log Book",
+    "muteTooltip": "Click to mute all sounds.",
+    "pokedex": "Pokédex",
+    "profile": "Profile",
+    "progressToUnlock": "Progress further to unlock...",
+    "reportBug": "Report a bug",
+    "save": "Save / Enter Code",
+    "saveTooltip": "Save the game.<br/>Shortcut: {{shortcut}}",
+    "settings": "Settings",
+    "startMenu": "Start Menu",
+    "statistics": "Statistics",
+    "unmuteTooltip": "Click to unmute all sounds."
+  },
+  "moonPhase": {
+    "description": "Moon Phases rotate daily and influence the catch rate of Moon Balls. Additionally, some Pokémon move around according to the current phase.",
+    "moonBallBonus": "Moon Ball Bonus",
+    "phase": "Phase",
+    "title": "Moon Phases"
+  },
+  "nextRegion": {
+    "attackDebuff": "When Pokémon are in a Region they're not native to, they will only retain <strong>{{percent}}</strong> of their total attack.",
+    "canTravel": "You can now travel on to {{region}}!",
+    "dockRequired": "You will also have to progress to the Dock in {{region}} before you are able to travel between regions again.",
+    "downloadAdvice": "It is recommended to download your save in case that you get stuck on your journey.",
+    "downloadSave": "Download Save",
+    "dungeonLoot": "Dungeons in the <strong>{{region}}</strong> Region will be significantly less likely to drop Epic, Legendary, and Mythic loot.",
+    "letsGo": "Let's Go!",
+    "pokedexCompleted": "Congratulations on completing the {{region}} Pokédex!",
+    "queueSlots": "You will gain <strong>{{slots}}</strong> queue slots in the Hatchery.",
+    "thingsToKnow": "There are a few things you should know before you depart:",
+    "title": "Travel to {{region}}"
+  },
+  "npc": {
+    "accept": "Accept",
+    "maybeLater": "Maybe Later"
+  },
+  "oakItems": {
+    "bonus": "Bonus: {{bonus}}",
+    "disabled": "Oak Items are disabled.",
+    "equipAnother": "Equip another Oak Item!",
+    "equipped": "Oak Items Equipped: {{active}}/{{max}}",
+    "level": "Level: {{level}}",
+    "loadouts": "Loadouts",
+    "locked": "Locked!",
+    "maxLevel": "MAX LEVEL!",
+    "namePlaceholder": "name",
+    "selector": "Selector",
+    "title": "Oak Items",
+    "upgrade": "Upgrade"
+  },
+  "pokeballFilters": {
+    "configureFilters": "Configure Filters",
+    "createFilter": "Create New Filter",
+    "disabled": "Disabled",
+    "enabled": "Enabled",
+    "help": {
+      "configureIntro": "Use this tab to add, edit, re-order, and remove Pokéball filters.",
+      "description": "You can hover (or tap) the <button class=\"btn-circle btn-info float-none\">ℹ</button> icon for a description of what the filter will catch.",
+      "hidden": "Some filter options and default filters are hidden at the start of the game, and will unlock as they become relevant.",
+      "reorder": "Filters can be re-ordered by dragging them from the bar on the left side of each filter. You can click the x on the right of each filter to remove them - this will open a confirmation box to prevent accidentally deleting one.",
+      "rightClick": "Right click (or long press on mobile) can be used to enable/disable filters from the main screen without opening this menu.",
+      "testDefault": "With the default catch filters, you will see that both \"Caught\" and \"New Shiny\" meet their conditions, but the \"New Shiny\" filter is the one used for catching. The filter furthest down in your list that matches all conditions is the one used. The highlighted filters are ones that matched the scenario.",
+      "testExample": "For instance, if you wanted to know what is used for a shiny Rattata, when you already have a normal Rattata, you would turn on the \"Shiny\" and \"Caught\" toggles, but leave the others off.",
+      "testExplain": "This tab will allow you to see exactly which will be chosen, for some scenario you configure with the settings in the tab.",
+      "testIntro": "In some scenario, multiple of your filters may meet all of their conditions, but only one can be used to choose a ball for catching.",
+      "toggleSettings": "Click the \"Toggle Settings\" button for a filter to configure how it works. Options listed first are all the values that are checked when catching - you can click their <button class=\"btn-circle btn-danger float-none\">−</button> to remove these. The darker options below that are not checked. You can click their <button class=\"btn-circle btn-success float-none\">+</button> button to include it in the filter, and choose a value it must match.",
+      "toggles": "The \"Enabled\" toggle allows you to turn a filter off. Disabled filters will be grayed out in the filter list on the main game screen, and also in the Test Filters tab. The \"Inverted\" toggle, when turned on, will make that filter <i>ignore</i> any Pokémon that match its conditions, and catch all the rest."
+    },
+    "priorityAfter": "have a higher priority! **",
+    "priorityBefore": "** Filters closer to the",
+    "priorityBottom": "bottom",
+    "priorityTop": "top",
+    "resetFilters": "Reset Filters",
+    "testConfigure": "Configure these options to describe a Pokémon you want to test:",
+    "testFilters": "Test Filters",
+    "testIntro": "This tab is useful for making sure what your filters match, and which ones take precedence. See the Help tab for more details.",
+    "testMatch": "This will use your \"{{name}}\" filter",
+    "testNoMatch": "None of your enabled filters match this scenario",
+    "toggleSettings": "Toggle Settings"
+  },
+  "pokeballSelector": {
+    "ball": "Ball",
+    "doNotCatch": "Do not catch",
+    "helpTooltip": "Select which Poké Ball to use on Pokémon depending on their status. Right click (or long press on mobile) can be used to toggle filter enabled/disabled.",
+    "qty": "Qty",
+    "selectionTitle": "Poké Ball Selection",
+    "title": "Poké Balls"
+  },
+  "pokedex": {
+    "addAll": "Add All",
+    "addAllTooltip": "Add all Pokémon matching the current filters to this category.",
+    "all": "All",
+    "categorized": "Categorized",
+    "categoryModeTooltip": "Use Category Mode to quickly assign and remove Pokémon from categories. Select a category then click the desired Pokémon to add or remove.",
+    "disableCategoryMode": "Disable Category Mode",
+    "editCategories": "Edit Categories",
+    "enableCategoryMode": "Enable Category Mode",
+    "evTooltip": "<br/>EVs: <strong>{{evs}}</strong><br/>EV bonus: <strong>×{{bonus}}</strong>",
+    "filtersAndSettings": "Filters and Settings",
+    "heldItemTooltip": "Shows Pokémon with a chance to drop an item",
+    "infoTooltip": "<u>Information:</u><br/>Base Attack: <strong>{{attack}}</strong><br/>Catch Rate: <strong>{{catchRate}}%</strong><br/>Hatch Steps: <strong>{{hatchSteps}}</strong>",
+    "missingPokemon": "Missing a Pokémon but don't see it here? Be sure to completely explore the region!",
+    "nameOrId": "Name or ID",
+    "nameOrIdPlaceholder": "{{pokemon}} or 1",
+    "noPokemonFound": "No Pokémon found",
+    "removeAll": "Remove All",
+    "removeAllTooltip": "Remove all Pokémon matching the current filters from this category.",
+    "resetAllFilters": "Reset All Filters",
+    "selected": "{{amount}} selected",
+    "selectedCategory": "Selected Category",
+    "showShadowSpritesTooltip": "Display all purified Pokémon with their shadow sprites.",
+    "showing": "Showing {{amount}} Pokémon",
+    "sortAscending": "Ascending (lowest value first)",
+    "sortDescending": "Descending (highest value first)",
+    "title": "Pokédex",
+    "types": "Types",
+    "unknown": "Unknown"
+  },
+  "pokemonList": {
+    "atk": "Atk",
+    "attackPower": "Attack Power",
+    "evs": "EVs: {{evs}}",
+    "lv": "Lv",
+    "purified": "Purified",
+    "shadow": "Shadow",
+    "title": "Pokémon List"
+  },
+  "pokemonStats": {
+    "attackAtLevel100": "Attack at level 100",
+    "baseAttack": "Base Attack",
+    "breedingEfficiency": "Breeding Efficiency",
+    "captured": "Captured",
+    "catchRate": "Catch Rate",
+    "currentAttack": "Current Attack",
+    "defeated": "Defeated",
+    "displayGender": "Display Gender",
+    "encountered": "Encountered",
+    "evBonus": "EV bonus",
+    "evs": "EVs",
+    "genderRatio": "Gender Ratio",
+    "genderless": "Genderless",
+    "hatchSteps": "Hatch Steps",
+    "hatched": "Hatched",
+    "heldItem": "Held Item",
+    "hideShinySprite": "Hide Shiny Sprite",
+    "nickname": "Nickname",
+    "notObtainable": "This Pokémon should not be obtainable.",
+    "pokemonStats": "Pokémon Stats",
+    "rareHoldItem": "Rare Hold Item",
+    "rareHoldItemTooltip": "Item this Pokémon has a chance to drop upon being defeated.",
+    "reportBug": "If you obtained it by accident, please report it as a bug.",
+    "settingOverride": "<strong><u>{{setting}}</u></strong> is currently overriding this setting.",
+    "shiniesCaptured": "Shinies Captured",
+    "shiniesDefeated": "Shinies Defeated",
+    "shiniesEncountered": "Shinies Encountered",
+    "shiniesHatched": "Shinies Hatched",
+    "showShadow": "Show Shadow",
+    "statistics": "Statistics",
+    "unknown": "Unknown",
+    "vitaminsApplied": "Vitamins Applied"
+  },
+  "profile": {
+    "background": "Background",
+    "gender": "Gender",
+    "namePlaceholder": "name",
+    "selectBackground": "Select a Background",
+    "selectTrainer": "Select a Trainer",
+    "shadow": "Shadow",
+    "shadowLocked": "Shadow {{pokemon}} is not unlocked yet or does not exist",
+    "shiny": "Shiny",
+    "shinyLocked": "Shiny {{pokemon}} is not unlocked yet",
+    "textColor": "Text Color",
+    "title": "Profile",
+    "trainer": "Trainer"
+  },
+  "purifyChamber": {
+    "flowNeeded": "Flow needed for next purification:",
+    "noShadowPokemon": "No Shadow Pokémon in the Party",
+    "purify": "Purify",
+    "title": "Purify Chamber"
+  },
+  "questLine": {
+    "cannotPause": "This quest line cannot be paused. It is either a story, progression related, or otherwise required quest.",
+    "inProgress": "In progress",
+    "locked": "Locked",
+    "pauseOnlyInTown": "Quest Lines can only be paused while in a town or fighting on a route.",
+    "pauseWarning": "Pausing this quest line will remove it from your quest list and prevent any progress.<br /><br />It can be resumed from the current step at the Bulletin Board it was originally accepted.",
+    "paused": "Paused"
+  },
+  "quests": {
+    "activeQuestLines": "Active Quest Lines",
+    "availableQuestLines": "Available Quest Lines",
+    "claim": "Claim",
+    "clickListToStart": "Click \"List\" to start a new quest.",
+    "completeAllBonus": "Or complete all quests for a bonus",
+    "completeQuestLines": "Complete Quest Lines",
+    "completed": "Completed",
+    "dailyFreeRefreshIn": "Daily free refresh in: {{time}}",
+    "freeRefresh": "Free Refresh",
+    "level": "Lvl. {{level}}",
+    "pause": "Pause",
+    "progress": "Progress",
+    "questLines": "Quest Lines",
+    "quit": "Quit",
+    "refresh": "- Refresh",
+    "reward": "Reward",
+    "start": "Start",
+    "step": "Step",
+    "tabQuests": "Quests",
+    "titleCount": "Quests ({{current}}/{{slots}})",
+    "unlockSlots": "Unlock additional quest slots at levels 5, 10, and 15!"
+  },
+  "routeInfo": {
+    "backlotDailySpecial": "Mr. Backlot's Daily Special",
+    "dayOfWeekPokemon": "Day of Week Pokémon",
+    "encounters": "Encounters",
+    "eventPokemon": "Event Pokémon",
+    "eventRoamingPokemon": "Event Roaming Pokémon",
+    "evs": "EVs: {{evs}}",
+    "fishingPokemon": "Fishing Pokémon",
+    "roaming": "Roaming",
+    "roamingBoosted": "This route is currently boosted! Roaming Pokémon are 3× more likely to appear.",
+    "roamingChance": "Chance of finding a Roaming Pokémon on this route.",
+    "roamingPokemon": "Roaming Pokémon",
+    "weatherPokemon": "Weather Pokémon"
+  },
+  "safari": {
+    "allCaught": "You have captured all of the Safari Pokémon!",
+    "allCaughtShiny": "You have captured all of the Safari Pokémon shiny!",
+    "ballButton": "Ball ({{amount}})",
+    "catchChance": "Catch chance: {{chance}} %",
+    "escapeChance": "Escape chance: {{chance}} %",
+    "explore": "Explore",
+    "help": {
+      "bait": "Bait",
+      "baitDesc": "Throwing any kind of Bait will make the Pokémon eat, and less likely to flee, but harder to catch. Berry Baits change the base rates of the Pokémon, with Razz increasing catch rate, Pinap increasing the chance an Item is dropped, and Nanab lowering flee rate. Only one Berry effect can be present at a time. Provides 5 Safari XP.",
+      "ball": "Ball",
+      "ballDesc": "This will throw a Poké Ball and give you a chance of capturing the Pokémon. Provides 10 Safari XP.",
+      "catchXp": "Catching a Pokémon will provide 50 Safari XP. Shiny is 5×",
+      "end": "Your safari exploration will end when you have run out of Poké Balls. You can freely leave and re-enter without having to pay the fee again as long as you still have Poké Balls remaining.",
+      "flee": "After your turn of the encounter, if it did not result in the encounter ending, the wild Pokémon will have a chance of running away.",
+      "intro": "The Safari Zone uses a different method of encountering and capturing Pokémon, and it contains several unique Pokémon.",
+      "itemXp": "Picking up an item will provide 10 Safari XP.",
+      "levelEffects": "Safari Level will increase the effectiveness of Rocks and Bait, the catch chance, the Egg Steps gained from walking, and the odds that an item will spawn when a Pokémon is caught.",
+      "levelItems": "Some items are not available until a certain Safari Level is reached.",
+      "options": "When you have encountered a Pokémon, you will be given 4 options:",
+      "rock": "Rock",
+      "rockDesc": "Throwing a Rock will make the Pokémon angry, and more likely to flee, but easier to catch. Provides 10 Safari XP.",
+      "run": "Run",
+      "runDesc": "This will end the encounter.",
+      "speedIntro": "Every 10 Safari Levels, the animation will speed up by the following values:",
+      "speedLevel": "<b>Level {{level}}:</b> {{percent}}% faster.",
+      "walk": "After paying the entrance fee, you will be able to walk around in the Safari Zone. To encounter Pokémon, you must either walk in the tall grass or walk into Pokémon that randomly appear on the map.",
+      "xp": "As you perform actions, you will gain Safari XP and increase your Safari Level. If you catch a Pokémon, there is a chance an item will appear on the map."
+    },
+    "leave": "Leave",
+    "level": "Lvl. {{level}}",
+    "maxLevel": "Max level reached",
+    "payEntranceFee": "Pay Entrance Fee",
+    "rockButton": "Rock (∞)",
+    "run": "Run",
+    "title": "Safari Zone"
+  },
+  "save": {
+    "claim": "Claim!",
+    "copyToClipboard": "Copy to Clipboard",
+    "deleteSave": "DELETE SAVE",
+    "deleteWarning": "You will not be able to recover your savefile!",
+    "discordNote": "<strong>Note:</strong> This is <strong>not</strong> used for cloud saves;<br>it just allows you to enter codes received from the Discord bot.",
+    "downloadHelp": "If this does not work, you can copy the contents of the save and paste it into a '.txt' file",
+    "downloadSave": "Download Save",
+    "enterCodePlaceholder": "Enter code...",
+    "importSave": "Import Save",
+    "linkDiscord": "Link Discord",
+    "title": "Save Data",
+    "unlinkDiscord": "Unlink Discord"
+  },
+  "saveSelector": {
+    "badges": "Badges:",
+    "discordAlt": "Join our Discord!",
+    "githubAlt": "Visit our GitHub!",
+    "importSave": "Import Save",
+    "menu": {
+      "delete": "Delete",
+      "download": "Download (backup)",
+      "import": "Import (overwrite)",
+      "load": "Load"
+    },
+    "newSave": "New Save",
+    "pokedex": "Pokédex:",
+    "time": "Time:",
+    "useOurClient": "Play offline &amp; improve performance by downloading our desktop client <b><a href=\"https://github.com/RedSparr0w/Pokeclicker-desktop/releases/latest\" target=\"_blank\">here</a></b>. You can even find a Pokémon exclusive to the client when you reach the Sevii Islands!<br><br>",
+    "wikiAlt": "Check out the Wiki!"
+  },
+  "settingsModal": {
+    "changeRoutesTooltip": "Change routes based on route order",
+    "desktopNotificationsTooltip": "Desktop notifications, these can be seen even if the game is not in focus",
+    "discord": {
+      "enable": "Enable Discord rich presence",
+      "line1": "Line 1 text:",
+      "line1Placeholder": "Shinies: {caught_shiny}/{caught} {sparkle}",
+      "line2": "Line 2 text:",
+      "line2Placeholder": "Total Attack: {attack}",
+      "options": "Options:",
+      "timer": "Show current session play time (max 24 hours)",
+      "timerReset": "Reset timer on area change"
+    },
+    "inGameNotificationsTooltip": "In game notifications",
+    "loadDefault": "Load From Default Settings",
+    "minusOrPlus": "- or +",
+    "numberKeys": "Number Keys",
+    "oakItemsTooltip": "Each number refers to a specific Oak Item",
+    "pokeballTooltip": "Each number refers to a specific Poké Ball",
+    "queueSizeTooltip": "Restrict your hatchery queue to a specific size or disable entirely. Enter a value between 1 and your current max size ({{max}}), zero (0) to disable the queue entirely, or -1 for no limit.",
+    "resetColors": "Reset Colors",
+    "resetDefault": "Reset Default Settings",
+    "resetOrder": "Reset Order",
+    "resetResizableModules": "Reset Resizable Modules",
+    "saveDefault": "Save As Default Settings",
+    "saveFilenameTooltip": "Special tags {name}, {version} and {date} are automatically filled",
+    "section": {
+      "currency": "Currency",
+      "dungeon": "Dungeon",
+      "farm": "Farm",
+      "general": "General",
+      "hatchery": "Hatchery",
+      "mapColors": "Map Colors",
+      "modals": "Modals",
+      "oakItems": "Oak Items",
+      "other": "Other",
+      "pokeballSelector": "Poké Ball Selector",
+      "safari": "Safari",
+      "ship": "Ship",
+      "shop": "Shop",
+      "town": "Town",
+      "underground": "Underground"
+    },
+    "setKeyTooltip": "Click here to set a new key",
+    "shipTooltip": "Each number selects a region.",
+    "shopTooltip": "Each number selects an item in the shop.",
+    "tab": {
+      "display": "Display",
+      "gameplay": "Gameplay",
+      "hotkeys": "Hotkeys",
+      "notifications": "Notifications",
+      "other": "Other",
+      "sound": "Sound"
+    },
+    "title": "Settings",
+    "townTooltip": "Can access anything from Gyms to NPCs. Each number is a button.",
+    "whiteTransparentTooltip": "Set to white for transparent"
+  },
+  "shop": {
+    "pokeMart": "Poké Mart",
+    "pokeMartOf": "Poké Mart {{town}}",
+    "soldOut": "Sold Out"
+  },
+  "shortcuts": {
+    "farm": "Farm",
+    "title": "Shortcuts",
+    "underground": "Underground"
+  },
+  "startSequence": {
+    "challengeModes": "Challenge Modes",
+    "intro": "Hello, there! Welcome to the world of Pokémon!<br> My name is Oak. People affectionately refer to me as the Pokémon Professor.<br> This world is inhabited by creatures called Pokémon!<br> For some people, Pokémon are pets. Other use them for battling.<br> As for myself… I study Pokémon as a profession.<br> However, your very own Pokémon legend is about to unfold!<br> A world of dreams and adventures with Pokémon awaits! Let's go!",
+    "professorOak": "Professor Oak"
+  },
+  "starter": {
+    "ambushed": "Oh No! We got ambushed by these Pokémon!<br> I can only hold off two! Pick the one you want to fight!",
+    "cantHoldOffFour": "I can't hold off all four! Please pick the Pokémon you want to fight!",
+    "cantHoldOffThree": "I can't hold off all three! Please pick the Pokémon you want to fight!",
+    "captureStarter": "Capture Starter",
+    "caughtIntro": "Hm! Excellent! You have caught your first Pokémon!<br> This is where your journey begins. <br> You can progress to the next route after you have defeated 10 Pokémon.<br> To help you on your journey, I will give you these <b>Key Items</b>!<br> You can view all your <b>Key Items</b> in the start menu.<br>",
+    "clickToDamage": "You can click on it to inflict damage",
+    "pickNextRegion": "Pick a starter for your next region"
+  },
+  "statistics": {
+    "achievementBonus": "Achievement Bonus",
+    "baseClickAttack": "Base Click Attack",
+    "clickAttackTab": "Click Attack",
+    "genderTooltip": "Male: {{male}}<br/>Female: {{female}}<br/>Genderless: {{genderless}}",
+    "modifiers": "Modifiers",
+    "multipliersTab": "Multipliers",
+    "noActiveMultipliers": "You have no active multipliers of this type",
+    "notAvailable": "N/A",
+    "purifiedPokemon": "Purified Pokémon",
+    "resistantPokemon": "Resistant Pokémon",
+    "shinyPokemon": "Shiny Pokémon",
+    "startDateTime": "Start Date/Time",
+    "statistic": "Statistic",
+    "statsTab": "Stats",
+    "timePlayed": "Time Played",
+    "title": "Statistics",
+    "uniquePokemon": "Unique Pokémon"
+  },
+  "town": {
+    "clears": "clears",
+    "dock": "Dock",
+    "dungeonAllCaught": "You have captured all Pokémon in this dungeon!",
+    "dungeonAllCaughtShiny": "You have captured all Pokémon shiny in this dungeon!",
+    "dungeonDebuffed": "This dungeon is debuffed and will be significantly less likely to drop Epic, Legendary, and Mythic loot.",
+    "dungeonLootTooltip": "See the Loot available in this dungeon.",
+    "dungeonShadowAllCaught": "All Shadow Pokémon in this dungeon have been captured!",
+    "dungeonShadowMissing": "There are uncaught Shadow Pokémon in this dungeon.",
+    "dungeonTokensHelp": "Capture Pokémon to gain Dungeon Tokens in order to battle dungeons.",
+    "enterBattleFrontier": "Enter Battle Frontier",
+    "hireDungeonGuide": "Hire a Dungeon Guide!",
+    "mapLegend": "Map Legend:",
+    "mapLegendIntro": "Map locations will be coloured based on the following:",
+    "mapLegendNote": "NOTE: Colors and priority can be customized in the settings menu",
+    "mapTitle": "Town Map ({{region}})",
+    "moonClickInfo": "Click for more information.",
+    "openCastformApp": "Open the Castform App",
+    "openDreamOrbs": "Open Dream Orbs",
+    "pickStarter": "Pick your Starter",
+    "purifyChamber": "Purify Chamber",
+    "startDungeon": "Start",
+    "totalClears": "Total Clears: {{clears}}",
+    "travelTo": "Travel to {{region}}"
+  },
+  "trader": {
+    "currency": "Currency",
+    "inv": "Inv",
+    "item": "Item",
+    "profit": "Profit",
+    "soldOut": "Sold out",
+    "totalQuestPoints": "Total Quest Points: {{amount}}",
+    "trade": "Trade",
+    "trades": "Trades"
+  },
+  "travel": {
+    "regionalTravel": "Regional Travel",
+    "subregionalTravel": "Subregional Travel",
+    "subregionalTravelTo": "Subregional Travel ({{subregion}})",
+    "unexploredRegion": "Unexplored region"
+  },
+  "underground": {
+    "dig": {
+      "allTreasuresCollected": "Collected all treasures",
+      "autoRestartTooltip": "{{setting}}: {{state}}",
+      "buried": "Buried • {{number}}",
+      "clickToDischarge": "Click to Discharge ({{hotkey}})",
+      "collected": "Collected • {{number}}",
+      "durabilityPerUse": "Durability per use",
+      "findMine": "Find mine",
+      "free": "Free",
+      "info": "Info",
+      "level": "Lvl. {{level}}",
+      "lifetimeUsage": "Lifetime usage",
+      "nextUse": "Next use",
+      "off": "Off",
+      "on": "On",
+      "searchingForMine": "Searching for mine",
+      "seen": "Seen • {{number}}",
+      "timeUntilFull": "Time until 100%",
+      "toolFree": "Your restore rate has grown so much that this tool has now become free to use."
+    },
+    "display": {
+      "battery": "Battery",
+      "expert": "Expert",
+      "fire": "Fire",
+      "noExperts": "No experts hired. You're on your own!",
+      "title": "Underground",
+      "view": "View"
+    },
+    "experts": {
+      "discoverChance": "Discover chance",
+      "expertise": "Expertise",
+      "fire": "Fire!",
+      "hire": "Hire!",
+      "information": "Information",
+      "level": "Level",
+      "levelValue": "Level {{level}}",
+      "rewardRetention": "Reward retention",
+      "smartToolUse": "Smart tool use",
+      "useExpertise": "Use Expertise",
+      "workCycle": "Work cycle"
+    },
+    "findMine": {
+      "clears": "{{number}} clears",
+      "discoveryTime": "Discovery time:",
+      "potentialTreasures": "Potential treasures",
+      "searchForMine": "Search for mine",
+      "selectMine": "Select a mine"
+    },
+    "help": {
+      "amount": {
+        "intro": "The amount of treasure a player can find is random, between the minimum (inclusive) and maximum (inclusive), and increases as their Underground Level increases:",
+        "level": "Level",
+        "maximum": "Maximum",
+        "minimum": "Minimum",
+        "title": "Amount of Treasure"
+      },
+      "battery": {
+        "chance": "Chance",
+        "charges": "Each successful mining attempt will add a charge, requiring {{maxCharges}} charges to be activated. You can only gain 1 charge per {{cooldown}} second. Equipping your Cell Battery Oak Item will increase the amount of energy gained per charge.",
+        "discharge": "When your battery is fully charged up, you can discharge it. This discharge will leave a pattern of cleared tiles behind. With higher level patterns, which damage more tiles, becoming available as you level up.",
+        "discharges": "Discharges",
+        "intro": "The Battery is a system that charges up as you or your expert mines tiles.",
+        "requirements": "Requirements",
+        "tier": "Tier",
+        "title": "Battery"
+      },
+      "discovery": {
+        "intro": "The discovery time is calculated as follows:",
+        "notRandom": "Current mine is not a {{random}}: No discovery time",
+        "other": "The discovery time starts at {{base}} and is reduced by {{reduction}} for every level past level {{level}}.",
+        "otherTitle": "Other Mine Type",
+        "random": "Current mine is a {{random}}:<br> The discovery time starts at {{base}} and is reduced by {{reduction}} for every level past level {{level}}. This is then further reduced as you discover treasures in your current mine.",
+        "title": "Discovery Time Calculation"
+      },
+      "experience": {
+        "clearLayer": "Digging up all treasures: {{experience}} experience",
+        "digUpItem": "Digging up any treasure: {{experience}} experience",
+        "experienceTitle": "Experience",
+        "intro": "Using tools and experts not only helps you gather treasures but also grants experience that helps in leveling up.",
+        "levelDiscovery": "Reduces the discovery time of mines when applicable",
+        "levelDurability": "Increases the rate at which tools gain durability",
+        "levelIntro": "Your underground level will affect the following:",
+        "levelSurvey": "Reduces the Survey area",
+        "levelTitle": "Underground Level",
+        "levelTreasures": "Increases the minimum and maximum amount of treasures that can be found in a mine",
+        "sharedExpert": "<strong>Expert Actions:</strong> When the expert performs an action that gains them experience, the player will also gain {{fraction}} of that experience, rounded to the nearest tenth.",
+        "sharedPlayer": "<strong>Player Actions:</strong> When the player performs an action that gains experience, the active expert will also gain {{fraction}} of that experience, rounded to the nearest tenth.",
+        "sharedTitle": "Shared Experience",
+        "title": "Experience and Leveling",
+        "treasures": "Treasures:"
+      },
+      "experts": {
+        "actionBomb": "<strong>Bomb:</strong> When not all treasures have been seen.",
+        "actionChisel": "<strong>Chisel:</strong> When all treasures have been seen, and the spot that is being mined has no adjacent tiles with a reward",
+        "actionHammer": "<strong>Hammer:</strong> When all treasures have been seen, and the spot that is being mined has at least 1 adjacent tile with a reward",
+        "actions": "Actions",
+        "energyRestore": "<strong>Energy restore:</strong> An expert can use an energy potion to restore a portion of the time until they can perform their next action. When an expert is allowed to use multiple restores they will first use the best restore at their disposal.",
+        "expertise": "<strong>Expertise:</strong> Each expert has an expertise, a specific mine they are more likely to find.",
+        "expertiseBase": "Starts at {{chance}} chance to find their specific mine when searching.",
+        "expertiseFallback": "If they don’t find their specific mine, they will find a {{random}}.",
+        "expertiseIncrease": "Increases by {{increase}} per level, up to a maximum of {{maximum}}.",
+        "intro": "Experts are characters you can hire to assist with mining tasks. They perform actions at certain timing intervals and become more efficient as they level up. Each of them bring their own powerful tools, so their actions will not affect the durability of your tools.",
+        "largeRestore": "<strong>Large restore:</strong> Restores 75% of the time until the next action can be performed",
+        "mechanicsTitle": "Expert Mechanics",
+        "mediumRestore": "<strong>Medium restore:</strong> Restores 50% of the time until the next action can be performed",
+        "neverSpecial": "Experts will never discover a {{special}}.",
+        "rewardRetention": "<strong>Reward retention:</strong> When an expert digs up a treasure (last click), there is a chance that they will keep the treasure for themselves.",
+        "rewardRetentionChance": "The chance starts at {{base}} and decreases by {{decrease}} per level, down to {{minimum}}.",
+        "smallRestore": "<strong>Small restore:</strong> Restores 25% of the time until the next action can be performed",
+        "smartToolUse": "<strong>Smart tool use:</strong> Experts start out inexperienced and will pick the most efficient tool {{chance}} of the time.",
+        "smartToolUseIncrease": "Increases by {{increase}} per level, up to {{maximum}}.",
+        "title": "Experts",
+        "workCycle": "<strong>Work cycle:</strong> Starts at {{base}} seconds and decreases by {{decrease}} second for every level, up to a minimum of {{minimum}} seconds per action."
+      },
+      "glossary": {
+        "collected": "<strong>Collected treasure:</strong> All parts of the treasure are visible to the player, the treasure has been claimed",
+        "completed": "<strong>Completed Mine:</strong> All buried treasures have been collected",
+        "seen": "<strong>Seen treasure:</strong> At least 1 part of the treasure is visible to the player",
+        "successfulToolUse": "<strong>Successful Tool Use:</strong> A tool only counts as used if its action is successful, meaning it accomplishes its intended task (e.g., mining layers or indicating tiles)",
+        "title": "Glossary"
+      },
+      "mines": {
+        "finding": "A new mine can be manually found by clicking the Find mine button in the Dig tab.<br> Automatically starting a new mine happens in the following cases:",
+        "findingExpert": "An <strong>expert</strong> digs up the last treasure: If your expert has the 'Use expertise' setting enabled, it will try to find a specific mine. If this setting is disabled it will find a {{random}}.",
+        "findingNote": "Note: This step happens before calculating a potential discovery time",
+        "findingPlayer": "A <strong>player</strong> digs up the last treasure: When the 'Auto restart selected mine' toggle is enabled, the game will automatically try to find a new mine of your selected type.",
+        "findingTitle": "Finding a new mine",
+        "intro": "There are six different types of mines you can search for in the Underground. Understanding their unique properties and the discovery times involved is crucial for efficient mining. The Underground Glossary can be found at the bottom of this page.",
+        "special": "When you (not your expert) are searching for a mine, there is a 4% chance for the mine to be a {{special}}. This mine only contains 1 treasure, which can be any of the mega stones (if eligible) or other special treasures. <br> <i>Note: The auto-restart triggered by the player digging up the last item <u>can</u> trigger a {{special}}.</i>",
+        "title": "Mines",
+        "typeDiamond": "<strong>{{mine}}:</strong> Contains only treasures that can be sold for diamonds.",
+        "typeEvolutionItem": "<strong>{{mine}}:</strong> Contains only evolution items.",
+        "typeFossil": "<strong>{{mine}}:</strong> Contains only fossils and fossil pieces.",
+        "typeGemPlate": "<strong>{{mine}}:</strong> Contains only gem plate treasures that can be sold for gems.",
+        "typeRandom": "<strong>{{mine}}:</strong> Contains all possible treasures (except the treasure found in a {{special}})",
+        "typeShard": "<strong>{{mine}}:</strong> Contains only shard treasures.",
+        "typeSpecial": "<strong>{{mine}}:</strong> Can only be found when special conditions are met (see below). Contains only special items.",
+        "typesTitle": "Mine Types"
+      },
+      "oakItems": {
+        "cellBatteryEffect": "<strong>Effect:</strong> Triggers a discharge which will clear tiles in a certain pattern, new patterns become available by levelling up Cell Battery",
+        "cellBatteryProgress": "<strong>Progress:</strong> Gains progress to level up when the player uses discharge",
+        "explosiveChargeEffect": "<strong>Effect:</strong> Increases the number of tiles the Bomb tool will mine",
+        "explosiveChargeProgress": "<strong>Progress:</strong> Gains progress to level up when finding all treasures in a mine",
+        "title": "Oak Items",
+        "treasureScannerEffect": "<strong>Effect:</strong> Has a chance to duplicate a collected treasure. Keeps attempting to duplicate until it fails a chance",
+        "treasureScannerProgress": "<strong>Progress:</strong> Gains progress to level up when finding a treasure in a mine"
+      },
+      "tools": {
+        "durability": "Using a tool is only possible when your tool is durable enough. When you use your tool successfully it will remove some of its durability, which will be restored over time.",
+        "durabilityTitle": "Durability",
+        "intro": "The Underground offers {{number}} powerful tools to aid in your mining and exploration. Each tool has a unique function, and understanding how to use them effectively is crucial for maximizing your mining efficiency.",
+        "overview": "There are {{number}} different tools available, each with unique functions:",
+        "overviewTitle": "Tools Overview",
+        "restoreRate": "The restore rate of your tools depends on your Underground level.",
+        "title": "Tools",
+        "tool": "Tool"
+      },
+      "trading": {
+        "exception": "<strong>Exception:</strong> Diamond treasures cannot be traded for other items, only sold for diamonds.",
+        "intro": "Trading allows you to exchange treasures within the same category. Here’s how it works:",
+        "ratio": "<strong>3 to 1 Trade:</strong> Trading always follows a 3 to 1 ratio (e.g., trade 3 treasures to receive 1 new treasure).",
+        "sameCategory": "<strong>Same Category Trading:</strong> Trades can only be made within the same category of treasures.",
+        "title": "Trading"
+      }
+    },
+    "tabs": {
+      "dig": "Dig",
+      "experts": "Experts",
+      "treasures": "Treasures"
+    },
+    "treasureDetail": {
+      "diamondsValue": "{{amount}} × Diamonds",
+      "gemsValue": "{{amount}} × {{type}} Gems",
+      "mined": "Mined",
+      "mining": "Mining",
+      "owned": "Owned",
+      "ownedAmount": "Owned: {{amount}}",
+      "setTradeAmount": "Set Trade Amount",
+      "statistics": "Statistics",
+      "trade": "Trade"
+    },
+    "treasures": {
+      "all": "All",
+      "canBeSold": "Can be sold",
+      "cannotBeSold": "Cannot be sold",
+      "clickForDetails": "Click on your treasure to open up a detail view",
+      "disableQuickSell": "Disable Quick-Sell Mode",
+      "enableQuickSell": "Enable Quick-Sell Mode",
+      "filtersAndSettings": "Filters and Settings",
+      "grid": "Grid",
+      "quickSellEnabled": "Quick-Sell Mode enabled",
+      "quickSellHint": "Clicking your treasure will sell your entire stash of that item.",
+      "quickSellTooltip": "With Quick-Sell Mode enabled, clicking an item sells all of it instantly",
+      "sortAscending": "Ascending (lowest value first)",
+      "sortDescending": "Descending (highest value first)"
+    }
+  },
+  "vitamins": {
+    "attackBonus": "Attack Bonus",
+    "breedingEfficiency": "Breeding Efficiency",
+    "disabled": "Vitamins are disabled.",
+    "eggSteps": "Egg Steps",
+    "hideMaxed": "Hide Pokémon with max vitamins",
+    "hideShiny": "Hide shiny Pokémon",
+    "order": "Order",
+    "removeAll": "Remove ALL Vitamins",
+    "removeAllOf": "Remove All {{vitamin}}",
+    "searchPlaceholder": "Search here",
+    "title": "Vitamins",
+    "vitaminsUsed": "Vitamins Used"
+  },
+  "weather": {
+    "castformApp": "Castform App",
+    "fri": "Fri",
+    "mon": "Mon",
+    "sat": "Sat",
+    "sun": "Sun",
+    "thu": "Thu",
+    "time": "Time",
+    "tue": "Tue",
+    "wed": "Wed"
+  }
+}

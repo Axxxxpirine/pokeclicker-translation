@@ -1,0 +1,1512 @@
+{
+  "achievementTracker": {
+    "selectAchievement": "Choisissez un succès à suivre !",
+    "title": "Suivi des Succès"
+  },
+  "achievements": {
+    "bonus": "Bonus des Succès :",
+    "bonusTooltip": "En obtenant des succès, vous gagnez jusqu'à : 150 % (global), 100 % (par région), 25 % (événements) et de 25 % à 75 % (par sous-région spéciale). Ces bonus s'appliquent à l'Attaque Clic, aux effets des Flûtes, aux gains de Pokédollars / Jetons de Donjon et à l'expérience obtenue de toutes les sources.",
+    "category": "Catégorie",
+    "sort": "Tri",
+    "sortAscending": "Croissant (valeur la plus faible en premier)",
+    "sortDescending": "Décroissant (valeur la plus élevée en premier)"
+  },
+  "badgeCase": {
+    "maxLevelTooltip": "Obtenir des badges augmente le niveau maximum de vos Pokémon, jusqu'à 100.<br>Le niveau maximum que vos Pokémon peuvent atteindre actuellement est <b>{{level}}</b>.",
+    "title": "Boîte à Badges"
+  },
+  "battle": {
+    "catchChance": "Chance de capture :",
+    "clickAttack": "Attaque Clic :",
+    "clickAttackTooltip": "Consultez l'onglet Attaque Clic du menu Menu → Statistiques pour plus de détails.",
+    "dungeonChestsTooltip": "Coffres ouverts dans ce Donjon",
+    "dungeonEncountersTooltip": "Combats remportés dans ce Donjon",
+    "dungeonGuideAttempts": "Tentatives restantes : {{clears}}",
+    "pokemonDefeated": "Pokémon vaincus",
+    "routeCompleted": "Vous avez capturé tous les Pokémon de cette route !",
+    "routeCompletedShiny": "Vous avez capturé tous les Pokémon chromatiques de cette route !",
+    "routeInfoTooltip": "Voir les Pokémon disponibles sur cette route."
+  },
+  "battleCafe": {
+    "clockwise": "Sens horaire",
+    "costPerSpin": "Coût par tour",
+    "counterClockwise": "Sens antihoraire",
+    "maxSpins": "Tours maximum",
+    "owned": "Possédé",
+    "remainingSpins": "Tours restants : {{spins}} / {{max}}",
+    "selectSweet": "Choisissez une Sucrerie",
+    "spin": "Tournez !",
+    "spinDuration": "Durée de rotation (secondes) :",
+    "spinsAccumulate": "Les tours se cumulent à minuit",
+    "title": "Café Combat"
+  },
+  "battleFrontier": {
+    "allRewardsReceived": "Vous avez reçu toutes les récompenses disponibles. Félicitations !",
+    "attackAgainst": "{{attack}} contre {{types}}",
+    "intro": "Ici, vous affronterez de nombreux niveaux pour gagner des Points de Combat.<br> Il n'y a ni malus d'attaque régional ni effets météo.<br> Vous pouvez partir plus tôt et reprendre plus tard à votre point de contrôle.<br> Vous obtiendrez des objets spéciaux en atteignant certains niveaux clés.<br> Quand vous êtes prêt, cliquez sur Commencer !<br> <i>Remarque : l'Attaque Clic n'inflige aucun dégât dans la Zone de Combat.</i>",
+    "leave": "Partir",
+    "pokemonAttack": "Attaque Pokémon :",
+    "quitBattle": "Abandonner le combat",
+    "reward": "Récompense",
+    "stage": "Niveau {{stage}} / {{highest}}",
+    "stageHeader": "Niveau",
+    "start": "Commencer",
+    "startCheckpoint": "Reprendre au dernier point de contrôle (niveau {{stage}})",
+    "title": "Zone de Combat",
+    "upcomingRewards": "Prochaines récompenses",
+    "welcome": "Bienvenue à la Zone de Combat !"
+  },
+  "battleItems": {
+    "allTypes": "Tous les types",
+    "consumes": "Consomme :",
+    "controls": "Commandes",
+    "controlsHelp": "Clic gauche/droit pour changer la quantité<br/>Cliquez sur l'image d'un objet pour l'utiliser",
+    "disabled": "Les Objets de combat sont désactivés.",
+    "fluteBoostTo": "+0,5 % de bonus pour :",
+    "flutes": "Flûtes",
+    "flutesControlsHelp": "Cliquez pour voir le total de vos Joyaux<br/>Cliquez sur les flûtes pour activer ou désactiver leurs effets",
+    "timeLeft": "{{time}} restant",
+    "timeRemaining": "Temps restant :",
+    "title": "Objets de combat",
+    "typeGems": "Joyaux {{type}}",
+    "zCrystals": "Cristaux Z",
+    "zMoveBonus": "{{bonus}} d'Attaque pour tous vos Pokémon de type {{type}}",
+    "zMovesDisabled": "Les capacités Z sont désactivées."
+  },
+  "berryDex": {
+    "attractedByAll": "Attirés par toutes les Baies",
+    "attractedByBerry": "Attirés par la Baie {{berry}}",
+    "attractedByColor": "Attirés par les Baies de couleur {{color}}",
+    "aura": "Aura",
+    "auraEffectAtStage": "Effet de l'aura par stade",
+    "berryColor": "Couleur",
+    "berryStageDuration": "Durée du stade Baie",
+    "bitter": "Amer",
+    "currentAmount": "Quantité actuelle",
+    "data": "Valeur",
+    "dry": "Sec",
+    "farmPointsPerHarvest": "Points de Récolte par récolte",
+    "farmingInfo": "Culture",
+    "firmness": "Fermeté",
+    "flavor": "Saveur",
+    "form": "Caractéristiques",
+    "growthDuration": "Durée de croissance",
+    "growthStages": "Stades de croissance",
+    "harvestAmount": "Quantité récoltée",
+    "hint": "Indice",
+    "length": "Durée",
+    "moreInfo": "Plus d'infos",
+    "overview": "Aperçu",
+    "replantRate": "Taux de replantation",
+    "size": "Taille",
+    "sour": "Acide",
+    "spicy": "Épicé",
+    "stage": {
+      "berry": "Baie",
+      "bloom": "Floraison",
+      "sprout": "Pousse",
+      "taller": "Croissance"
+    },
+    "statistic": "Statistique",
+    "sweet": "Sucré",
+    "time": "Temps",
+    "totalHarvested": "Total récolté",
+    "totalLifeSpan": "Durée de vie totale",
+    "totalObtained": "Total obtenu",
+    "totalTimeUntilStage": "Temps total avant le stade",
+    "wanderingPokemon": "Pokémon errants"
+  },
+  "berryMaster": {
+    "inv": "Inv.",
+    "item": "Objet",
+    "shop": "Boutique",
+    "trade": "Échanger",
+    "trades": "Échanges"
+  },
+  "breeding": {
+    "addAll": "Tout ajouter",
+    "addAllTooltip": "Ajouter à cette catégorie tous les Pokémon correspondant aux filtres actuels.",
+    "all": "Tous",
+    "allCategories": "Toutes les catégories",
+    "attackEfficiency": "Efficacité d'attaque :",
+    "categorized": "Catégorisés",
+    "category": "Catégorie :",
+    "categoryModeTooltip": "Le mode Catégorie permet d'ajouter ou de retirer rapidement des Pokémon d'une catégorie. Choisissez une catégorie, puis cliquez sur les Pokémon à ajouter ou à retirer.",
+    "clear": "Vider",
+    "clearQueue": "Vider la file",
+    "clearQueueTooltip": "Retirer tous les Pokémon de la file d'attente.",
+    "costPerHatch": "Coût / éclosion :",
+    "disableCategoryMode": "Désactiver le mode Catégorie",
+    "editCategories": "Modifier les catégories",
+    "efficiencyBonus": "Bonus d'efficacité :",
+    "eggAmount": "Quantité : {{amount}}",
+    "eggInfo": {
+      "attackBoost": "Faire éclore un Pokémon que vous avez déjà attrapé augmente légèrement son attaque.",
+      "odds": "Un Œuf a 50 % de chances de faire éclore un Pokémon de votre région la plus avancée, et ces chances sont divisées par deux pour chaque région précédente. Les pools de Kanto et de Johto ont toujours les mêmes chances.<br><br>Par exemple, à Sinnoh, vous avez 50 % de chances d'obtenir un Pokémon du pool d'Œufs de Sinnoh, 25 % de chances pour celui de Hoenn, et 12,5 % de chances pour ceux de Kanto et de Johto.",
+      "purchase": "Les Œufs de Pokémon s'achètent ou s'échangent dans les boutiques de chaque région et permettent d'obtenir des Pokémon exclusifs. Cliquez sur un Œuf ci-dessous pour voir les Pokémon qu'il peut contenir."
+    },
+    "eggInfoTitle": "Informations sur les Œufs et chances d'éclosion",
+    "eggs": "Œufs",
+    "enableCategoryMode": "Activer le mode Catégorie",
+    "filtersAndSettings": "Filtres et réglages",
+    "fire": "Renvoyer !",
+    "fireAll": "Renvoyer tous",
+    "hatch": "Faire éclore",
+    "hatchReady": "Éclosion !",
+    "hatched": "Éclos :",
+    "hatchery": "Pension",
+    "hatcheryHelpers": "Assistants de Pension",
+    "hatchesProgress": "{{current}} / {{total}} éclosions",
+    "help": {
+      "attackBonus": "Quand un Œuf éclot, votre Pokémon gagne un bonus de {{bonus}} % de son attaque de base et a plus de chances de devenir chromatique !",
+      "baseAttackNote": "REMARQUE : l'attaque de base est la valeur qu'a votre Pokémon au niveau 100, avant tout bonus de Pension.",
+      "calciums": "Chaque Calcium donné à un Pokémon lui ajoute 1 % de son attaque de base par éclosion, mais demande 20 pas de plus.",
+      "carbos": "Chaque Carbone donné à un Pokémon réduit le nombre de pas nécessaires par éclosion.",
+      "helpersAttackEfficiency": "Chacun a aussi sa propre efficacité d'attaque, qui détermine l'attaque gagnée par rapport à une éclosion faite par vous-même.",
+      "helpersBonus": "Ces efficacités augmentent selon le nombre d'Œufs que l'assistant a fait éclore pour vous.",
+      "helpersCost": "Le coût affiché est le montant prélevé à chaque éclosion.",
+      "helpersFilters": "Ils ne placent en Pension que les Pokémon correspondant à vos filtres actuels de la Pension.",
+      "helpersIntro": "Les Assistants de Pension placent automatiquement vos Pokémon en Pension à votre place.",
+      "helpersMore": "D'autres Assistants de Pension se débloquent via les boutiques et en faisant éclore plus de Pokémon",
+      "helpersStepEfficiency": "Chaque assistant a sa propre efficacité de pas et fait éclore les Œufs plus ou moins vite selon sa valeur.",
+      "helpersUnlock": "(débloqués après avoir fait éclore 100 Pokémon au total)",
+      "intro": "Vous pouvez déposer ici vos Pokémon de niveau 100 pour obtenir un Œuf du même Pokémon.",
+      "noLimit": "La Pension n'a aucune limite : ce sera votre principale source de gain d'attaque.",
+      "proteins": "Chaque Protéine donnée à un Pokémon lui ajoute 1 point d'attaque par éclosion, mais demande 20 pas de plus.",
+      "queue": "Vous aurez accès à une file d'attente à la Pension en atteignant la région de Johto, puis à des emplacements supplémentaires pour chaque nouvelle région atteinte.",
+      "queueTitle": "File d'attente",
+      "shinyBonus": "Un Pokémon qui éclot chromatique reçoit 5 fois le gain d'attaque habituel. Ce bonus ne s'applique pas à chaque éclosion d'un Pokémon déjà chromatique : si vous placez un Pokémon chromatique en Pension, il ne reçoit le bonus que s'il éclot de nouveau chromatique."
+    },
+    "helperTooltip": {
+      "attackEfficiency": "Efficacité d'attaque : {{value}} %",
+      "cost": "Coût : {{currency}}&nbsp;{{amount}}/éclosion",
+      "hatched": "Éclos : {{value}}",
+      "stepEfficiency": "Efficacité des pas : {{value}} %"
+    },
+    "helpers": "Assistants",
+    "hire": "Engager !",
+    "maxBonus": "BONUS MAX !",
+    "mysteryEggInfo": "Les Œufs Mystère peuvent faire éclore des Pokémon de leur propre pool exclusif comme de tous les pools d'Œufs typés. Les Pokémon exclusifs sont listés ci-dessous.",
+    "nameOrId": "Nom ou numéro",
+    "nextPokemon": "Prochains Pokémon",
+    "noFreeEggSlot": "Vous n'avez aucun emplacement d'Œuf libre.",
+    "noMaxLevelPokemon": "Malheureusement, vous n'avez aucun Pokémon de niveau 100 à placer en Pension.",
+    "noNextPokemon": "Aucun ! Vérifiez les filtres et réglages.",
+    "odds": "Chances",
+    "pattern": "Motif",
+    "queueDisabled": "Votre file d'attente de Pension est désactivée.",
+    "queueFull": "Votre file d'attente de Pension est pleine.",
+    "queueLimited": "La file d'attente est actuellement limitée par votre réglage de taille de file.",
+    "removeAll": "Tout retirer",
+    "removeAllTooltip": "Retirer de cette catégorie tous les Pokémon correspondant aux filtres actuels.",
+    "resetAllFilters": "Réinitialiser les filtres",
+    "searchPlaceholder": "{{pokemon}} ou 1",
+    "selectedCategory": "Catégorie sélectionnée",
+    "selectedCount": "{{count}} sélectionnés",
+    "sort": "Tri :",
+    "sortAscending": "Croissant (plus petite valeur en premier)",
+    "sortDescending": "Décroissant (plus grande valeur en premier)",
+    "stepEfficiency": "Efficacité des pas :",
+    "toggleLockedHelpers": "Afficher/masquer les Assistants de Pension verrouillés",
+    "types": "Types",
+    "unlock": "Débloquer",
+    "unlockRequirement": "Condition de déblocage",
+    "useHatcheryFilters": "Utiliser les filtres de la Pension",
+    "useHatcheryFiltersTooltip": "Si cette option est activée, les Assistants de Pension utilisent les filtres et réglages choisis dans la Pension en plus de leurs propres réglages. Si vous la désactivez, ils travaillent de façon indépendante et ignorent les filtres de la Pension."
+  },
+  "bulletinBoard": {
+    "accept": "Accepter",
+    "noQuests": "Aucune nouvelle quête disponible.",
+    "previouslyStarted": "Déjà commencée",
+    "resume": "Reprendre",
+    "started": "Commencée",
+    "step": "Étape : {{current}} / {{total}}",
+    "title": "Tableau d'affichage"
+  },
+  "categories": {
+    "addNew": "+ Nouvelle",
+    "color": "Couleur",
+    "movePokemonTo": "Déplacer les Pokémon vers :",
+    "moveTooltip": "Déplacer les Pokémon de cette catégorie vers une autre catégorie.",
+    "removeCategory": "Supprimer la catégorie",
+    "resetMessage": "Voulez-vous vraiment réinitialiser toutes vos catégories par défaut ?",
+    "resetTitle": "Réinitialiser les catégories",
+    "title": "Catégories"
+  },
+  "challenges": {
+    "activate": "ACTIVER",
+    "active": "ACTIF",
+    "disabled": "DÉSACTIVÉ",
+    "done": "Terminé !",
+    "firstTime": "Si c'est votre première partie, nous vous recommandons vivement de ne rien changer ici afin de bien découvrir le jeu.",
+    "intro": "<strong>Activez des modes Défi en jeu !</strong><br> Les Défis peuvent être désactivés plus tard, mais <u>ne peuvent pas</u> être réactivés.",
+    "recommended": "Les Défis recommandés sont activés par défaut ; le jeu est conçu et équilibré autour d'eux.",
+    "title": "Modes Défi"
+  },
+  "changelog": {
+    "message": "Message",
+    "title": "Notes de version",
+    "viewFullNotes": "Voir les notes de version complètes"
+  },
+  "common": {
+    "amount": "Quantité",
+    "buy": "Acheter",
+    "close": "Fermer",
+    "cost": "Coût",
+    "description": "Description",
+    "filters": "Filtres",
+    "help": "Aide",
+    "inventory": "Inventaire",
+    "list": "Liste",
+    "max": "Max",
+    "name": "Nom",
+    "next": "Suivant",
+    "pokemon": "Pokémon",
+    "region": "Région",
+    "reset": "Réinitialiser",
+    "search": "Rechercher",
+    "sell": "Vendre",
+    "status": "Statut",
+    "type": "Type"
+  },
+  "consumable": {
+    "attack": "Attaque"
+  },
+  "credits": {
+    "codeContributions": "Contributions au code",
+    "contributedSprites": "Sprites fournis",
+    "creditedIndividual": "Contributeur",
+    "title": "Crédits"
+  },
+  "currency": {
+    "battlePointTooltip": "Points de Combat<br /><br />Obtenus à la Zone de Combat.",
+    "contestTokenTooltip": "Jetons de Concours<br /><br />Obtenus en participant aux Concours.",
+    "diamondTooltip": "Diamants<br /><br />Obtenus en vendant les trésors trouvés dans le Souterrain.",
+    "dungeonTokenTooltip": "Jetons de Donjon<br /><br />Obtenus en capturant des Pokémon sauvages.",
+    "farmPointTooltip": "Points de Récolte<br /><br />Obtenus en récoltant des Baies à la Ferme.",
+    "moneyTooltip": "Pokédollars<br /><br />Obtenus en battant des Pokémon et des Dresseurs en combat.",
+    "questPointTooltip": "Points de Quête<br /><br />Obtenus en accomplissant des Quêtes.",
+    "title": "Monnaies"
+  },
+  "damageCalculator": {
+    "baseAttackOnly": "Attaque de base uniquement",
+    "damage": "Dégâts",
+    "helpTooltip": "Vérifiez combien de dégâts vous infligez à un type de Pokémon donné et voyez d'où proviennent ces dégâts selon les types de vos Pokémon.",
+    "ignoreLevel": "Ignorer le niveau",
+    "includeBreeding": "Inclure la Pension",
+    "none": "Aucune",
+    "subregion": "Sous-région",
+    "title": "Calculateur de dégâts",
+    "totalDamage": "Dégâts totaux : {{damage}}",
+    "type1": "Type 1",
+    "type2": "Type 2",
+    "typeDamage": "Dégâts {{type}} : {{damage}}",
+    "typeDetail": "Détail par type",
+    "weather": "Météo"
+  },
+  "devBanner": {
+    "letsGo": "C'est parti !",
+    "reimport": "Ramener votre sauvegarde vers le jeu principal causera très probablement des problèmes ; chaque fois que vous testez quelque chose de nouveau, réimportez une sauvegarde récente pour éviter tout bug.",
+    "title": "Bienvenue sur le site de développement !",
+    "warning": "Ceci est la version de développement du jeu, ne transférez pas votre sauvegarde de cette version vers le jeu principal !"
+  },
+  "dreamOrbs": {
+    "open": "Ouvrir",
+    "openedMessage": "Vous avez ouvert {{amount}} Orbe(s) Rêve {{color}} et obtenu :",
+    "openedTitle": "Orbes Rêve ouverts",
+    "orbsLeft": "Orbes restants : {{amount}}",
+    "title": "Ouvrir des Orbes Rêve"
+  },
+  "dungeon": {
+    "allCaught": "Vous avez capturé tous les Pokémon de ce Donjon !",
+    "allCaughtShiny": "Vous avez capturé tous les Pokémon chromatiques de ce Donjon !",
+    "catchChance": "Chance de capture : {{chance}} %",
+    "chestEnemyHp": "(+20 % de PV ennemis)",
+    "clears": "{{count}} victoires",
+    "clickAttack": "Attaque Clic : {{value}}",
+    "debuffPreservedTooltip": "Les chances d'obtenir cet objet sont conservées malgré l'affaiblissement du Donjon.",
+    "leave": "Quitter le Donjon",
+    "nextFloor": "Étage suivant",
+    "openChest": "Ouvrir le coffre {{tier}}",
+    "startBossfight": "Affronter le boss"
+  },
+  "dungeonGuides": {
+    "attemptsRemaining": "Tentatives restantes",
+    "costPerRun": "Coût / exploration",
+    "currencies": "Monnaies",
+    "dungeonAttempts": "Tentatives de Donjon",
+    "dungeonGuide": "Guide de Donjon",
+    "entryCost": "Coût d'entrée du Donjon",
+    "exploreDungeon": "Explorer le Donjon",
+    "fire": "Renvoyer !",
+    "guideCost": "Coût du guide",
+    "help": {
+      "betaNote": "REMARQUE : cette fonctionnalité est en <strong>bêta</strong>, elle risque donc d'évoluer lors des prochaines mises à jour ;<br>n'hésitez pas à nous faire part de vos retours ou bugs sur le <a href=\"https://discord.gg/a6DFe4p\" target=\"_blank\">Discord</a>.",
+      "cost": "Vous devez payer à l'avance le nombre de tentatives que vous souhaitez effectuer dans le Donjon <span class=\"text-danger\">(non remboursable)</span>, mais plus vous achetez d'explorations d'un coup, plus la réduction est importante.",
+      "intro": "Les Guides de Donjon vous font traverser automatiquement le Donjon : ils ouvrent tous les coffres qu'ils croisent, descendent les échelles qu'ils trouvent et lancent les combats contre le boss.",
+      "noGuarantee": "Ils ne garantissent pas la réussite du Donjon et se font payer quel que soit le résultat.",
+      "speed": "Chaque guide avance à sa propre vitesse : certains repèrent des cases précises du Donjon, d'autres évitent autant que possible certaines cases."
+    },
+    "hire": "Engager !",
+    "hireTab": "Engager",
+    "movementSpeed": "Vitesse de déplacement",
+    "nonRefundable": "AUCUN REMBOURSEMENT POSSIBLE",
+    "seconds": "{{seconds}} secondes",
+    "start": "C'est parti !",
+    "statistics": "Statistiques",
+    "title": "Engager un Guide de Donjon (BÊTA)",
+    "toggleLocked": "Afficher/masquer les Guides de Donjon verrouillés",
+    "totalAttempts": "Tentatives totales : {{count}}",
+    "totalClears": "Victoires totales : {{count}}",
+    "totalCost": "Coût total",
+    "unlockRequirement": "Condition de déblocage"
+  },
+  "events": {
+    "activate": "Activer",
+    "endTime": "Fin",
+    "event": "Événement",
+    "startTime": "Début",
+    "timeLeft": "Temps restant :",
+    "title": "Événements"
+  },
+  "externalLinks": {
+    "companionTool": "Outil compagnon :",
+    "companionToolText": "Utilisez l'Outil compagnon pour obtenir plus d'informations sur votre fichier de sauvegarde : <a href=\"https://companion.pokeclicker.com/\" target=\"_blank\">https://companion.pokeclicker.com/</a>",
+    "discord": "Discord :",
+    "discordText": "Rejoignez le serveur Discord pour participer à la discussion : <a href=\"https://discord.gg/a6DFe4p\" target=\"_blank\">https://discord.gg/a6DFe4p</a>",
+    "github": "GitHub :",
+    "githubText": "Aidez à rendre PokéClicker encore meilleur ! Contribuez au projet en partageant vos idées sur notre GitHub : <a href=\"https://github.com/pokeclicker/pokeclicker\" target=\"_blank\">https://github.com/pokeclicker/pokeclicker</a>",
+    "subreddit": "Subreddit :",
+    "subredditText": "Découvrez les publications populaires de la communauté PokéClicker : <a href=\"https://www.reddit.com/r/PokeClicker/\" target=\"_blank\">https://www.reddit.com/r/PokeClicker/</a>",
+    "title": "Liens externes",
+    "wiki": "Wiki :",
+    "wikiText": "Consultez le wiki de la communauté pour en savoir plus sur PokéClicker : <a href=\"https://wiki.pokeclicker.com/\" target=\"_blank\">https://wiki.pokeclicker.com/</a>"
+  },
+  "faq": {
+    "challengeModes": {
+      "noBattleItems": {
+        "answer": "Désactive l'utilisation de l'Attaque +, du Clic +, de l'Œuf Chance, du Collecteur de Jetons, du Cherch'Objet et de l'Encens Veine.<br> Vous pouvez toujours acheter ou trouver ces objets, même si vous ne pouvez pas les utiliser.",
+        "title": "Pas d'objets de combat"
+      },
+      "noClickAttack": {
+        "answer": "Désactive les attaques par clic.<br> Vous pouvez quand même cliquer lors du tout premier combat du jeu.",
+        "title": "Pas d'Attaque Clic"
+      },
+      "noGemUpgrades": {
+        "answer": "Désactive l'utilisation des Joyaux pour augmenter les multiplicateurs de dégâts.<br> Vous pouvez toujours obtenir des Joyaux et les utiliser pour acheter des objets comme des flûtes ou des Pokémon.",
+        "title": "Pas d'amélioration par Joyaux"
+      },
+      "noMasterBalls": {
+        "answer": "Désactive l'utilisation des Master Ball.<br> Vous pouvez quand même en acheter, afin de compléter les succès associés.",
+        "title": "Pas de Master Ball"
+      },
+      "noOakItems": {
+        "answer": "Désactive l'utilisation de tous les Objets du Prof. Chen.<br> Les succès liés à l'amélioration de ces objets disparaissent, et leurs pourcentages sont répartis entre les autres succès généraux.<br> Pour obtenir les Baies qui mutent grâce à certains Objets du Prof. Chen, vous pouvez les acheter chez le Maître des Baies de Johto une fois que vous avez débloqué la Baie qui évolue en elles.",
+        "title": "Pas d'Objets du Prof. Chen"
+      },
+      "noVitamins": {
+        "answer": "Désactive l'utilisation des Vitamines.<br> Vous pouvez toujours en acheter et en trouver, afin de compléter les succès associés. Après les avoir obtenues, vous pouvez vous faire rembourser en saisissant le code « REFUND-VITAMINS » (utilisable une seule fois).",
+        "title": "Pas de Vitamines"
+      },
+      "realEvolution": {
+        "answer": "Vos Pokémon disparaissent quand ils évoluent.<br> Quand vos Pokémon évoluent, leurs statistiques sont transférées à l'évolution : nombre d'éclosions, EV et statut chromatique.<br> Si le Pokémon de base tenait un objet, celui-ci est transféré à l'évolution, sauf s'il est incompatible. Par exemple, la Balle Lumière ne sera pas transférée à un Raichu, mais un Aimant le sera.<br> Les Pokémon Bébés ne sont pas considérés comme des évolutions, mais comme des cadeaux.",
+        "title": "Évolution réelle"
+      },
+      "regionalDebuff": {
+        "answer": "Réduit l'attaque des Pokémon qui ne sont pas originaires de la région actuelle.<br> La force du malus dépend de la région la plus avancée que vous avez atteinte, pas de la région où vous combattez.<br> Les Pokémon conservent 20 % de leur attaque à Johto, et cette valeur augmente de 10 % à chaque région.<br> <strong>Remarque :</strong> ce défi est activé par défaut.",
+        "title": "Malus d'attaque régional"
+      },
+      "requireDex": {
+        "answer": "Exige un Pokédex régional complet avant de passer à la région suivante.<br> Vous n'avez besoin que d'<strong>un exemplaire de chaque Pokémon</strong> pour passer à la région suivante. N'importe quelle forme du Pokémon compte, même si ce n'est pas sa forme de base.<br> <strong>Remarque :</strong> ce défi est activé par défaut.",
+        "title": "Pokédex complet requis"
+      },
+      "rewards": {
+        "answer": "Vous ne gagnez rien de spécial en ayant des défis actifs, mais chaque défi vous donne un ruban sur votre profil de Dresseur.",
+        "question": "Qu'est-ce que je gagne en activant des Modes Défi ?"
+      },
+      "slowEvs": {
+        "answer": "Les EV s'obtiennent 10 fois plus lentement.<br> Si le défi est désactivé, les EV sont multipliés en conséquence.",
+        "title": "EV lents"
+      },
+      "title": "Modes Défi",
+      "whatAre": {
+        "answer": "Ce sont des options que vous pouvez choisir <strong>en commençant une nouvelle sauvegarde</strong> pour rendre le jeu plus difficile ou plus complexe en modifiant certaines mécaniques.<br> <strong>Remarque :</strong> vous pouvez désactiver les défis à tout moment, mais ils ne peuvent pas être activés plus tard.",
+        "question": "Que sont les Modes Défi ?"
+      }
+    },
+    "development": {
+      "developers": {
+        "answer": "Le jeu original a été développé par @IshaD#1866, qui a depuis décidé d'arrêter de travailler sur ce projet.<br> Depuis, de nombreuses personnes ont aidé en contribuant au code via GitHub.",
+        "question": "Qui sont les personnes formidables qui développent ce jeu ?"
+      },
+      "help": {
+        "answer": "Le dépôt GitHub se trouve ici :<br> <a href=\"https://github.com/pokeclicker/pokeclicker\" target=\"_blank\">https://github.com/pokeclicker/pokeclicker</a><br> Tout nouveau ticket, suggestion ou contribution au code est toujours le bienvenu.<br> Vous pourriez même obtenir les rôles @Poké Crew, @Code Contributor ou @Developer sur Discord.",
+        "question": "Comment puis-je aider au développement ?"
+      },
+      "moreRegions": {
+        "answer": "C'est une priorité actuelle, mais il n'y a pas de calendrier fixe : ce sera prêt quand ce sera prêt.",
+        "question": "Quand d'autres régions seront-elles ajoutées ?"
+      },
+      "release": {
+        "answer": "Il n'y a actuellement aucun projet de « version finale ».<br> Peut-être qu'une fois toutes les régions ajoutées, ce sera la version <code>1.0.0</code>.",
+        "question": "Quand la version de développement sortira-t-elle officiellement ?"
+      },
+      "title": "Développement"
+    },
+    "gameplay": {
+      "autoBattle": {
+        "answer": "Vous devez vaincre le Champion d'Arène manuellement 10 fois.",
+        "question": "Comment débloquer le combat automatique dans les Arènes ?"
+      },
+      "breeding": {
+        "answer": "Certains Pokémon ne s'obtiennent qu'à la Pension.<br> Quand un Pokémon éclot, son attaque augmente de 25 % de sa valeur de base.<br> La Pension offre de meilleures chances d'obtenir un Pokémon chromatique <code>(1/1024)</code>.",
+        "question": "Pourquoi faire éclore des Pokémon à la Pension ?"
+      },
+      "clickAttack": {
+        "answer": "Chaque nouveau Pokémon capturé, chaque chromatique obtenu, chaque Pokémon devenu Résistant au Pokérus et chaque Pokémon purifié augmente votre Attaque Clic.",
+        "question": "Comment augmenter mon Attaque Clic ?"
+      },
+      "dayCycle": {
+        "end": "Fin",
+        "icon": "Icône",
+        "question": "Quel est l'horaire du cycle jour/nuit ?",
+        "start": "Début",
+        "timeOfDay": "Moment de la journée"
+      },
+      "dungeonFloors": {
+        "answer": "Les Donjons ne peuvent pas dépasser 10x10 : ils gagnent à la place un second étage d'au moins 5x5. La case du boss se trouve toujours au second étage, le premier étage ayant une case d'escalier à la place. Quand vous atteignez le second étage, le temps s'arrête et vous gagnez 10 secondes supplémentaires.",
+        "question": "Comment fonctionnent les étages des Donjons ?"
+      },
+      "dungeonGuides": {
+        "answer": "Vous devez avoir terminé le Donjon au moins 10 fois pour pouvoir utiliser les Guides de Donjon.",
+        "question": "Comment débloquer les Guides de Donjon (BÊTA) ?"
+      },
+      "evMultipliers": {
+        "andSoOn": "… et ainsi de suite",
+        "damage": "Dégâts x{{multiplier}}",
+        "damageMultiplier": "Multiplicateur de dégâts",
+        "evAmount": "{{evs}} EV",
+        "evs": "EV",
+        "question": "Quels sont les multiplicateurs de dégâts des EV ?"
+      },
+      "flash": {
+        "answer": "<code>Niveau 1 :</code> 100 victoires<br> <code>Niveau 2 :</code> 250 victoires<br> <code>Niveau 3 :</code> 400 victoires",
+        "question": "Comment débloquer Flash dans les Donjons ?"
+      },
+      "howToUnlock": {
+        "answer": "<code>Souterrain :</code> achetez le <strong>Kit Explorateur</strong> à <strong>Cramois'Île</strong>.<br> <code>Pension :</code> débloquée en atteignant la <strong>Route 3</strong>.<br> <code>Ferme :</code> débloquée en atteignant la <strong>Route 11</strong> et en obtenant des <strong>Baies</strong>",
+        "question": "Comment débloquer…"
+      },
+      "multipleQuests": {
+        "answer": "Oui, vous pouvez débloquer jusqu'à 4 emplacements de quête.<br> <code>Niveau de quêtes 5 :</code> 2 emplacements<br> <code>Niveau de quêtes 10 :</code> 3 emplacements<br> <code>Niveau de quêtes 15 :</code> 4 emplacements",
+        "question": "Puis-je progresser dans plus d'une quête à la fois ?"
+      },
+      "nextRegion": {
+        "answer": "Vous devez vaincre le Maître de la Ligue de la région actuelle. Si le défi « Pokédex complet requis » est actif, vous devez aussi obtenir tous les Pokémon disponibles dans la région actuelle.<br> <strong>Remarque :</strong> une fois dans la région suivante, vous ne pourrez pas revenir dans les régions précédentes avant d'avoir atteint le quai.",
+        "question": "Comment accéder à la région suivante ?"
+      },
+      "obtainPokemon": {
+        "answer": "Vérifiez que vous avez terminé chaque <strong>Route</strong>.<br> Vérifiez que chaque <strong>Donjon</strong> a été terminé.<br> Certains Pokémon ne sortent que des <strong>Œufs</strong>.<br> Certains ne s'obtiennent qu'avec un <strong>objet d'évolution</strong>.<br> Certains ne se trouvent que dans le <strong>Parc Safari</strong>.<br> Les <strong>Pokémon Fossiles</strong> ne s'obtiennent qu'avec le <strong>Fossile</strong> correspondant, trouvé dans le <strong>Souterrain</strong>.<br> Certains ne peuvent être achetés que dans une <strong>Boutique</strong>.<br> <strong>(Voyageurs)</strong> Certains légendaires apparaissent <strong>aléatoirement</strong> sur les <strong>Routes</strong>.<br> <strong>(Bébés)</strong> Faites éclore leur évolution à la Pension.<br> Certains ne peuvent évoluer qu'à certains <strong>moments de la journée</strong>.<br> Certains ne peuvent évoluer qu'à des <strong>endroits</strong> précis.<br> Certains ne peuvent apparaître/évoluer que par une <strong>météo</strong> précise.",
+        "question": "Comment obtenir certains Pokémon ?"
+      },
+      "regions": {
+        "answer": "Actuellement, les régions de Kanto à {{region}} sont jouables.",
+        "question": "Combien de régions sont jouables ?"
+      },
+      "smallerDungeons": {
+        "answer": "Les Donjons rétrécissent à 10, 100, 1 000, etc. victoires, jusqu'à un minimum de 5x5 cases.",
+        "question": "Comment rendre les Donjons plus petits ?"
+      },
+      "title": "Jeu",
+      "whereToFind": {
+        "answer": "<code>Souterrain :</code> Route 14<br> <code>Pension :</code> Route 5, ou cliquez sur <strong>Liste</strong> dans la Pension<br> <code>Ferme :</code> Route 11",
+        "question": "Où trouver…"
+      }
+    },
+    "general": {
+      "damage": {
+        "answer": "Les dégâts infligés à un Pokémon adverse correspondent à la somme de l'attaque de tous les Pokémon du joueur, après application de l'efficacité des types, des faiblesses de type et des autres multiplicateurs.<br> Pour les Pokémon du joueur ayant deux types, seul le type le plus efficace est pris en compte.<br> Pour les Pokémon adverses ayant deux types, l'efficacité et la faiblesse sont appliquées une fois à chaque type.<br> Pour les Pokémon adverses n'ayant qu'un seul type, l'efficacité et la faiblesse sont appliquées deux fois à ce type.<br> D'autres facteurs multiplient les dégâts, comme les flûtes, les objets de combat et la météo. Les Joyaux permettent aussi de modifier les multiplicateurs d'efficacité et de faiblesse.<br> Le joueur peut voir son attaque contre un Pokémon précis qu'il combat en <strong>survolant la valeur d'attaque des Pokémon</strong>.",
+        "question": "Comment les dégâts sont-ils calculés ?"
+      },
+      "dungeonTokens": {
+        "answer": "Lisez le tutoriel du jeu.<br> Réglez le sélecteur « Attrapé » en haut à gauche sur Poké Ball pour capturer les Pokémon que vous avez déjà attrapés.",
+        "question": "Comment obtenir des Jetons de Donjon ?"
+      },
+      "inactiveSpeed": {
+        "answer": "Il s'agit d'un réglage des navigateurs qui ralentit les fenêtres inactives.<br> Vous pouvez modifier les options avancées (flags) du navigateur, mais ce n'est <strong>pas </strong>recommandé.<br> Sinon, vous pouvez télécharger le client Windows ici :<br> <a href=\"https://github.com/RedSparr0w/Pokeclicker-desktop/releases/latest\" target=\"_blank\">https://github.com/RedSparr0w/Pokeclicker-desktop/releases/latest</a>",
+        "question": "Mon jeu ne tourne pas à pleine vitesse quand la fenêtre n'est pas active."
+      },
+      "saveInfo": {
+        "question": "Où puis-je voir plus d'informations sur ma sauvegarde ?"
+      },
+      "title": "Général",
+      "whereToPlay": {
+        "answer": "<a href=\"https://www.pokeclicker.com/\" target=\"_blank\">https://www.pokeclicker.com/</a><br> ou téléchargez le client Windows hors ligne :<br> <a href=\"https://github.com/RedSparr0w/Pokeclicker-desktop/releases/latest\" target=\"_blank\">https://github.com/RedSparr0w/Pokeclicker-desktop/releases/latest</a>",
+        "question": "Où puis-je jouer à la dernière version ?"
+      },
+      "wiki": {
+        "answer": "<a href=\"https://wiki.pokeclicker.com/\" target=\"_blank\">https://wiki.pokeclicker.com/</a><br> Le Menu contient aussi un bouton pour ouvrir le Wiki.",
+        "question": "Où se trouve le wiki ?"
+      }
+    },
+    "items": {
+      "berriesUse": {
+        "answer": "Elles peuvent être plantées à la <strong>Ferme</strong> pour faire pousser d'autres Baies et gagner des Points de Récolte.<br> Elles peuvent être échangées contre divers objets ou Pokémon dans les boutiques des Maîtres des Baies.<br> Elles possèdent des Auras spéciales qui peuvent donner des bonus en jeu.<br> Elles peuvent attirer à la Ferme des Pokémon sauvages à capturer, dont certains ne s'obtiennent que de cette façon.",
+        "question": "À quoi servent les Baies ?"
+      },
+      "evolutionItems": {
+        "answer": "Vous pouvez utiliser les objets d'évolution en cliquant sur <strong>Objets</strong> dans le Menu.",
+        "question": "Comment faire évoluer les Pokémon qui ont besoin d'un objet pour évoluer ?"
+      },
+      "moreBerries": {
+        "answer": "Certaines Baies s'obtiennent comme butin sur les Pokémon ou dans les coffres des Donjons, mais la plupart s'obtiennent par mutation à la Ferme.<br> Le Maître des Baies de Kanto, à Azuria, donne chaque jour des indices sur la façon de faire muter les différentes Baies.",
+        "question": "Comment obtenir plus de Baies ?"
+      },
+      "oakItemSlots": {
+        "answer": "Il y a au maximum 3 emplacements actifs.",
+        "question": "Combien d'emplacements d'Objets du Prof. Chen sont disponibles ?"
+      },
+      "restores": {
+        "answer": "Ils servent dans le Souterrain à restaurer votre énergie.",
+        "question": "À quoi servent les petits/moyens/grands Remontants ?"
+      },
+      "title": "Objets"
+    },
+    "pokerusEvs": {
+      "evBonus": {
+        "answer": "Le multiplicateur de dégâts des EV est multiplicatif et augmente linéairement jusqu'à x1,5 (50 EV). Au-delà, le bonus a des rendements décroissants par rapport au nombre d'EV gagnés, mais n'a pas de limite.",
+        "question": "Qu'est-ce que le bonus d'attaque des EV ?"
+      },
+      "gainEvs": {
+        "answer": "Les EV s'obtiennent de diverses manières, mais surtout en capturant des Pokémon (pas en les faisant éclore).<br> Vous pouvez utiliser le sélecteur de Poké Ball « Contagieux » (débloqué après avoir obtenu le Pokérus) pour cibler la capture des Pokémon ayant moins de 50 EV. Notez que régler ce sélecteur sur « Ne pas attraper » vous empêchera de capturer tout Pokémon Contagieux, même si votre sélecteur « Attrapé » a une Poké Ball choisie.<br><br> Gain de base : <code>0.1EV</code><br> Gain de base d'un Pokémon errant : <code>0.2EV</code><br> Gain d'un Pokémon errant : <code>1EV</code><br> Gain par objet d'évolution / Pokémon de boutique / Safari : <code>1EV</code><br> Modificateur Obscur : <code>2×</code><br> Modificateur chromatique : <code>5×</code><br> Modificateur de Donjon : <code>3×</code><br> Modificateur de Mimic / Boss de Donjon : <code>10×</code><br> Modificateur Voyageur : <code>50×</code><br> Modificateur Bis Ball : <code>5×</code><br> Modificateur Bracelet Macho : <code>1.5×</code><br> Modificateur Poids Pouvoir : <code>2×</code><br> Modificateur Aura de la Baie Pommo : <code>Multiplicateur</code> selon la configuration de la Ferme<br> Modificateur Flûte Bleue : <code>%</code> selon le bonus de Succès",
+        "question": "Comment gagner des EV ?"
+      },
+      "spread": {
+        "answer": "Le Pokérus se transmet des Pokémon infectés aux autres Pokémon de la Pension (pas ceux de la file d'attente) qui partagent un type avec le Pokémon infecté. Aucun des deux Pokémon ne doit être prêt à éclore, et aucun Assistant de Pension ne doit s'occuper de l'un ou de l'autre.",
+        "question": "Comment propager le Pokérus ?"
+      },
+      "statusFilters": {
+        "answer": "<code>Aucun</code> : Pokémon qui n'ont pas été infectés par le Pokérus.<br> <img src=\"assets/images/breeding/pokerus/Infected.png\"> <code>Infecté</code> : le Pokémon a le Pokérus, mais ne peut ni le propager ni gagner d'EV avant d'avoir éclos.<br> <img src=\"assets/images/breeding/pokerus/Contagious.png\"> <code>Contagieux</code> : Pokémon ayant moins de 50 EV.<br> <img src=\"assets/images/breeding/pokerus/Resistant.png\"> <code>Résistant</code> : Pokémon ayant 50 EV ou plus. Ces Pokémon peuvent toujours propager le Pokérus.",
+        "question": "Que signifient les filtres de statut du Pokérus ?"
+      },
+      "title": "Pokérus et EV",
+      "unlockEvs": {
+        "answer": "Les EV sont débloqués après avoir terminé le Donjon Monde Distorsion à Sinnoh.",
+        "question": "Quand les EV sont-ils débloqués ?"
+      },
+      "whatIs": {
+        "answer": "Le Pokérus est un virus bénéfique que vos Pokémon peuvent attraper. Les EV, aussi appelés Points Effort, augmentent l'attaque de vos Pokémon.",
+        "question": "Qu'est-ce que le Pokérus, et que sont les EV ?"
+      }
+    },
+    "rareShiny": {
+      "breedShiny": {
+        "answer": "Oui, un Pokémon devenu chromatique le restera pour toujours.",
+        "question": "Si je mets un Pokémon chromatique à la Pension, restera-t-il chromatique ?"
+      },
+      "evolveShiny": {
+        "answer": "Non, vous devrez obtenir l'évolution chromatique par un autre moyen.",
+        "question": "Si je fais évoluer un Pokémon chromatique, son évolution sera-t-elle chromatique ?"
+      },
+      "roamingOdds": {
+        "answer": "La probabilité de rencontrer un Pokémon Voyageur est de <code>1/8192</code> sur la première route d'une région, et augmente linéairement jusqu'à <code>1/4096</code> sur la dernière route de la région.<br> (« première » et « dernière » désignent ici la difficulté/les PV de la route, pas forcément l'ordre dans lequel vous les atteignez)",
+        "question": "Quelles sont les chances de trouver un Pokémon Voyageur ?"
+      },
+      "shinyBonus": {
+        "answer": "Oui, ils donnent un bonus supplémentaire de 100 % à l'Attaque Clic.",
+        "question": "Les Pokémon chromatiques apportent-ils un bonus en jeu ?"
+      },
+      "shinyOdds": {
+        "answer": "Sur une Route : <code>1/8192</code><br> Dans un Donjon : <code>1/4096</code><br> Avec un objet d'évolution : <code>1/2048</code><br> Dans le Parc Safari : <code>1/1024</code><br> Dans une Boutique : <code>1/1024</code><br> En faisant éclore un Œuf : <code>1/1024</code><br> Comme récompense : <code>1/1024</code><br> Avec un palier de la Zone de Combat : <code>1/1024</code><br> Pokémon errant à la Ferme : <code>1/1024</code>",
+        "question": "Quelles sont les chances de trouver un Pokémon chromatique ?"
+      },
+      "title": "Pokémon rares/chromatiques"
+    },
+    "saveData": {
+      "cloudSaves": {
+        "answer": "Non. Votre fichier est enregistré dans les données de votre navigateur. Nous vous recommandons de sauvegarder régulièrement vos données.",
+        "question": "Existe-t-il des sauvegardes en ligne ou des comptes ?"
+      },
+      "release": {
+        "answer": "Votre sauvegarde sera très probablement compatible avec la version finale.",
+        "question": "Ma progression sera-t-elle conservée à la sortie du jeu ?"
+      },
+      "title": "Sauvegarde",
+      "transfer": {
+        "answer": "Oui ! Téléchargez une copie de la sauvegarde depuis <strong>Menu → Sauvegarde</strong>, transférez-la sur l'autre appareil et importez-la depuis l'écran de sélection des sauvegardes.<br> Notez que la progression n'est pas synchronisée automatiquement entre les appareils.",
+        "question": "Puis-je transférer ma sauvegarde d'un appareil à l'autre ?"
+      }
+    },
+    "title": "Foire aux questions"
+  },
+  "farm": {
+    "berries": "Baies",
+    "berry": "Baie",
+    "berryListTooltip": "<u>Durée de croissance</u> : {{growthDuration}}<br/>{{harvestAmount}} {{berryImage}} par récolte<br/>{{farmValue}} {{farmPointImage}} par récolte",
+    "berrydex": "Baiedex",
+    "clearMulchTooltip": "Retirer l'Engrais d'une parcelle.",
+    "clearPlantTooltip": "Retirer une plante d'une parcelle.",
+    "externalAuras": "<u>Auras externes</u>",
+    "farmHands": "Ouvriers agricoles",
+    "farmPoints": "Points de Récolte",
+    "flipAll": "Tout inverser",
+    "flipAllShort": "Inverser",
+    "flipAllTooltip": "Inverse les parcelles verrouillées et déverrouillées.",
+    "hands": {
+      "actionPerCycle": "{{actions}} action/cycle",
+      "actionsPerCycle": "{{actions}} actions/cycle",
+      "allowedPlots": "Parcelles autorisées",
+      "allowedPlotsTooltip": "Choisissez les parcelles où l'ouvrier peut agir (les parcelles vertes sont autorisées).",
+      "cost": "Coût :",
+      "costPerHour": "{{cost}}/heure",
+      "costTooltip": "Payé automatiquement toutes les heures tant qu'il est embauché.",
+      "edit": "Modifier",
+      "efficiency": "Efficacité :",
+      "efficiencyTooltip": "Nombre d'actions effectuées à chaque cycle.",
+      "energy": "Énergie :",
+      "energyTooltip": "Consommée quand il travaille, récupérée après les cycles sans travail.",
+      "fire": "Renvoyer !",
+      "fireAll": "Renvoyer tous",
+      "focusNone": "Aucune",
+      "focusRandom": "Au hasard",
+      "focusReplant": "Replanter",
+      "harvesting": "Récolte des Baies :",
+      "harvestingTooltip": "Autoriser l'ouvrier à récolter les Baies mûres.",
+      "hire": "Embaucher !",
+      "manageWanderers": "Gérer les errants :",
+      "planting": "Plantation des Baies :",
+      "plantingTooltip": "Autoriser l'ouvrier à planter des Baies.",
+      "showLocked": "Afficher/masquer les ouvriers verrouillés",
+      "tooltip": "<strong>{{name}}</strong><br/>Énergie : {{energy}}/{{maxEnergy}}<br/>Cycle de travail : {{workCycle}}<br/>Prochain paiement : {{nextPayment}}",
+      "unlockRequirement": "Condition de déblocage",
+      "wanderersTooltip": "Autoriser l'ouvrier à capturer les Pokémon errants, en utilisant vos filtres de capture et vos Poké Balls.",
+      "workCycle": "Cycle de travail :",
+      "workCycleTooltip": "Fréquence à laquelle il travaille ou récupère de l'énergie."
+    },
+    "harvestAll": "Tout récolter",
+    "help": {
+      "amazeMulch": "Combinaison plus faible des engrais Boost, Rich et Surprise.",
+      "boostMulch": "Accélère la croissance des plants de Baies.",
+      "farmHands": "Les ouvriers agricoles vous aident à la Ferme : ils récoltent et plantent des Baies selon les besoins ou capturent les Pokémon errants, et gagnent des Points de Récolte au passage.",
+      "farmHandsEfficiency": "L'efficacité correspond au nombre d'actions qu'ils peuvent effectuer par cycle de travail.",
+      "farmHandsEnergy": "S'ils n'ont plus d'énergie, ils ne travaillent pas pendant ce cycle et récupèrent un peu d'énergie à la place. S'il n'y a rien à faire pour le moment, ils récupèrent aussi de l'énergie. Une fois renvoyés, ils récupèrent leur énergie au même rythme que s'ils étaient encore embauchés.",
+      "farmHandsMax": "Vous pouvez embaucher jusqu'à 3 ouvriers agricoles à la fois.",
+      "farmHandsMore": "<i>D'autres ouvriers agricoles se débloquent dans les boutiques et en découvrant de nouvelles Baies.</i>",
+      "farmHandsUnlock": "<i>(Débloqué après avoir obtenu 8 Baies différentes.)</i>",
+      "freezeMulch": "Arrête la croissance des Baies et leurs auras. Les mutations continuent de se produire pendant que les Baies sont gelées.",
+      "gooeyMulch": "Augmente de 10 % le taux de capture des Pokémon errants et la probabilité de voir apparaître des errants peu communs. Disponible à partir d'Unys.",
+      "growth": "Chaque type de Baie met un temps différent à pousser. <br>Une fois arrivé à maturité, le plant de Baie peut être récolté d'un clic ou par un ouvrier agricole embauché. Les deux méthodes rapportent des Points de Récolte.",
+      "intro": "À la Ferme, vous pouvez planter et récolter des Baies.",
+      "locking": "Vous pouvez verrouiller certaines parcelles avec le bouton de verrouillage <br>ou le raccourci <kbd>{{hotkey}}</kbd>. <br>Vous pouvez aussi faire <kbd>Maj + Clic</kbd> avec n'importe quel outil ou Baie sélectionné pour verrouiller une parcelle.",
+      "lockingEffect": "Une parcelle verrouillée ne peut pas être plantée, récoltée<br>ni modifiée de quelque façon que ce soit.",
+      "lockingIgnore": "<i>Les parcelles verrouillées sont ignorées par les boutons « Tout récolter », « Tout planter » et « Tout fertiliser », ainsi que par les ouvriers agricoles.</i>",
+      "lockingTitle": "Verrouiller des parcelles",
+      "module": "Surveillez la Ferme et interagissez avec elle sans ouvrir la fenêtre complète. Récoltez ou plantez des Baies, appliquez de l'Engrais, utilisez les pelles et verrouillez/déverrouillez des parcelles avec les commandes étendues.<br> Masquez les commandes étendues pour alléger l'affichage tout en gardant la possibilité de planter et récolter, ou désactivez complètement le module dans les réglages.<br> Vous pouvez aussi faire <kbd>Maj + Clic</kbd> pour verrouiller/déverrouiller une parcelle.<br> Le raccourci vers la Ferme est masqué quand le module Ferme est activé.",
+      "moduleTitle": "Module Ferme",
+      "mulchEffects": "Ils s'utilisent sur les parcelles pour différents effets :",
+      "mulchShovels": "Pour retirer un Engrais, utilisez une Pelle à Engrais. Elle retire entièrement l'effet de l'Engrais, quel que soit le temps restant.",
+      "mulches": "Les Engrais s'achètent auprès des Maîtres des Baies des régions suivantes. Chacun dure 5 minutes et ils sont cumulables. En revanche, vous ne pouvez pas combiner plusieurs types d'Engrais sur une même parcelle !",
+      "mulchesTitle": "Engrais",
+      "mutationKinds": "<b>Mutations communes :</b> elles nécessitent des Baies précises. <i>Elles ne se produisent qu'au stade mûr.</i> <br><b>Mutations évolutives :</b> elles nécessitent généralement qu'une Baie se transforme en une autre et dépendent des saveurs ou de l'utilisation d'objets. <i>Elles peuvent se produire dès le stade Croissance.</i>",
+      "mutationTypes": "Il existe deux types de mutations :",
+      "mutations": "Les Baies peuvent provoquer des mutations et faire apparaître de nouvelles espèces de Baies sur les parcelles vides, sous certaines conditions. <br><i>(Le Maître des Baies de Kanto vous donnera chaque jour des indices sur ces conditions.)</i>",
+      "mutationsTitle": "Mutations",
+      "plots": "Vous pouvez débloquer des parcelles supplémentaires en dépensant des Baies.",
+      "richMulch": "Augmente le nombre de Baies récoltées.",
+      "shovels": "Pour retirer un plant de Baie avant sa maturité, vous pouvez le déraciner avec une Pelle, qui sera alors consommée. Utilisée sur une Baie mûre, elle fonctionne en revanche comme une récolte normale, et la Pelle n'est pas consommée !",
+      "shovelsShop": "<i>(Les deux types de pelles s'achètent auprès des Maîtres des Baies des régions suivantes.)</i>",
+      "shovelsTitle": "Pelles",
+      "surpriseMulch": "Augmente les chances de mutation.",
+      "trades": "Dans les régions suivantes, les Maîtres des Baies échangent des Baies contre d'autres objets utiles.",
+      "tradesTitle": "Échanges",
+      "unlocking": "Pour déverrouiller une parcelle, utilisez le bouton de verrouillage ou refaites <kbd>Maj + Clic</kbd> dessus.",
+      "wandererAuras": "Certaines auras de Baies augmentent ou réduisent les chances de rencontrer des Pokémon errants.",
+      "wandererCatch": "Vos filtres de Poké Balls sont utilisés pour tenter de capturer un Pokémon errant. Les ouvriers agricoles peuvent aussi s'en charger si vous activez leur option « Gérer les errants ».",
+      "wandererReward": "Interagir avec un Pokémon errant vous rapporte des Points de Récolte, que vous le capturiez ou non. Chaque capture réussie vous rapporte aussi des Jetons de Donjon.",
+      "wandererStay": "Quand un Pokémon errant arrive sur votre Ferme, il apparaît sur une parcelle voisine de la Baie et y reste jusqu'à ce que vous interagissiez avec lui, ou s'enfuit quelques minutes après la récolte ou le flétrissement de la Baie.",
+      "wanderers": "Les plants de Baies mûres peuvent attirer des Pokémon sauvages, que vous pouvez ensuite capturer. Certains Pokémon ne se trouvent qu'avec certaines espèces de Baies.",
+      "wither": "Sinon, après un certain temps à maturité, le plant de Baie flétrit et laisse tomber la moitié des Baies prévues, mais il peut aussi être replanté automatiquement. <br><i>(Les Baies qui flétrissent ou sont replantées ne rapportent pas de Points de Récolte !)</i>"
+    },
+    "lockAll": "Tout verrouiller",
+    "lockAllShort": "Toutes",
+    "lockAllTooltip": "Verrouiller toutes les parcelles.",
+    "lockAlt": "Verrouiller",
+    "lockUnlockPlotTooltip": "Verrouiller/déverrouiller une parcelle pour empêcher toute interaction.",
+    "lockedPlotAlt": "cadenas",
+    "mulch": "Engrais",
+    "mulchAll": "Tout fertiliser",
+    "mulchShovel": "Pelle à Engrais",
+    "multiplier": "Multiplicateur",
+    "multiplierHelp": "Clic gauche/droit pour changer la quantité<br/>S'applique à l'unité et à « Tout fertiliser »",
+    "plantAll": "Tout planter",
+    "plot": {
+      "alteredFrom": "(au lieu de {{time}})",
+      "auraEmitted": "<u>Aura émise :</u>",
+      "auraReceived": "<u>Aura reçue :</u>",
+      "infiniteUntilDeath": "∞ avant de flétrir",
+      "mulch": "<u>Engrais</u>",
+      "possibleMutations": "<u>Mutations possibles</u>",
+      "untilBloom": "{{time}} avant la floraison",
+      "untilDeath": "{{time}} avant de flétrir",
+      "untilGrown": "{{time}} avant la croissance",
+      "untilRipe": "{{time}} avant maturité",
+      "untilSprout": "{{time}} avant la pousse",
+      "wanderer": "Un <strong>{{pokemon}}</strong> sauvage rôde dans les parages"
+    },
+    "searchTooltip": "Recherchez des Baies par leur nom. Séparez plusieurs Baies par un espace.",
+    "selectedBerryImage": "image de la Baie sélectionnée",
+    "selectedMulchImage": "image de l'Engrais sélectionné",
+    "shovel": "Pelle",
+    "title": "Ferme",
+    "toggleLockTooltip": "Activer/désactiver le verrouillage d'une parcelle.",
+    "unlockAll": "Tout déverrouiller",
+    "unlockAllShort": "Aucune",
+    "unlockAllTooltip": "Déverrouiller toutes les parcelles.",
+    "unlockPlotInFarmTooltip": "Débloquez cette parcelle dans la Ferme",
+    "view": "Voir"
+  },
+  "gemMaster": {
+    "gems": "Joyaux",
+    "title": "Maître des Joyaux"
+  },
+  "gems": {
+    "description": "Utilisez les Joyaux pour améliorer l'efficacité des types de vos Pokémon. Quand vous battez un Pokémon, vous obtenez des Joyaux selon son type. Chaque amélioration augmente votre efficacité de {{step}}.",
+    "disabled": "Les bonus de Joyaux sont désactivés.",
+    "immune": "Sans effet",
+    "maxed": "MAX",
+    "neutral": "Neutre",
+    "notAvailable": "N/D",
+    "notVery": "Peu efficace",
+    "selectGem": "Choisissez un Joyau",
+    "title": "Joyaux",
+    "versus": "Contre",
+    "very": "Super efficace"
+  },
+  "gym": {
+    "clears": "{{clears}} victoires",
+    "stopAuto": "Arrêter l'auto"
+  },
+  "hallOfFame": {
+    "alola": "Le Professeur Euphorbe m'a dit que tu venais de battre la Ligue Pokémon d'Alola ! Félicitations !<br> Te voilà Maître de la Ligue d'Alola !",
+    "completePokedex": "Pour continuer, tu devras capturer tous les Pokémon disponibles dans la région actuelle !",
+    "galar": "La Professeure Magnolia m'a dit que tu venais de battre la Ligue Pokémon de Galar ! Félicitations !<br> Te voilà Maître de la Ligue de Galar !",
+    "hoenn": "Le Professeur Seko m'a dit que tu venais de battre la Ligue Pokémon de Hoenn ! Félicitations !<br> Te voilà Maître de la Ligue de Hoenn !",
+    "johto": "Le Professeur Orme m'a appris que tu venais de conquérir la Ligue Pokémon de Johto ! Félicitations !<br> Te voilà Maître de la Ligue de Johto !",
+    "kalos": "Le Professeur Platane vient de me l'annoncer. Rien ne t'arrête ! Félicitations !<br> Te voilà Maître de la Ligue de Kalos !",
+    "kanto": "Alors, tu as gagné ! Félicitations !<br> Te voilà Maître de la Ligue Pokémon !<br> Tu as tellement grandi depuis ton départ avec {{starter}} !<br> <br> Il reste encore bien d'autres régions à explorer !",
+    "sinnoh": "Le Professeur Sorbier m'a appris que tu venais de conquérir la Ligue Pokémon de Sinnoh ! Félicitations !<br> Te voilà Maître de la Ligue de Sinnoh !",
+    "unova": "La Professeure Keteleeria m'a dit que tu avais aussi battu la Ligue Pokémon d'Unys ! Félicitations !<br> Te voilà Maître de la Ligue d'Unys !"
+  },
+  "heldItem": {
+    "heldItemColumn": "Objet tenu :",
+    "pokemonColumn": "Pokémon :",
+    "type2": "Type 2"
+  },
+  "items": {
+    "collectibleItems": "Objets de collection",
+    "consumables": "Consommables",
+    "evolutionItem": "Objet d'évolution",
+    "evolutionItems": "Objets d'évolution",
+    "fossilPieces": "Morceaux de fossile",
+    "fossils": "Fossiles",
+    "gemPlates": "Plaques",
+    "heldItems": "Objets tenus",
+    "itemBag": "Sac",
+    "keyItems": "Objets rares",
+    "megaStones": "Méga-Gemmes",
+    "multipleEvolutionTooltip": "Si les conditions de plusieurs évolutions sont remplies, une évolution sera choisie au hasard.",
+    "selectPokemon": "Choisissez un Pokémon",
+    "shards": "Tessons",
+    "sortAscending": "Croissant (valeur la plus basse en premier)",
+    "sortDescending": "Décroissant (valeur la plus haute en premier)",
+    "undergroundTreasure": "Trésors du Souterrain",
+    "useEvolutionItems": "Utiliser les objets d'évolution !",
+    "useStonesTooltip": "Si un Pokémon chromatique est obtenu, le jeu arrête d'utiliser les objets d'évolution.",
+    "vitamins": "Vitamines"
+  },
+  "keyItem": {
+    "congratulations": "Félicitations !",
+    "newKeyItem": "Nouvel objet rare !",
+    "youGained": "Vous avez obtenu :"
+  },
+  "logBook": {
+    "date": "Date",
+    "logs": "Journal",
+    "logsSettings": "Réglages du journal",
+    "message": "Message",
+    "title": "Journal de bord",
+    "toggleTypes": "Activer ou désactiver des types d'entrées"
+  },
+  "menu": {
+    "achievements": "Succès",
+    "badgeCase": "Boîte à Badges",
+    "challengeModes": "Modes Défi",
+    "changelog": "Notes de version",
+    "credits": "Crédits",
+    "damageCalculator": "Calculateur de dégâts",
+    "events": "Événements",
+    "externalLinks": "Liens externes",
+    "faq": "FAQ",
+    "gems": "Joyaux",
+    "items": "Objets",
+    "logBook": "Journal de bord",
+    "muteTooltip": "Cliquer pour couper tous les sons.",
+    "pokedex": "Pokédex",
+    "profile": "Profil",
+    "progressToUnlock": "Progressez encore pour débloquer…",
+    "reportBug": "Signaler un bug",
+    "save": "Sauvegarde / Entrer un code",
+    "saveTooltip": "Sauvegarder la partie.<br/>Raccourci : {{shortcut}}",
+    "settings": "Réglages",
+    "startMenu": "Menu",
+    "statistics": "Statistiques",
+    "unmuteTooltip": "Cliquer pour réactiver tous les sons."
+  },
+  "moonPhase": {
+    "description": "Les phases de la lune changent chaque jour et influencent le taux de capture des Moon Balls. De plus, certains Pokémon se déplacent selon la phase actuelle.",
+    "moonBallBonus": "Bonus Moon Ball",
+    "phase": "Phase",
+    "title": "Phases de la lune"
+  },
+  "nextRegion": {
+    "attackDebuff": "Lorsque des Pokémon se trouvent dans une Région dont ils ne sont pas originaires, ils ne conservent que <strong>{{percent}}</strong> de leur attaque totale.",
+    "canTravel": "Vous pouvez maintenant partir pour {{region}} !",
+    "dockRequired": "Vous devrez aussi progresser jusqu'au Quai de {{region}} avant de pouvoir à nouveau voyager entre les régions.",
+    "downloadAdvice": "Il est conseillé de télécharger votre sauvegarde au cas où vous resteriez bloqué en cours de route.",
+    "downloadSave": "Télécharger la sauvegarde",
+    "dungeonLoot": "Les Donjons de la Région <strong>{{region}}</strong> auront beaucoup moins de chances de donner du butin Épique, Légendaire et Mythique.",
+    "letsGo": "C'est parti !",
+    "pokedexCompleted": "Félicitations pour avoir complété le Pokédex de {{region}} !",
+    "queueSlots": "Vous obtiendrez <strong>{{slots}}</strong> emplacements de file d'attente à la Pension.",
+    "thingsToKnow": "Quelques informations à connaître avant votre départ :",
+    "title": "Voyager vers {{region}}"
+  },
+  "npc": {
+    "accept": "Accepter",
+    "maybeLater": "Plus tard"
+  },
+  "oakItems": {
+    "bonus": "Bonus : {{bonus}}",
+    "disabled": "Les Objets du Prof. Chen sont désactivés.",
+    "equipAnother": "Équipez un autre Objet du Prof. Chen !",
+    "equipped": "Objets du Prof. Chen équipés : {{active}}/{{max}}",
+    "level": "Niveau : {{level}}",
+    "loadouts": "Configurations",
+    "locked": "Verrouillé !",
+    "maxLevel": "NIVEAU MAX !",
+    "namePlaceholder": "nom",
+    "selector": "Sélection",
+    "title": "Objets du Prof. Chen",
+    "upgrade": "Améliorer"
+  },
+  "pokeballFilters": {
+    "configureFilters": "Configurer les filtres",
+    "createFilter": "Nouveau filtre",
+    "disabled": "Désactivé",
+    "enabled": "Activé",
+    "help": {
+      "configureIntro": "Utilisez cet onglet pour ajouter, modifier, réordonner et supprimer des filtres de Poké Balls.",
+      "description": "Survolez (ou touchez) l'icône <button class=\"btn-circle btn-info float-none\">ℹ</button> pour voir ce que le filtre capturera.",
+      "hidden": "Certaines options de filtre et certains filtres par défaut sont masqués en début de partie et se débloquent lorsqu'ils deviennent utiles.",
+      "reorder": "Vous pouvez réordonner les filtres en les faisant glisser par la barre à gauche de chacun. Cliquez sur le x à droite d'un filtre pour le supprimer : une confirmation vous sera demandée pour éviter toute suppression accidentelle.",
+      "rightClick": "Un clic droit (ou un appui long sur mobile) permet d'activer ou désactiver un filtre depuis l'écran principal sans ouvrir ce menu.",
+      "testDefault": "Avec les filtres de capture par défaut, vous verrez que « Capturé » et « Nouveau chromatique » remplissent tous deux leurs conditions, mais que c'est le filtre « Nouveau chromatique » qui est utilisé pour la capture. Le filtre le plus bas de votre liste qui remplit toutes ses conditions est celui qui est utilisé. Les filtres surlignés sont ceux qui correspondent au scénario.",
+      "testExample": "Par exemple, pour savoir ce qui est utilisé pour un Rattata chromatique alors que vous possédez déjà un Rattata normal, activez les options « Chromatique » et « Capturé » en laissant les autres désactivées.",
+      "testExplain": "Cet onglet vous permet de voir exactement lequel sera choisi, pour un scénario que vous configurez avec les réglages de l'onglet.",
+      "testIntro": "Dans certains cas, plusieurs de vos filtres peuvent remplir toutes leurs conditions, mais un seul peut servir à choisir la Ball utilisée pour la capture.",
+      "toggleSettings": "Cliquez sur le bouton « Afficher les réglages » d'un filtre pour configurer son fonctionnement. Les options listées en premier sont les valeurs vérifiées lors de la capture : cliquez sur leur <button class=\"btn-circle btn-danger float-none\">−</button> pour les retirer. Les options plus sombres en dessous ne sont pas vérifiées. Cliquez sur leur bouton <button class=\"btn-circle btn-success float-none\">+</button> pour les ajouter au filtre et choisir la valeur à respecter.",
+      "toggles": "L'interrupteur « Activé » permet de désactiver un filtre. Les filtres désactivés apparaissent grisés dans la liste des filtres de l'écran principal ainsi que dans l'onglet Tester les filtres. L'interrupteur « Inversé », lorsqu'il est activé, fait <i>ignorer</i> au filtre tous les Pokémon qui remplissent ses conditions et capturer tous les autres."
+    },
+    "priorityAfter": "sont prioritaires ! **",
+    "priorityBefore": "** Les filtres les plus proches du",
+    "priorityBottom": "bas",
+    "priorityTop": "haut",
+    "resetFilters": "Réinitialiser les filtres",
+    "testConfigure": "Configurez ces options pour décrire le Pokémon à tester :",
+    "testFilters": "Tester les filtres",
+    "testIntro": "Cet onglet permet de vérifier ce que vos filtres ciblent et lesquels sont prioritaires. Consultez l'onglet Aide pour plus de détails.",
+    "testMatch": "Votre filtre « {{name}} » sera utilisé",
+    "testNoMatch": "Aucun de vos filtres activés ne correspond à ce scénario",
+    "toggleSettings": "Afficher les réglages"
+  },
+  "pokeballSelector": {
+    "ball": "Ball",
+    "doNotCatch": "Ne pas capturer",
+    "helpTooltip": "Choisissez la Poké Ball à utiliser selon le statut des Pokémon. Un clic droit (ou un appui long sur mobile) permet d'activer ou désactiver un filtre.",
+    "qty": "Qté",
+    "selectionTitle": "Choix de la Poké Ball",
+    "title": "Poké Balls"
+  },
+  "pokedex": {
+    "addAll": "Tout ajouter",
+    "addAllTooltip": "Ajouter à cette catégorie tous les Pokémon correspondant aux filtres actuels.",
+    "all": "Tous",
+    "categorized": "Classés",
+    "categoryModeTooltip": "Le Mode Catégorie permet d'ajouter ou de retirer rapidement des Pokémon d'une catégorie. Choisissez une catégorie, puis cliquez sur les Pokémon à ajouter ou à retirer.",
+    "disableCategoryMode": "Désactiver le Mode Catégorie",
+    "editCategories": "Modifier les catégories",
+    "enableCategoryMode": "Activer le Mode Catégorie",
+    "evTooltip": "<br/>EV : <strong>{{evs}}</strong><br/>Bonus d'EV : <strong>×{{bonus}}</strong>",
+    "filtersAndSettings": "Filtres et réglages",
+    "heldItemTooltip": "Affiche les Pokémon qui peuvent laisser tomber un objet",
+    "infoTooltip": "<u>Informations :</u><br/>Attaque de base : <strong>{{attack}}</strong><br/>Taux de capture : <strong>{{catchRate}} %</strong><br/>Pas avant éclosion : <strong>{{hatchSteps}}</strong>",
+    "missingPokemon": "Il vous manque un Pokémon qui n'apparaît pas ici ? Explorez entièrement la région !",
+    "nameOrId": "Nom ou numéro",
+    "nameOrIdPlaceholder": "{{pokemon}} ou 1",
+    "noPokemonFound": "Aucun Pokémon trouvé",
+    "removeAll": "Tout retirer",
+    "removeAllTooltip": "Retirer de cette catégorie tous les Pokémon correspondant aux filtres actuels.",
+    "resetAllFilters": "Réinitialiser tous les filtres",
+    "selected": "{{amount}} sélectionnés",
+    "selectedCategory": "Catégorie sélectionnée",
+    "showShadowSpritesTooltip": "Afficher tous les Pokémon purifiés avec leur sprite Obscur.",
+    "showing": "{{amount}} Pokémon affichés",
+    "sortAscending": "Croissant (valeur la plus faible en premier)",
+    "sortDescending": "Décroissant (valeur la plus élevée en premier)",
+    "title": "Pokédex",
+    "types": "Types",
+    "unknown": "Inconnu"
+  },
+  "pokemonList": {
+    "atk": "Att",
+    "attackPower": "Puissance d'attaque",
+    "evs": "EV : {{evs}}",
+    "lv": "N.",
+    "purified": "Purifié",
+    "shadow": "Obscur",
+    "title": "Liste des Pokémon"
+  },
+  "pokemonStats": {
+    "attackAtLevel100": "Attaque au niveau 100",
+    "baseAttack": "Attaque de base",
+    "breedingEfficiency": "Efficacité en Pension",
+    "captured": "Capturés",
+    "catchRate": "Taux de capture",
+    "currentAttack": "Attaque actuelle",
+    "defeated": "Vaincus",
+    "displayGender": "Afficher le sexe",
+    "encountered": "Rencontrés",
+    "evBonus": "Bonus d'EV",
+    "evs": "EV",
+    "genderRatio": "Répartition des sexes",
+    "genderless": "Asexué",
+    "hatchSteps": "Pas avant éclosion",
+    "hatched": "Éclos",
+    "heldItem": "Objet tenu",
+    "hideShinySprite": "Masquer le sprite chromatique",
+    "nickname": "Surnom",
+    "notObtainable": "Ce Pokémon ne devrait pas pouvoir être obtenu.",
+    "pokemonStats": "Stats du Pokémon",
+    "rareHoldItem": "Objet rare tenu",
+    "rareHoldItemTooltip": "Objet que ce Pokémon peut laisser tomber quand il est vaincu.",
+    "reportBug": "Si vous l'avez obtenu par accident, merci de le signaler comme bug.",
+    "settingOverride": "<strong><u>{{setting}}</u></strong> remplace actuellement ce réglage.",
+    "shiniesCaptured": "Chromatiques capturés",
+    "shiniesDefeated": "Chromatiques vaincus",
+    "shiniesEncountered": "Chromatiques rencontrés",
+    "shiniesHatched": "Chromatiques éclos",
+    "showShadow": "Afficher en Obscur",
+    "statistics": "Statistiques",
+    "unknown": "Inconnu",
+    "vitaminsApplied": "Vitamines utilisées"
+  },
+  "profile": {
+    "background": "Fond",
+    "gender": "Sexe",
+    "namePlaceholder": "nom",
+    "selectBackground": "Choisir un fond",
+    "selectTrainer": "Choisir un Dresseur",
+    "shadow": "Obscur",
+    "shadowLocked": "{{pokemon}} Obscur n'est pas encore débloqué ou n'existe pas",
+    "shiny": "Chromatique",
+    "shinyLocked": "{{pokemon}} chromatique n'est pas encore débloqué",
+    "textColor": "Couleur du texte",
+    "title": "Profil",
+    "trainer": "Dresseur"
+  },
+  "purifyChamber": {
+    "flowNeeded": "Flux nécessaire pour la prochaine purification :",
+    "noShadowPokemon": "Aucun Pokémon Obscur dans l'équipe",
+    "purify": "Purifier",
+    "title": "Chambre de Purification"
+  },
+  "questLine": {
+    "cannotPause": "Cette série de quêtes ne peut pas être mise en pause. Elle fait partie de l'histoire, de la progression, ou est obligatoire pour une autre raison.",
+    "inProgress": "En cours",
+    "locked": "Verrouillée",
+    "pauseOnlyInTown": "Les séries de quêtes ne peuvent être mises en pause que dans une ville ou pendant un combat sur une route.",
+    "pauseWarning": "Mettre cette série de quêtes en pause la retirera de votre liste de quêtes et bloquera toute progression.<br /><br />Vous pourrez la reprendre à l'étape actuelle depuis le Tableau d'affichage où vous l'avez acceptée.",
+    "paused": "En pause"
+  },
+  "quests": {
+    "activeQuestLines": "Séries de quêtes en cours",
+    "availableQuestLines": "Séries de quêtes disponibles",
+    "claim": "Récupérer",
+    "clickListToStart": "Cliquez sur « Liste » pour commencer une nouvelle quête.",
+    "completeAllBonus": "Ou terminez toutes les quêtes pour un bonus",
+    "completeQuestLines": "Séries de quêtes terminées",
+    "completed": "Terminée",
+    "dailyFreeRefreshIn": "Actualisation gratuite quotidienne dans : {{time}}",
+    "freeRefresh": "Actualisation gratuite",
+    "level": "Niv. {{level}}",
+    "pause": "Pause",
+    "progress": "Progression",
+    "questLines": "Séries de quêtes",
+    "quit": "Abandonner",
+    "refresh": "- Actualiser",
+    "reward": "Récompense",
+    "start": "Commencer",
+    "step": "Étape",
+    "tabQuests": "Quêtes",
+    "titleCount": "Quêtes ({{current}}/{{slots}})",
+    "unlockSlots": "Débloquez des emplacements de quête supplémentaires aux niveaux 5, 10 et 15 !"
+  },
+  "routeInfo": {
+    "backlotDailySpecial": "Spécialité du jour de M. Backlot",
+    "dayOfWeekPokemon": "Pokémon du jour de la semaine",
+    "encounters": "Rencontres",
+    "eventPokemon": "Pokémon d'événement",
+    "eventRoamingPokemon": "Pokémon Voyageur d'événement",
+    "evs": "EV : {{evs}}",
+    "fishingPokemon": "Pokémon de pêche",
+    "roaming": "Voyageurs",
+    "roamingBoosted": "Cette route est actuellement favorisée ! Les Pokémon Voyageurs ont 3× plus de chances d'apparaître.",
+    "roamingChance": "Chance de trouver un Pokémon Voyageur sur cette route.",
+    "roamingPokemon": "Pokémon Voyageur",
+    "weatherPokemon": "Pokémon lié à la météo"
+  },
+  "safari": {
+    "allCaught": "Vous avez capturé tous les Pokémon du Parc Safari !",
+    "allCaughtShiny": "Vous avez capturé tous les Pokémon chromatiques du Parc Safari !",
+    "ballButton": "Ball ({{amount}})",
+    "catchChance": "Chance de capture : {{chance}} %",
+    "escapeChance": "Chance de fuite : {{chance}} %",
+    "explore": "Explorer",
+    "help": {
+      "bait": "Appât",
+      "baitDesc": "Lancer un Appât, quel qu'il soit, fait manger le Pokémon : il a moins de chances de fuir, mais il est plus difficile à capturer. Les Baies utilisées comme appât modifient les taux de base du Pokémon : Framby augmente le taux de capture, Nanana augmente les chances qu'un objet soit lâché et Nanab réduit le taux de fuite. Un seul effet de Baie peut être actif à la fois. Rapporte 5 XP Safari.",
+      "ball": "Ball",
+      "ballDesc": "Lance une Poké Ball pour tenter de capturer le Pokémon. Rapporte 10 XP Safari.",
+      "catchXp": "Capturer un Pokémon rapporte 50 XP Safari (×5 pour un chromatique).",
+      "end": "Votre exploration du Parc Safari prend fin lorsque vous n'avez plus de Poké Balls. Vous pouvez sortir et revenir librement sans repayer l'entrée tant qu'il vous reste des Poké Balls.",
+      "flee": "Après votre tour, si la rencontre n'est pas terminée, le Pokémon sauvage a une chance de s'enfuir.",
+      "intro": "Le Parc Safari utilise une méthode différente pour rencontrer et capturer les Pokémon, et il abrite plusieurs Pokémon uniques.",
+      "itemXp": "Ramasser un objet rapporte 10 XP Safari.",
+      "levelEffects": "Le niveau Safari augmente l'efficacité des Cailloux et des Appâts, les chances de capture, les pas d'Œuf gagnés en marchant et les chances qu'un objet apparaisse lors d'une capture.",
+      "levelItems": "Certains objets ne sont disponibles qu'à partir d'un certain niveau Safari.",
+      "options": "Lorsque vous rencontrez un Pokémon, vous avez 4 options :",
+      "rock": "Caillou",
+      "rockDesc": "Lancer un Caillou met le Pokémon en colère : il a plus de chances de fuir, mais il est plus facile à capturer. Rapporte 10 XP Safari.",
+      "run": "Fuite",
+      "runDesc": "Met fin à la rencontre.",
+      "speedIntro": "Tous les 10 niveaux Safari, l'animation accélère selon les valeurs suivantes :",
+      "speedLevel": "<b>Niveau {{level}} :</b> {{percent}} % plus rapide.",
+      "walk": "Après avoir payé l'entrée, vous pourrez vous promener dans le Parc Safari. Pour rencontrer des Pokémon, marchez dans les hautes herbes ou allez au contact des Pokémon qui apparaissent au hasard sur la carte.",
+      "xp": "En effectuant des actions, vous gagnez de l'XP Safari et augmentez votre niveau Safari. Quand vous capturez un Pokémon, un objet a une chance d'apparaître sur la carte."
+    },
+    "leave": "Partir",
+    "level": "Niv. {{level}}",
+    "maxLevel": "Niveau maximum atteint",
+    "payEntranceFee": "Payer l'entrée",
+    "rockButton": "Caillou (∞)",
+    "run": "Fuite",
+    "title": "Parc Safari"
+  },
+  "save": {
+    "claim": "Valider !",
+    "copyToClipboard": "Copier dans le presse-papiers",
+    "deleteSave": "SUPPRIMER LA SAUVEGARDE",
+    "deleteWarning": "Vous ne pourrez pas récupérer votre fichier de sauvegarde !",
+    "discordNote": "<strong>Remarque :</strong> ceci n'est <strong>pas</strong> utilisé pour les sauvegardes en ligne ;<br>cela permet seulement d'entrer les codes reçus du bot Discord.",
+    "downloadHelp": "Si cela ne fonctionne pas, vous pouvez copier le contenu de la sauvegarde et le coller dans un fichier « .txt »",
+    "downloadSave": "Télécharger la sauvegarde",
+    "enterCodePlaceholder": "Entrez un code…",
+    "importSave": "Importer une sauvegarde",
+    "linkDiscord": "Lier Discord",
+    "title": "Sauvegarde",
+    "unlinkDiscord": "Délier Discord"
+  },
+  "saveSelector": {
+    "badges": "Badges :",
+    "discordAlt": "Rejoignez notre Discord !",
+    "githubAlt": "Visitez notre GitHub !",
+    "importSave": "Importer une sauvegarde",
+    "menu": {
+      "delete": "Supprimer",
+      "download": "Télécharger (copie de secours)",
+      "import": "Importer (écraser)",
+      "load": "Charger"
+    },
+    "newSave": "Nouvelle sauvegarde",
+    "pokedex": "Pokédex :",
+    "time": "Temps :",
+    "useOurClient": "Jouez hors ligne et améliorez les performances en téléchargeant notre client de bureau <b><a href=\"https://github.com/RedSparr0w/Pokeclicker-desktop/releases/latest\" target=\"_blank\">ici</a></b>. Vous pourrez même trouver un Pokémon exclusif au client en atteignant les Îles Sevii !<br><br>",
+    "wikiAlt": "Découvrez le Wiki !"
+  },
+  "settingsModal": {
+    "changeRoutesTooltip": "Change de route selon l'ordre des routes",
+    "desktopNotificationsTooltip": "Notifications de bureau, visibles même lorsque le jeu n'est pas au premier plan",
+    "discord": {
+      "enable": "Activer la Rich Presence Discord",
+      "line1": "Texte de la ligne 1 :",
+      "line1Placeholder": "Chromatiques : {caught_shiny}/{caught} {sparkle}",
+      "line2": "Texte de la ligne 2 :",
+      "line2Placeholder": "Attaque totale : {attack}",
+      "options": "Options :",
+      "timer": "Afficher le temps de jeu de la session en cours (24 heures max.)",
+      "timerReset": "Réinitialiser le minuteur à chaque changement de zone"
+    },
+    "inGameNotificationsTooltip": "Notifications en jeu",
+    "loadDefault": "Charger les réglages par défaut",
+    "minusOrPlus": "- ou +",
+    "numberKeys": "Touches numériques",
+    "oakItemsTooltip": "Chaque chiffre correspond à un Objet du Prof. Chen",
+    "pokeballTooltip": "Chaque chiffre correspond à une Poké Ball",
+    "queueSizeTooltip": "Limitez la file d'attente de la Pension à une taille précise ou désactivez-la complètement. Saisissez une valeur entre 1 et votre taille maximale actuelle ({{max}}), zéro (0) pour désactiver complètement la file d'attente, ou -1 pour ne fixer aucune limite.",
+    "resetColors": "Réinitialiser les couleurs",
+    "resetDefault": "Réinitialiser les réglages par défaut",
+    "resetOrder": "Réinitialiser l'ordre",
+    "resetResizableModules": "Réinitialiser la taille des modules",
+    "saveDefault": "Enregistrer comme réglages par défaut",
+    "saveFilenameTooltip": "Les balises spéciales {name}, {version} et {date} sont remplies automatiquement",
+    "section": {
+      "currency": "Devises",
+      "dungeon": "Donjon",
+      "farm": "Ferme",
+      "general": "Général",
+      "hatchery": "Pension",
+      "mapColors": "Couleurs de la carte",
+      "modals": "Fenêtres",
+      "oakItems": "Objets du Prof. Chen",
+      "other": "Autres",
+      "pokeballSelector": "Sélecteur de Poké Ball",
+      "safari": "Safari",
+      "ship": "Paquebot",
+      "shop": "Boutique",
+      "town": "Ville",
+      "underground": "Souterrain"
+    },
+    "setKeyTooltip": "Cliquez ici pour définir une nouvelle touche",
+    "shipTooltip": "Chaque chiffre sélectionne une région.",
+    "shopTooltip": "Chaque chiffre sélectionne un objet de la boutique.",
+    "tab": {
+      "display": "Affichage",
+      "gameplay": "Jeu",
+      "hotkeys": "Raccourcis",
+      "notifications": "Notifications",
+      "other": "Autres",
+      "sound": "Son"
+    },
+    "title": "Réglages",
+    "townTooltip": "Donne accès à tout, des Arènes aux PNJ. Chaque chiffre correspond à un bouton.",
+    "whiteTransparentTooltip": "Choisissez le blanc pour la transparence"
+  },
+  "shop": {
+    "pokeMart": "Boutique Pokémon",
+    "pokeMartOf": "Boutique Pokémon {{town}}",
+    "soldOut": "Épuisé"
+  },
+  "shortcuts": {
+    "farm": "Ferme",
+    "title": "Raccourcis",
+    "underground": "Souterrain"
+  },
+  "startSequence": {
+    "challengeModes": "Modes Défi",
+    "intro": "Bien le bonjour ! Bienvenue dans le monde des Pokémon !<br> Je m'appelle Chen. Les gens m'appellent affectueusement le Professeur Pokémon.<br> Ce monde est peuplé de créatures appelées Pokémon !<br> Pour certains, les Pokémon sont des animaux de compagnie. D'autres s'en servent pour combattre.<br> Quant à moi… L'étude des Pokémon est ma profession.<br> Mais ta propre légende Pokémon est sur le point de commencer !<br> Un monde de rêves et d'aventures avec les Pokémon t'attend ! En avant !",
+    "professorOak": "Professeur Chen"
+  },
+  "starter": {
+    "ambushed": "Oh non ! Ces Pokémon nous ont tendu une embuscade !<br> Je ne peux en retenir que deux ! Choisis celui que tu veux affronter !",
+    "cantHoldOffFour": "Je ne peux pas retenir les quatre ! Choisis le Pokémon que tu veux affronter !",
+    "cantHoldOffThree": "Je ne peux pas retenir les trois ! Choisis le Pokémon que tu veux affronter !",
+    "captureStarter": "Capturer le Pokémon de départ",
+    "caughtIntro": "Hum ! Excellent ! Tu as capturé ton premier Pokémon !<br> C'est ici que ton aventure commence. <br> Tu pourras passer à la route suivante après avoir vaincu 10 Pokémon.<br> Pour t'aider dans ton aventure, je vais te donner ces <b>Objets rares</b> !<br> Tu peux consulter tous tes <b>Objets rares</b> dans le menu.<br>",
+    "clickToDamage": "Tu peux cliquer dessus pour lui infliger des dégâts",
+    "pickNextRegion": "Choisis un Pokémon de départ pour ta prochaine région"
+  },
+  "statistics": {
+    "achievementBonus": "Bonus des Succès",
+    "baseClickAttack": "Attaque Clic de base",
+    "clickAttackTab": "Attaque Clic",
+    "genderTooltip": "Mâles : {{male}}<br/>Femelles : {{female}}<br/>Asexués : {{genderless}}",
+    "modifiers": "Modificateurs",
+    "multipliersTab": "Multiplicateurs",
+    "noActiveMultipliers": "Vous n'avez aucun multiplicateur actif de ce type",
+    "notAvailable": "N/D",
+    "purifiedPokemon": "Pokémon purifiés",
+    "resistantPokemon": "Pokémon Résistants",
+    "shinyPokemon": "Pokémon chromatiques",
+    "startDateTime": "Date et heure de début",
+    "statistic": "Statistique",
+    "statsTab": "Stats",
+    "timePlayed": "Temps de jeu",
+    "title": "Statistiques",
+    "uniquePokemon": "Pokémon uniques"
+  },
+  "town": {
+    "clears": "victoires",
+    "dock": "Quai",
+    "dungeonAllCaught": "Vous avez capturé tous les Pokémon de ce Donjon !",
+    "dungeonAllCaughtShiny": "Vous avez capturé tous les Pokémon chromatiques de ce Donjon !",
+    "dungeonDebuffed": "Ce Donjon est affaibli : il a beaucoup moins de chances de donner du butin Épique, Légendaire ou Mythique.",
+    "dungeonLootTooltip": "Voir le butin disponible dans ce Donjon.",
+    "dungeonShadowAllCaught": "Tous les Pokémon Obscurs de ce Donjon ont été capturés !",
+    "dungeonShadowMissing": "Il reste des Pokémon Obscurs non capturés dans ce Donjon.",
+    "dungeonTokensHelp": "Capturez des Pokémon pour gagner des Jetons de Donjon et pouvoir affronter les Donjons.",
+    "enterBattleFrontier": "Entrer dans la Zone de Combat",
+    "hireDungeonGuide": "Engager un Guide de Donjon !",
+    "mapLegend": "Légende de la carte :",
+    "mapLegendIntro": "Les lieux de la carte sont colorés selon les critères suivants :",
+    "mapLegendNote": "REMARQUE : les couleurs et leur priorité peuvent être personnalisées dans les Réglages",
+    "mapTitle": "Carte ({{region}})",
+    "moonClickInfo": "Cliquez pour plus d'informations.",
+    "openCastformApp": "Ouvrir l'appli Morphéo",
+    "openDreamOrbs": "Ouvrir des Orbes Rêve",
+    "pickStarter": "Choisir votre starter",
+    "purifyChamber": "Chambre de Purification",
+    "startDungeon": "Entrer",
+    "totalClears": "Victoires totales : {{clears}}",
+    "travelTo": "Voyager vers {{region}}"
+  },
+  "trader": {
+    "currency": "Monnaie",
+    "inv": "Inv.",
+    "item": "Objet",
+    "profit": "Gain",
+    "soldOut": "Épuisé",
+    "totalQuestPoints": "Total de Points de Quête : {{amount}}",
+    "trade": "Échanger",
+    "trades": "Échanges"
+  },
+  "travel": {
+    "regionalTravel": "Voyage entre régions",
+    "subregionalTravel": "Voyage entre sous-régions",
+    "subregionalTravelTo": "Voyage entre sous-régions ({{subregion}})",
+    "unexploredRegion": "Région inexplorée"
+  },
+  "underground": {
+    "dig": {
+      "allTreasuresCollected": "Tous les trésors ont été récupérés",
+      "autoRestartTooltip": "{{setting}} : {{state}}",
+      "buried": "Enfouis • {{number}}",
+      "clickToDischarge": "Cliquez pour décharger ({{hotkey}})",
+      "collected": "Récupérés • {{number}}",
+      "durabilityPerUse": "Durabilité par utilisation",
+      "findMine": "Trouver une mine",
+      "free": "Gratuit",
+      "info": "Infos",
+      "level": "Niv. {{level}}",
+      "lifetimeUsage": "Utilisations au total",
+      "nextUse": "Prochaine utilisation",
+      "off": "Non",
+      "on": "Oui",
+      "searchingForMine": "Recherche d'une mine",
+      "seen": "Repérés • {{number}}",
+      "timeUntilFull": "Temps avant 100 %",
+      "toolFree": "Votre vitesse de régénération est devenue si élevée que cet outil est désormais gratuit."
+    },
+    "display": {
+      "battery": "Batterie",
+      "expert": "Expert",
+      "fire": "Renvoyer",
+      "noExperts": "Aucun expert engagé. Vous êtes livré à vous-même !",
+      "title": "Souterrain",
+      "view": "Voir"
+    },
+    "experts": {
+      "discoverChance": "Chance de découverte",
+      "expertise": "Expertise",
+      "fire": "Renvoyer !",
+      "hire": "Engager !",
+      "information": "Informations",
+      "level": "Niveau",
+      "levelValue": "Niveau {{level}}",
+      "rewardRetention": "Trésors gardés",
+      "smartToolUse": "Choix d'outil avisé",
+      "useExpertise": "Utiliser l'expertise",
+      "workCycle": "Cycle de travail"
+    },
+    "findMine": {
+      "clears": "{{number}} mines vidées",
+      "discoveryTime": "Temps de découverte :",
+      "potentialTreasures": "Trésors possibles",
+      "searchForMine": "Chercher une mine",
+      "selectMine": "Choisissez une mine"
+    },
+    "help": {
+      "amount": {
+        "intro": "Le nombre de trésors qu'un joueur peut trouver est aléatoire, compris entre le minimum (inclus) et le maximum (inclus), et augmente avec son niveau de Souterrain :",
+        "level": "Niveau",
+        "maximum": "Maximum",
+        "minimum": "Minimum",
+        "title": "Nombre de trésors"
+      },
+      "battery": {
+        "chance": "Chance",
+        "charges": "Chaque tentative de minage réussie ajoute une charge ; il faut {{maxCharges}} charges pour l'activer. Vous ne pouvez gagner qu'une charge par tranche de {{cooldown}} s. Équiper l'Objet du Prof. Chen Pile augmente la quantité d'énergie gagnée par charge.",
+        "discharge": "Lorsque votre batterie est entièrement chargée, vous pouvez la décharger. Cette décharge laisse derrière elle un motif de cases dégagées. Des motifs de plus haut niveau, qui endommagent davantage de cases, se débloquent à mesure que vous montez de niveau.",
+        "discharges": "Décharges",
+        "intro": "La Batterie est un système qui se recharge à mesure que vous ou votre expert minez des cases.",
+        "requirements": "Conditions",
+        "tier": "Rang",
+        "title": "Batterie"
+      },
+      "discovery": {
+        "intro": "Le temps de découverte est calculé comme suit :",
+        "notRandom": "La mine actuelle n'est pas une {{random}} : aucun temps de découverte",
+        "other": "Le temps de découverte commence à {{base}} et diminue de {{reduction}} pour chaque niveau au-delà du niveau {{level}}.",
+        "otherTitle": "Autres types de mines",
+        "random": "La mine actuelle est une {{random}} :<br> Le temps de découverte commence à {{base}} et diminue de {{reduction}} pour chaque niveau au-delà du niveau {{level}}. Il est ensuite encore réduit à mesure que vous découvrez des trésors dans votre mine actuelle.",
+        "title": "Calcul du temps de découverte"
+      },
+      "experience": {
+        "clearLayer": "Déterrer tous les trésors : {{experience}} points d'expérience",
+        "digUpItem": "Déterrer un trésor : {{experience}} points d'expérience",
+        "experienceTitle": "Expérience",
+        "intro": "Utiliser des outils et des experts vous aide non seulement à récolter des trésors, mais vous rapporte aussi de l'expérience pour monter de niveau.",
+        "levelDiscovery": "Réduit le temps de découverte des mines, le cas échéant",
+        "levelDurability": "Augmente la vitesse de régénération de la durabilité des outils",
+        "levelIntro": "Votre niveau de Souterrain a les effets suivants :",
+        "levelSurvey": "Réduit la zone couverte par le Sondage",
+        "levelTitle": "Niveau de Souterrain",
+        "levelTreasures": "Augmente le nombre minimum et maximum de trésors pouvant être trouvés dans une mine",
+        "sharedExpert": "<strong>Actions de l'expert :</strong> Lorsque l'expert effectue une action qui lui rapporte de l'expérience, le joueur gagne aussi {{fraction}} de cette expérience, arrondi au dixième le plus proche.",
+        "sharedPlayer": "<strong>Actions du joueur :</strong> Lorsque le joueur effectue une action qui rapporte de l'expérience, l'expert actif gagne aussi {{fraction}} de cette expérience, arrondi au dixième le plus proche.",
+        "sharedTitle": "Expérience partagée",
+        "title": "Expérience et niveaux",
+        "treasures": "Trésors :"
+      },
+      "experts": {
+        "actionBomb": "<strong>Bombe :</strong> Lorsque tous les trésors n'ont pas encore été repérés.",
+        "actionChisel": "<strong>Burin :</strong> Lorsque tous les trésors ont été repérés et que l'emplacement miné n'a aucune case adjacente contenant une récompense",
+        "actionHammer": "<strong>Marteau :</strong> Lorsque tous les trésors ont été repérés et que l'emplacement miné a au moins 1 case adjacente contenant une récompense",
+        "actions": "Actions",
+        "energyRestore": "<strong>Restauration d'énergie :</strong> Un expert peut utiliser une potion d'énergie pour récupérer une partie du temps restant avant sa prochaine action. Si un expert est autorisé à utiliser plusieurs types de restaurations, il utilisera d'abord la meilleure dont il dispose.",
+        "expertise": "<strong>Expertise :</strong> Chaque expert a une expertise, c'est-à-dire un type de mine qu'il a plus de chances de trouver.",
+        "expertiseBase": "Commence à {{chance}} de chances de trouver sa mine de prédilection lors d'une recherche.",
+        "expertiseFallback": "S'il ne trouve pas sa mine de prédilection, il trouvera une {{random}}.",
+        "expertiseIncrease": "Augmente de {{increase}} par niveau, jusqu'à un maximum de {{maximum}}.",
+        "intro": "Les experts sont des personnages que vous pouvez engager pour vous aider à miner. Ils agissent à intervalles réguliers et deviennent plus efficaces en montant de niveau. Chacun apporte ses propres outils puissants : leurs actions n'affectent donc pas la durabilité de vos outils.",
+        "largeRestore": "<strong>Grande restauration :</strong> Récupère 75 % du temps restant avant la prochaine action",
+        "mechanicsTitle": "Fonctionnement des experts",
+        "mediumRestore": "<strong>Restauration moyenne :</strong> Récupère 50 % du temps restant avant la prochaine action",
+        "neverSpecial": "Les experts ne découvriront jamais de {{special}}.",
+        "rewardRetention": "<strong>Trésors gardés :</strong> Lorsqu'un expert déterre un trésor (dernier clic), il y a une chance qu'il le garde pour lui.",
+        "rewardRetentionChance": "Cette chance commence à {{base}} et diminue de {{decrease}} par niveau, jusqu'à {{minimum}}.",
+        "smallRestore": "<strong>Petite restauration :</strong> Récupère 25 % du temps restant avant la prochaine action",
+        "smartToolUse": "<strong>Choix d'outil avisé :</strong> Au début, les experts manquent d'expérience et ne choisissent l'outil le plus efficace que {{chance}} du temps.",
+        "smartToolUseIncrease": "Augmente de {{increase}} par niveau, jusqu'à {{maximum}}.",
+        "title": "Experts",
+        "workCycle": "<strong>Cycle de travail :</strong> Commence à {{base}} secondes et diminue de {{decrease}} seconde à chaque niveau, jusqu'à un minimum de {{minimum}} secondes par action."
+      },
+      "glossary": {
+        "collected": "<strong>Trésor récupéré :</strong> Toutes les parties du trésor sont visibles par le joueur, le trésor a été récupéré",
+        "completed": "<strong>Mine terminée :</strong> Tous les trésors enfouis ont été récupérés",
+        "seen": "<strong>Trésor repéré :</strong> Au moins une partie du trésor est visible par le joueur",
+        "successfulToolUse": "<strong>Utilisation d'outil réussie :</strong> Un outil n'est compté comme utilisé que si son action réussit, c'est-à-dire qu'elle accomplit sa tâche (par ex. miner des couches ou signaler des cases)",
+        "title": "Glossaire"
+      },
+      "mines": {
+        "finding": "Une nouvelle mine peut être trouvée manuellement en cliquant sur le bouton « Trouver une mine » de l'onglet « Creuser ».<br> Une nouvelle mine démarre automatiquement dans les cas suivants :",
+        "findingExpert": "Un <strong>expert</strong> déterre le dernier trésor : si l'option « Utiliser l'expertise » de votre expert est activée, il essaiera de trouver une mine précise. Si cette option est désactivée, il trouvera une {{random}}.",
+        "findingNote": "Remarque : cette étape a lieu avant le calcul d'un éventuel temps de découverte",
+        "findingPlayer": "Le <strong>joueur</strong> déterre le dernier trésor : si l'option « Redémarrage auto de la mine choisie » est activée, le jeu essaiera automatiquement de trouver une nouvelle mine du type choisi.",
+        "findingTitle": "Trouver une nouvelle mine",
+        "intro": "Il existe six types de mines différents que vous pouvez rechercher dans le Souterrain. Comprendre leurs propriétés et les temps de découverte associés est essentiel pour miner efficacement. Le glossaire du Souterrain se trouve en bas de cette page.",
+        "special": "Lorsque vous (et non votre expert) cherchez une mine, il y a 4 % de chances que la mine soit une {{special}}. Cette mine ne contient qu'un seul trésor, qui peut être n'importe quelle Méga-Gemme (si vous y avez droit) ou un autre trésor spécial. <br> <i>Remarque : le redémarrage automatique déclenché quand le joueur déterre le dernier objet <u>peut</u> faire apparaître une {{special}}.</i>",
+        "title": "Mines",
+        "typeDiamond": "<strong>{{mine}} :</strong> Contient uniquement des trésors qui peuvent être vendus contre des Diamants.",
+        "typeEvolutionItem": "<strong>{{mine}} :</strong> Contient uniquement des objets d'évolution.",
+        "typeFossil": "<strong>{{mine}} :</strong> Contient uniquement des fossiles et des morceaux de fossiles.",
+        "typeGemPlate": "<strong>{{mine}} :</strong> Contient uniquement des plaques, qui peuvent être vendues contre des Joyaux.",
+        "typeRandom": "<strong>{{mine}} :</strong> Contient tous les trésors possibles (sauf le trésor trouvé dans une {{special}})",
+        "typeShard": "<strong>{{mine}} :</strong> Contient uniquement des éclats.",
+        "typeSpecial": "<strong>{{mine}} :</strong> Ne peut être trouvée que lorsque certaines conditions spéciales sont remplies (voir ci-dessous). Contient uniquement des objets spéciaux.",
+        "typesTitle": "Types de mines"
+      },
+      "oakItems": {
+        "cellBatteryEffect": "<strong>Effet :</strong> Déclenche une décharge qui dégage des cases selon un certain motif ; de nouveaux motifs se débloquent en faisant monter la Pile de niveau",
+        "cellBatteryProgress": "<strong>Progression :</strong> Progresse vers le niveau suivant chaque fois que le joueur utilise une décharge",
+        "explosiveChargeEffect": "<strong>Effet :</strong> Augmente le nombre de cases minées par l'outil Bombe",
+        "explosiveChargeProgress": "<strong>Progression :</strong> Progresse vers le niveau suivant chaque fois que vous trouvez tous les trésors d'une mine",
+        "title": "Objets du Prof. Chen",
+        "treasureScannerEffect": "<strong>Effet :</strong> A une chance de dupliquer un trésor récupéré. Continue d'essayer de le dupliquer jusqu'à ce qu'une tentative échoue",
+        "treasureScannerProgress": "<strong>Progression :</strong> Progresse vers le niveau suivant chaque fois que vous trouvez un trésor dans une mine"
+      },
+      "tools": {
+        "durability": "Un outil ne peut être utilisé que s'il a assez de durabilité. Chaque utilisation réussie lui retire une partie de sa durabilité, qui se régénère avec le temps.",
+        "durabilityTitle": "Durabilité",
+        "intro": "Le Souterrain propose {{number}} outils puissants pour vous aider à miner et à explorer. Chaque outil a une fonction qui lui est propre, et bien comprendre comment les utiliser est essentiel pour miner le plus efficacement possible.",
+        "overview": "{{number}} outils différents sont disponibles, chacun avec sa propre fonction :",
+        "overviewTitle": "Aperçu des outils",
+        "restoreRate": "La vitesse de régénération de vos outils dépend de votre niveau de Souterrain.",
+        "title": "Outils",
+        "tool": "Outil"
+      },
+      "trading": {
+        "exception": "<strong>Exception :</strong> Les trésors à Diamants ne peuvent pas être échangés contre d'autres objets, seulement vendus contre des Diamants.",
+        "intro": "Les échanges vous permettent d'échanger des trésors d'une même catégorie. Voici comment cela fonctionne :",
+        "ratio": "<strong>Échange 3 contre 1 :</strong> Les échanges se font toujours au taux de 3 contre 1 (par ex. échangez 3 trésors pour recevoir 1 nouveau trésor).",
+        "sameCategory": "<strong>Échanges dans une même catégorie :</strong> Les échanges ne sont possibles qu'entre trésors d'une même catégorie.",
+        "title": "Échanges"
+      }
+    },
+    "tabs": {
+      "dig": "Creuser",
+      "experts": "Experts",
+      "treasures": "Trésors"
+    },
+    "treasureDetail": {
+      "diamondsValue": "{{amount}} × Diamants",
+      "gemsValue": "{{amount}} × Joyaux {{type}}",
+      "mined": "Extraits",
+      "mining": "Minage",
+      "owned": "Possédés",
+      "ownedAmount": "Possédés : {{amount}}",
+      "setTradeAmount": "Choisir la quantité",
+      "statistics": "Statistiques",
+      "trade": "Échanger"
+    },
+    "treasures": {
+      "all": "Tous",
+      "canBeSold": "Vendables",
+      "cannotBeSold": "Non vendables",
+      "clickForDetails": "Cliquez sur un trésor pour afficher ses détails",
+      "disableQuickSell": "Désactiver la vente rapide",
+      "enableQuickSell": "Activer la vente rapide",
+      "filtersAndSettings": "Filtres et réglages",
+      "grid": "Grille",
+      "quickSellEnabled": "Vente rapide activée",
+      "quickSellHint": "Cliquer sur un trésor vendra la totalité de votre stock de cet objet.",
+      "quickSellTooltip": "Lorsque la vente rapide est activée, cliquer sur un objet le vend instantanément en totalité",
+      "sortAscending": "Croissant (valeur la plus basse en premier)",
+      "sortDescending": "Décroissant (valeur la plus haute en premier)"
+    }
+  },
+  "vitamins": {
+    "attackBonus": "Bonus d'Attaque",
+    "breedingEfficiency": "Efficacité en Pension",
+    "disabled": "Les Vitamines sont désactivées.",
+    "eggSteps": "Pas pour l'Œuf",
+    "hideMaxed": "Masquer les Pokémon au maximum de Vitamines",
+    "hideShiny": "Masquer les Pokémon chromatiques",
+    "order": "Ordre",
+    "removeAll": "Retirer TOUTES les Vitamines",
+    "removeAllOf": "Tout retirer : {{vitamin}}",
+    "searchPlaceholder": "Rechercher ici",
+    "title": "Vitamines",
+    "vitaminsUsed": "Vitamines utilisées"
+  },
+  "weather": {
+    "castformApp": "Appli Morphéo",
+    "fri": "Ven",
+    "mon": "Lun",
+    "sat": "Sam",
+    "sun": "Dim",
+    "thu": "Jeu",
+    "time": "Heure",
+    "tue": "Mar",
+    "wed": "Mer"
+  }
+}
