@@ -11,6 +11,20 @@ function start() {
   try { active = localStorage.getItem(storageKey) !== 'false'; } catch { /* Storage may be blocked. */ }
   const display = mountTranslation(document, createTranslator(catalog).translate);
   display.setEnabled(active);
+  const style = document.createElement('style');
+  style.id = 'pokeclicker-translation-layout';
+  style.textContent = `
+    html[data-pct-enabled="true"] #dailyQuestDisplayBody .row > .col-10 {
+      flex: 1 1 0; max-width: none; min-width: 0;
+    }
+    html[data-pct-enabled="true"] #dailyQuestDisplayBody .row > .col-2 {
+      flex: 0 0 auto; width: auto; max-width: none; padding-left: .3rem;
+    }
+    html[data-pct-enabled="true"] #dailyQuestDisplayBody .col-2 .btn {
+      width: auto; white-space: nowrap; line-height: 18px; padding: 0 .35rem !important;
+    }
+  `;
+  document.head.append(style);
   let signal = null, bridge = null, attempts = 0;
   const button = document.createElement('button');
   button.id = 'pokeclicker-translation-toggle';
@@ -18,6 +32,7 @@ function start() {
   button.setAttribute('data-pct-ignore', '');
   button.style.cssText = 'position:fixed;bottom:8px;right:8px;z-index:2000;border:1px solid #5680aa;border-radius:6px;padding:5px 9px;background:#18314b;color:white;font:12px system-ui;cursor:pointer;opacity:.9';
   const updateButton = () => {
+    document.documentElement.setAttribute('data-pct-enabled', String(active));
     button.textContent = active ? 'FR ✓' : 'FR —';
     button.setAttribute('aria-pressed', String(active));
     button.title = active ? 'Traduction française (préversion) — désactiver' : 'Traduction française (préversion) — activer';

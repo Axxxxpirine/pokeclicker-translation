@@ -16,5 +16,11 @@ export function readResources() {
 
 export function displayCatalog(resources) {
   const fragments = extractFragments(resources);
-  return buildCatalog({ en: { ...resources.en, displayFragments: fragments.en }, fr: { ...resources.fr, displayFragments: fragments.fr } });
+  const catalog = buildCatalog({ en: { ...resources.en, displayFragments: fragments.en }, fr: { ...resources.fr, displayFragments: fragments.fr } });
+  const { domains } = JSON.parse(readFileSync(resolve(root, 'upstream/display-terms.json'), 'utf8'));
+  const french = JSON.parse(readFileSync(resolve(root, 'display/terms-fr.json'), 'utf8'));
+  catalog.domains = Object.fromEntries(Object.entries(domains).map(([name, terms]) => [name,
+    Object.fromEntries(terms.map(term => [term, french[name]?.[term] ?? term])),
+  ]));
+  return catalog;
 }

@@ -45,3 +45,13 @@ test('never translates an already-French target into a different meaning', () =>
   assert.equal(translate('Explore'), 'Explorer');
   assert.equal(translate('Explorer'), undefined);
 });
+
+test('named placeholders accept only declared terms and keep numbers and repeated values intact', () => {
+  const catalog = buildCatalog({ en: { quests: { a: 'Use {{amount}} {{questBall}}.', b: 'Compare {{questBall}} with {{questBall}}.' } }, fr: { quests: { a: 'Utilise {{amount}} {{questBall}}.', b: 'Compare {{questBall}} et {{questBall}}.' } } });
+  catalog.domains = { questBall: { 'Great Balls': 'Super Balls', 'Poké Balls': 'Poké Balls', 'Ball (X+)': 'Ball spéciale' } };
+  const { translate } = createTranslator(catalog);
+  assert.equal(translate('Use 1,378 Great Balls.'), 'Utilise 1,378 Super Balls.');
+  assert.equal(translate('Use 2 Ball (X+).'), 'Utilise 2 Ball spéciale.');
+  assert.equal(translate('Compare Great Balls with Great Balls.'), 'Compare Super Balls et Super Balls.');
+  for (const text of ['Use 8 Unknown Balls.', 'Use <b>8</b> Great Balls.', 'Use 8 Ball XXX.', 'Compare Great Balls with Poké Balls.']) assert.equal(translate(text), undefined, text);
+});

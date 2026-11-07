@@ -49,17 +49,23 @@ const escapeRegex = text => text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
 export function createTranslator(catalog) {
   const exact = new Map(), templates = [], cache = new Map();
+  const domains = Object.fromEntries(Object.entries(catalog.domains ?? {}).map(([name, values]) => [name, new Map(Object.entries(values))]));
   for (const entry of catalog.entries) {
     const tokens = [...entry.en.matchAll(/{{\s*([^{}]+?)\s*}}/g)];
     if (!tokens.length) { exact.set(entry.en, entry.fr); continue; }
-    // Arbitrary strings and HTML are deliberately not guessed by the display fallback.
-    if (tokens.some(token => !/^\w+$/.test(token[1])) || entry.en.replace(/{{[^{}]+}}/g, '').length < 10) continue;
+    // Named values must come from an explicit finite vocabulary. Unknown placeholders stay numeric.
+    const hasDomain = tokens.some(token => Object.hasOwn(domains, token[1]));
+    if (tokens.some(token => !/^\w+$/.test(token[1])) || entry.en.replace(/{{[^{}]+}}/g, '').length < (hasDomain ? 4 : 10)) continue;
     let pattern = '^', offset = 0;
     const names = [], groups = new Map();
     for (const token of tokens) {
       pattern += escapeRegex(entry.en.slice(offset, token.index));
       if (groups.has(token[1])) pattern += `\\${groups.get(token[1])}`;
-      else { names.push(token[1]); groups.set(token[1], names.length); pattern += '([+-]?\\d[\\d., \\u00a0\\u202f’\x27]*%?)'; }
+      else {
+        names.push(token[1]); groups.set(token[1], names.length);
+        const domain = Object.hasOwn(domains, token[1]) ? domains[token[1]] : null;
+        pattern += domain ? `(${[...domain.keys()].sort((a, b) => b.length - a.length).map(escapeRegex).join('|') || '(?!)'})` : '([+-]?\\d[\\d., \\u00a0\\u202f’\x27]*%?)';
+      }
       offset = token.index + token[0].length;
     }
     pattern += escapeRegex(entry.en.slice(offset)) + '$';
@@ -77,7 +83,7 @@ export function createTranslator(catalog) {
           if (!source.startsWith(rule.prefix)) continue;
           const match = rule.pattern.exec(source);
           if (match) {
-            const values = Object.fromEntries(rule.names.map((name, index) => [name, match[index + 1]]));
+            const values = Object.fromEntries(rule.names.map((name, index) => [name, Object.hasOwn(domains, name) ? domains[name].get(match[index + 1]) : match[index + 1]]));
             results.add(rule.target.replace(/{{\s*(\w+)\s*}}/g, (_, name) => values[name]));
           }
         }

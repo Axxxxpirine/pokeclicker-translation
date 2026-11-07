@@ -2,7 +2,7 @@
 
 Traduction indépendante de PokéClicker, en commençant par le français. Dépôt privé pendant le développement, destiné à être partagé en open source. Projet non affilié aux mainteneurs du jeu.
 
-## État : préversion 0.2.0
+## État : préversion 0.3.0
 
 Le script autonome se trouve dans `dist/pokeclicker-translation.user.js`. Il embarque ses dictionnaires et ne contacte aucun service de traduction. La première cible est le navigateur avec Tampermonkey. Le client bureau reste à valider.
 
@@ -14,9 +14,12 @@ Le script autonome se trouve dans `dist/pokeclicker-translation.user.js`. Il emb
 | Interface | 1 188 | 1 188 |
 | Réglages | 274 | 274 |
 | Journal | 45 | 45 |
-| Total | 6 310 | 6 310 |
+| Compléments propres au script | 40 | 40 |
+| Total | 6 350 | 6 350 |
 
-Ces chiffres mesurent les dictionnaires récupérés, **pas un pourcentage de traduction du jeu**. Les objets, lieux, combats, succès et autres textes non exportés ne sont pas tous recensés. La présence d'une traduction ne prouve pas son affichage sur tous les écrans. La comparaison avec la version publiée 0.10.26 ne détecte aucune clé anglaise nouvelle ou modifiée dans les quatre dictionnaires natifs.
+Ces chiffres mesurent les dictionnaires et modèles de phrases disponibles, **pas un pourcentage de traduction du jeu**. Les objets, lieux, combats, succès et autres textes non exportés ne sont pas tous recensés. La présence d'une traduction ne prouve pas son affichage sur tous les écrans. La comparaison avec la version publiée 0.10.26 ne détecte aucune clé anglaise nouvelle ou modifiée dans les quatre dictionnaires natifs.
+
+La version 0.3.0 ajoute les phrases des **18 familles de quêtes répétables**, la carte et les voyages par région, et harmonise les titres Monnaies et Objets du Prof. Chen. Les descriptions affichées utilisent une liste fermée de noms recensés dans la version publiée, avec conservation des nombres. Les objets de quête et leurs identifiants restent inchangés. Les noms propres de nombreux lieux, personnages et baies restent anglais pour le moment. Les boutons de quête disposent de la largeur nécessaire aux libellés français.
 
 ## Essayer la préversion
 
@@ -34,10 +37,10 @@ Le démarrage réel avec **Zen 1.24b et Tampermonkey 5.5.0** a été vérifié l
 ## Fonctionnement et limites
 
 - Le raccord au système natif traduit les appels connus et conserve le comportement natif pour les clés inconnues. Il ne renomme aucun identifiant de Pokémon, ville, objet ou quête.
-- Le complément d'affichage remplace des textes complets reconnus et certains compteurs numériques. Les correspondances ambiguës restent dans leur langue d'origine.
+- Le complément d'affichage remplace des textes complets reconnus et certains compteurs numériques. Les modèles des quêtes acceptent seulement les noms recensés dans leurs vocabulaires explicites. Les correspondances ambiguës restent dans leur langue d'origine.
 - Les paragraphes HTML sont découpés à la construction seulement lorsque leur structure anglaise et française correspond. Les éléments, liens et actions du jeu restent en place.
 - Les champs de saisie, noms de dresseur et options sans valeur explicite sont préservés. Un contenu tiers peut demander une exclusion supplémentaire avec `data-pct-ignore`.
-- Les textes avec des variables arbitraires, les changements de structure HTML, certains textes riches et les textes absents des dictionnaires restent partiels ou non traduits.
+- Les textes avec des variables arbitraires hors des vocabulaires explicites, les changements de structure HTML, certains textes riches et les textes absents des dictionnaires restent partiels ou non traduits.
 - Les traductions existantes demandent encore une relecture linguistique, notamment pour harmoniser le tutoiement et le vocabulaire.
 - Une mise à jour du jeu demande un nouveau contrôle. La compatibilité avec tous les scripts tiers n'est pas encore établie.
 
@@ -58,17 +61,20 @@ Vérification sur le vrai jeu dans un navigateur isolé :
 npx playwright install chromium --only-shell
 npm run test:browser
 npm run test:compatibility
+npm run test:quests
 ```
 
 Le test navigateur lit le dépôt `../pokeclicker` au commit fixé dans `upstream/provenance.json`, sans modifier sa branche. Un autre emplacement peut être indiqué par `POKECLICKER_SOURCE`. Il lance son propre serveur sur localhost et vérifie le démarrage, le tutoriel, les traductions natives, le basculement de langue et les clés de villes. Les captures temporaires restent dans `.verification/`, ignoré par Git.
 
 Le test de compatibilité lit les six scripts dans `../../Pokeclicker-Scripts-NEW`, ou dans le chemin indiqué par `POKECLICKER_SCRIPTS`. Il prépare une partie synthétique locale avec trois Pokémon et deux quêtes, puis laisse les vraies automatisations combattre, terminer et encaisser la première quête. Aucune progression ni sauvegarde personnelle n'est utilisée. Ces scripts externes ne sont pas intégrés au paquet de traduction.
 
+Le test des quêtes instancie les 18 classes natives dans une partie locale jetable, contrôle leur rendu, le retour à l’anglais, les données sérialisées et le bouton d’abandon natif dans un panneau étroit. Il ne déclenche aucune quête dans une sauvegarde personnelle.
+
 ## Traductions et provenance
 
-- `locales/en` et `locales/fr` contiennent les instantanés importés.
+- `locales/en` et `locales/fr` contiennent les instantanés importés, ainsi que `extra.json`, nos compléments rédigés pour le script.
 - `upstream/provenance.json` conserve les branches et commits d'origine.
-- `upstream/en` contient la référence anglaise des quatre espaces natifs du jeu publié.
+- `upstream/en` contient la référence anglaise des quatre espaces natifs du jeu publié. `upstream/display-terms.json` recense les noms autorisés et le commit du jeu utilisé, `display/terms-fr.json` leurs adaptations françaises. Un nom absent des adaptations garde sa forme d’origine.
 - `overrides` contient les corrections locales sous forme de clés i18next plates. Elles rétablissent le nom du Pokémon dans la notification de capture d'un Pokémon obscur et complètent les 92 réglages manquants, dont 37 renvois aux libellés partagés des notifications de bureau.
 - `src` contient le moteur et le raccord au jeu. `tools` contient l'import, l'audit et la construction.
 

@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { readResources } from '../tools/resources.mjs';
+import { readResources, displayCatalog } from '../tools/resources.mjs';
 import { buildCatalog, createTranslator, flatten } from '../src/catalog.mjs';
 import ko from 'knockout';
 import { installBridge } from '../src/bridge.mjs';
@@ -28,4 +28,19 @@ test('every settings label is available in French and desktop notifications reso
   }
   assert.equal(native.get('showFarmModule', 'settings')(), 'Afficher la ferme sur l’écran principal');
   assert.equal(native.get('sound.muted', 'settings')(), 'Couper tous les sons');
+});
+
+test('released repeatable quest phrases render numbers and known names while unknown names remain unchanged', () => {
+  const { translate } = createTranslator(displayCatalog(readResources()));
+  const cases = [
+    ['Use 378 Great Balls.', 'Utilise 378 Super Balls.'],
+    ['Clear 158 Stages in the Battle Frontier.', 'Termine 158 étapes à la Zone de Combat.'],
+    ['Defeat Elite Drake in Hoenn 11 times.', 'Bats Drake du Conseil 4 (Hoenn) 11 fois.'],
+    ['Capture or hatch 1,250 Fire-type Pokémon.', 'Capture ou fais éclore 1,250 Pokémon de type Feu.'],
+    ['Harvest 151 Rawst Berries at the farm.', 'Récolte 151 baies Rawst à la ferme.'],
+    ['Town Map (Hoenn)', 'Carte de Hoenn'],
+  ];
+  for (const [en, fr] of cases) assert.equal(translate(en), fr, en);
+  assert.equal(translate('Use 8 Unknown Balls.'), undefined);
+  assert.equal(translate('Defeat Invented boss in Hoenn 11 times.'), undefined);
 });
