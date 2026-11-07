@@ -30,3 +30,21 @@ test('native translation resolves nested Pokémon names and leaves internal keys
   assert.equal(page.App.translation.get(key, 'questlines')(), 'Capture Bulbizarre');
   assert.equal(key, 'Catch.123');
 });
+
+test('text bridge translates trusted NPC markup, retains native escaping and switches reactively', async () => {
+  const { installTextBridge } = await import('../src/bridge.mjs');
+  const enabled = ko.observable(true);
+  const merger = {mergeText(text) {return text.replace('$playername$', '&lt;Joey&gt;');}};
+  const original = merger.mergeText;
+  const bridge = installTextBridge({TextMerger:merger}, text => text === 'Hello $playername$!' ? 'Bonjour $playername$ !' : undefined, enabled);
+  const result = ko.pureComputed(() => merger.mergeText('Hello $playername$!'));
+  const subscription = result.subscribe(() => {});
+  assert.equal(result(), 'Bonjour &lt;Joey&gt; !');
+  enabled(false);
+  assert.equal(result(), 'Hello &lt;Joey&gt;!');
+  assert.equal(merger.mergeText('Unknown'), 'Unknown');
+  enabled(true);
+  assert.equal(result(), 'Bonjour &lt;Joey&gt; !');
+  subscription.dispose(); bridge.restore();
+  assert.equal(merger.mergeText, original);
+});

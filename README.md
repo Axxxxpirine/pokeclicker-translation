@@ -1,50 +1,52 @@
 # PokéClicker Translation
 
-Traduction indépendante de PokéClicker, en commençant par le français. Dépôt privé pendant le développement, destiné à être partagé en open source. Projet non affilié aux mainteneurs du jeu.
+Traduction française indépendante de PokéClicker. Projet personnel non affilié aux mainteneurs du jeu, privé pendant le développement et destiné à être partagé en open source.
 
-## État : préversion 0.3.0
+## Version 0.4.0
 
-Le script autonome se trouve dans `dist/pokeclicker-translation.user.js`. Il embarque ses dictionnaires et ne contacte aucun service de traduction. La première cible est le navigateur avec Tampermonkey. Le client bureau reste à valider.
+Le script autonome est `dist/pokeclicker-translation.user.js`. Il embarque tous ses dictionnaires et ne contacte aucun service de traduction. Cette version vise le jeu publié **0.10.26**, fixé dans `upstream/provenance.json`, dans un navigateur avec Tampermonkey.
 
-| Dictionnaire | Textes français disponibles | Textes anglais recensés |
-|---|---:|---:|
-| Pokémon | 1 762 | 1 762 |
-| Dialogues des PNJ | 2 091 | 2 091 |
-| Quêtes scénarisées | 950 | 950 |
-| Interface | 1 188 | 1 188 |
-| Réglages | 274 | 274 |
-| Journal | 45 | 45 |
-| Compléments propres au script | 40 | 40 |
-| Total | 6 350 | 6 350 |
+### Couverture
 
-Ces chiffres mesurent les dictionnaires et modèles de phrases disponibles, **pas un pourcentage de traduction du jeu**. Les objets, lieux, combats, succès et autres textes non exportés ne sont pas tous recensés. La présence d'une traduction ne prouve pas son affichage sur tous les écrans. La comparaison avec la version publiée 0.10.26 ne détecte aucune clé anglaise nouvelle ou modifiée dans les quatre dictionnaires natifs.
+Les 14 dictionnaires contiennent **16 074 entrées françaises sur 16 074 clés anglaises recensées**, sans variable d’interpolation manquante. Ce total comprend des variantes et des doublons utiles au rendu. Il ne constitue pas un pourcentage de toutes les situations possibles à l’écran.
 
-La version 0.3.0 ajoute les phrases des **18 familles de quêtes répétables**, la carte et les voyages par région, et harmonise les titres Monnaies et Objets du Prof. Chen. Les descriptions affichées utilisent une liste fermée de noms recensés dans la version publiée, avec conservation des nombres. Les objets de quête et leurs identifiants restent inchangés. Les noms propres de nombreux lieux, personnages et baies restent anglais pour le moment. Les boutons de quête disposent de la largeur nécessaire aux libellés français.
+| Famille | Couverture du corpus publié contrôlée |
+|---|---:|
+| Noms et formes de Pokémon | 1 762 entrées natives |
+| PNJ, professeurs et assistants | 634 personnages inventoriés |
+| Arènes | 165 arènes examinées, 136 messages de victoire non vides |
+| Combats temporaires | 454 combats examinés |
+| Objets | 511 descriptions, 17 objets clés, 12 objets du Prof. Chen |
+| Baies | 70 baies, 74 indices de mutations, 57 cas Enigma |
+| Succès | 2 304 succès, dont les 28 secrets |
+| Conditions de déblocage | Plus de 13 000 occurrences de conditions dans le modèle du jeu |
+| Quêtes répétables | Les 18 classes natives |
+| Interface | Menus, FAQ, aides, réglages, défis, événements et phases lunaires |
 
-## Essayer la préversion
+Les noms de lieux, champions, badges, baies et objets ont été complétés. Les références de nomenclature incluent les tables bilingues `location_names.csv` et `item_names.csv` de [PokeAPI](https://github.com/PokeAPI/pokeapi/tree/master/data/v2/csv), avec vérification des homonymes et adaptations des lieux propres à PokéClicker.
 
-1. Sauvegarder sa partie et ses scripts Tampermonkey avant un essai personnel.
-2. Ouvrir le tableau de bord Tampermonkey, créer un script et remplacer son contenu par le fichier complet `dist/pokeclicker-translation.user.js`.
-3. Enregistrer, puis recharger PokéClicker.
-4. Utiliser le bouton **FR ✓** en bas à droite pour activer ou désactiver la traduction.
+Les tests de navigateur vérifient dix panneaux réels ainsi que le démarrage, les dialogues, les quêtes et la coexistence avec six automatisations. Les inventaires contrôlent aussi les données des régions avancées qui ne sont pas accessibles dans une partie neuve. Cela ne remplace pas une partie complète ni une relecture humaine exhaustive du style.
 
-Le bouton conserve uniquement sa propre préférence. Désactiver le userscript puis recharger retire également la traduction. La langue native du jeu est conservée, donc l'affichage désactivé suit ce réglage. La préversion privée n'a pas de mise à jour automatique.
+### Installer
 
-La coexistence avec Enhanced Auto Clicker 3.6.6, Auto Navigation 1.1.3, AutoQuest 1.1.10, Auto Hatchery 3.3.4, Auto Mine 3.2.4 et Auto Farmer 1.9.6 est vérifiée sur Chromium avec les sources réelles des scripts. Dans les deux ordres de chargement, AutoQuest termine une quête native de test et encaisse sa récompense. Les valeurs des commandes et les données de planification restent identiques après changement de langue. Les actions de ferme, de mine et de pension ne sont pas exercées par ce scénario. Cela ne valide pas encore toutes les régions, les activités parallèles ni une longue partie.
+1. Sauvegarder sa partie et ses scripts Tampermonkey avant de remplacer la version installée.
+2. Ouvrir le script **PokéClicker Translation — Français** dans Tampermonkey et remplacer son contenu par le fichier complet `dist/pokeclicker-translation.user.js`.
+3. Enregistrer et recharger PokéClicker.
+4. Le bouton **FR ✓** en bas à droite active ou désactive la traduction.
 
-Le démarrage réel avec **Zen 1.24b et Tampermonkey 5.5.0** a été vérifié le 7 novembre 2026 : installation du seul script après sauvegarde des scripts existants, rechargement du jeu, reprise d’une sauvegarde avancée et basculement FR. Le raccord natif est actif, un seul bouton FR est présent, Auto Click et Auto Hatch continuent avec leurs réglages, AutoQuest reste OFF. Il s’agit d’un essai de fonctionnement court, pas d’une validation de toutes les activités. Le profil vierge automatisé de Zen rencontre encore une erreur interne Tampermonkey, absente de cet essai personnel. Les tests Chromium ci-dessus chargent les sources directement et ne simulent pas toute l’extension.
+Le bouton ne conserve que sa propre préférence. Désactiver le userscript puis recharger retire également la traduction. La langue native du jeu est conservée. Cette version privée n’a pas d’URL de mise à jour automatique.
 
-## Fonctionnement et limites
+## Fonctionnement
 
-- Le raccord au système natif traduit les appels connus et conserve le comportement natif pour les clés inconnues. Il ne renomme aucun identifiant de Pokémon, ville, objet ou quête.
-- Le complément d'affichage remplace des textes complets reconnus et certains compteurs numériques. Les modèles des quêtes acceptent seulement les noms recensés dans leurs vocabulaires explicites. Les correspondances ambiguës restent dans leur langue d'origine.
-- Les paragraphes HTML sont découpés à la construction seulement lorsque leur structure anglaise et française correspond. Les éléments, liens et actions du jeu restent en place.
-- Les champs de saisie, noms de dresseur et options sans valeur explicite sont préservés. Un contenu tiers peut demander une exclusion supplémentaire avec `data-pct-ignore`.
-- Les textes avec des variables arbitraires hors des vocabulaires explicites, les changements de structure HTML, certains textes riches et les textes absents des dictionnaires restent partiels ou non traduits.
-- Les traductions existantes demandent encore une relecture linguistique, notamment pour harmoniser le tutoiement et le vocabulaire.
-- Une mise à jour du jeu demande un nouveau contrôle. La compatibilité avec tous les scripts tiers n'est pas encore établie.
+- Le raccord i18next traduit les appels natifs connus et conserve leur comportement pour les clés inconnues.
+- Le raccord `TextMerger` traduit les lignes de dialogue complètes avant la substitution et l’échappement natifs du nom du joueur. Les tableaux de dialogues, identifiants et sauvegardes restent inchangés.
+- Le complément d’affichage traduit les textes complets, les fragments HTML alignés et les attributs d’aide. Il conserve les éléments, liens et actions.
+- Les noms variables proviennent de vocabulaires fermés. Un parcours par préfixes évite les expressions régulières géantes. Les captures numériques, durées et combinaisons de conditions ont des limites de travail explicites.
+- Les homonymes, notamment les types, badges et certaines Poké Balls, utilisent leur contexte d’affichage. Les fragments servant à composer les noms de Pokémon ne sont pas appliqués seuls aux libellés de l’interface.
+- Les options sans attribut `value` conservent leur valeur originale pendant la traduction. Les mises à jour natives et le retour à l’anglais sont couverts par des tests avec les vrais bindings Knockout.
+- Les champs de saisie, noms de dresseur, scripts, éditeurs et éléments marqués `data-pct-ignore` sont préservés. Un contenu tiers inconnu conserve son affichage d’origine.
 
-## Développement
+## Vérifier et reconstruire
 
 Node.js 22 ou plus récent.
 
@@ -53,46 +55,46 @@ npm ci
 npm test
 npm run audit
 npm run build
-```
-
-Vérification sur le vrai jeu dans un navigateur isolé :
-
-```sh
 npx playwright install chromium --only-shell
 npm run test:browser
-npm run test:compatibility
+npm run test:coverage
 npm run test:quests
+npm run test:dialogues
+npm run test:requirements
+npm run test:gameplay
+npm run test:compatibility
 ```
 
-Le test navigateur lit le dépôt `../pokeclicker` au commit fixé dans `upstream/provenance.json`, sans modifier sa branche. Un autre emplacement peut être indiqué par `POKECLICKER_SOURCE`. Il lance son propre serveur sur localhost et vérifie le démarrage, le tutoriel, les traductions natives, le basculement de langue et les clés de villes. Les captures temporaires restent dans `.verification/`, ignoré par Git.
+Tous les essais utilisent des parties jetables sur localhost. Le jeu est lu depuis les objets Git du commit fixé, sans changer sa branche, dans `../pokeclicker` ou `POKECLICKER_SOURCE`. Les sorties temporaires sont placées dans `.verification/`, ignoré par Git.
 
-Le test de compatibilité lit les six scripts dans `../../Pokeclicker-Scripts-NEW`, ou dans le chemin indiqué par `POKECLICKER_SCRIPTS`. Il prépare une partie synthétique locale avec trois Pokémon et deux quêtes, puis laisse les vraies automatisations combattre, terminer et encaisser la première quête. Aucune progression ni sauvegarde personnelle n'est utilisée. Ces scripts externes ne sont pas intégrés au paquet de traduction.
+Le scénario de compatibilité charge les vraies sources d’Enhanced Auto Clicker 3.6.6, Auto Navigation 1.1.3, AutoQuest 1.1.10, Auto Hatchery 3.3.4, Auto Mine 3.2.4 et Auto Farmer 1.9.6 depuis `../../Pokeclicker-Scripts-NEW` ou `POKECLICKER_SCRIPTS`. Dans les deux ordres de chargement, AutoQuest termine une quête native et encaisse sa récompense. Les commandes et données de planification restent identiques après le changement de langue. Ce scénario ne simule pas toute l’extension Tampermonkey et n’exerce pas toutes les actions de ferme, mine et pension.
 
-Le test des quêtes instancie les 18 classes natives dans une partie locale jetable, contrôle leur rendu, le retour à l’anglais, les données sérialisées et le bouton d’abandon natif dans un panneau étroit. Il ne déclenche aucune quête dans une sauvegarde personnelle.
+## Maintenance des dictionnaires
 
-## Traductions et provenance
+- `locales/en` et `locales/fr` contiennent les traductions importées et les compléments du script.
+- `overrides/fr` conserve les corrections des instantanés importés.
+- `upstream/en` contient les quatre espaces anglais natifs de référence.
+- `upstream/display-terms.json`, `display/terms-fr.json` et `display/requirement-terms-fr.json` définissent les vocabulaires des phrases variables et les variantes d’identifiants réellement utilisées dans les conditions.
+- `src` contient le moteur. `tools` contient l’import, la construction, les inventaires et les vérifications.
 
-- `locales/en` et `locales/fr` contiennent les instantanés importés, ainsi que `extra.json`, nos compléments rédigés pour le script.
-- `upstream/provenance.json` conserve les branches et commits d'origine.
-- `upstream/en` contient la référence anglaise des quatre espaces natifs du jeu publié. `upstream/display-terms.json` recense les noms autorisés et le commit du jeu utilisé, `display/terms-fr.json` leurs adaptations françaises. Un nom absent des adaptations garde sa forme d’origine.
-- `overrides` contient les corrections locales sous forme de clés i18next plates. Elles rétablissent le nom du Pokémon dans la notification de capture d'un Pokémon obscur et complètent les 92 réglages manquants, dont 37 renvois aux libellés partagés des notifications de bureau.
-- `src` contient le moteur et le raccord au jeu. `tools` contient l'import, l'audit et la construction.
-
-L'import est une opération de maintenance : il remplace les instantanés de `locales` et `upstream`, mais conserve `overrides`. Pour réimporter depuis les branches de travail récupérées :
+Réimporter les six dictionnaires historiques depuis les branches récupérées :
 
 ```sh
 node tools/import-translations.mjs ../pokeclicker-translations ../pokeclicker
 ```
 
-Les branches `npc-dialog`, `fr-questlines` et `fr-ui` sont nécessaires. Les dépendances aux anciens dépôts concernent seulement la réimportation et le test du jeu, pas la construction du script ni son installation.
+Cette opération remplace les six instantanés importés et leur provenance, en conservant les autres dictionnaires et les corrections. Les branches `npc-dialog`, `fr-questlines` et `fr-ui` sont nécessaires.
 
-## Suite prévue
+Reconstruire le corpus d’objets, succès et notifications depuis la version fixée :
 
-1. Étendre les vérifications aux fenêtres principales, régions avancées et activités parallèles des automatisations.
-2. Compléter les adaptations d'affichage manquantes et relire les traductions récupérées.
-3. Étendre aux lieux, objets, arènes et autres systèmes, avec un comptage distinct des textes traduits, raccordés et vérifiés.
-4. Préparer les contributions et les versions publiques, puis tester le client bureau.
+```sh
+node tools/gameplay-inventory.mjs
+node tools/gameplay-build.mjs
+node tools/gameplay-check.mjs
+```
+
+`npm run import:terms` actualise le vocabulaire des quêtes. Relire ensuite les noms français avant de reconstruire. Une nouvelle version du jeu exige un nouvel inventaire et le passage des vérifications. Les textes ajoutés par d’autres scripts et les nouvelles versions ne sont pas couverts automatiquement.
 
 ## Licence et crédits
 
-Le nouveau code est sous licence MIT. Les dictionnaires issus de [pokeclicker-translations](https://github.com/pokeclicker/pokeclicker-translations) conservent leur notice MIT dans `licenses/pokeclicker-translations-MIT.txt`. Le script embarque également la notice MIT d'i18next. Les illustrations et le jeu lui-même ne sont pas distribués dans ce dépôt.
+Le nouveau code est sous licence MIT. Les dictionnaires issus de [pokeclicker-translations](https://github.com/pokeclicker/pokeclicker-translations) conservent leur notice MIT dans `licenses/pokeclicker-translations-MIT.txt`. Le script embarque également la notice MIT d’i18next. Les illustrations et le jeu lui-même ne sont pas distribués dans ce dépôt.

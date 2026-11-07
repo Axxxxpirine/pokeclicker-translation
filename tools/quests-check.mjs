@@ -42,7 +42,7 @@ try {
   assert.equal(translated.length, 18);
   translated.forEach((text, i) => assert.notEqual(text, original[i].description, original[i].description));
   assert.equal(translated[2], 'Capture ou fais éclore 17 Pokémon de type Feu.');
-  assert.equal(translated[13], 'Bats Drake du Conseil 4 (Hoenn) 11 fois.');
+  assert.equal(translated[13], 'Bats Aragon du Conseil 4 (Hoenn) 11 fois.');
   const snapshot = () => page.evaluate(() => App.game.quests.questList().map(q => ({ description: q.description, serialized: q.toJSON() })));
   assert.deepEqual(await snapshot(), original, 'translated rendering must not change quest descriptions or serialized data');
   const layout = await page.locator('#dailyQuestDisplayBody .col-2 button').first().evaluate(el => { const canvas = document.createElement('canvas'), ctx = canvas.getContext('2d'); ctx.font = getComputedStyle(el).font; return { naturalWidth: ctx.measureText(el.textContent.trim()).width, text: el.textContent.trim(), height: el.clientHeight, lineHeight: parseFloat(getComputedStyle(el).lineHeight), width: el.clientWidth, content: el.scrollWidth, row: el.parentElement.parentElement.getBoundingClientRect().width, extent: el.getBoundingClientRect().right - el.parentElement.parentElement.getBoundingClientRect().left }; });

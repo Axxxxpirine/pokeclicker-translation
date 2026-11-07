@@ -35,12 +35,20 @@ test('released repeatable quest phrases render numbers and known names while unk
   const cases = [
     ['Use 378 Great Balls.', 'Utilise 378 Super Balls.'],
     ['Clear 158 Stages in the Battle Frontier.', 'Termine 158 étapes à la Zone de Combat.'],
-    ['Defeat Elite Drake in Hoenn 11 times.', 'Bats Drake du Conseil 4 (Hoenn) 11 fois.'],
+    ['Defeat Elite Drake in Hoenn 11 times.', 'Bats Aragon du Conseil 4 (Hoenn) 11 fois.'],
     ['Capture or hatch 1,250 Fire-type Pokémon.', 'Capture ou fais éclore 1,250 Pokémon de type Feu.'],
-    ['Harvest 151 Rawst Berries at the farm.', 'Récolte 151 baies Rawst à la ferme.'],
+    ['Harvest 151 Rawst Berries at the farm.', 'Récolte 151 baies Fraive à la ferme.'],
     ['Town Map (Hoenn)', 'Carte de Hoenn'],
   ];
   for (const [en, fr] of cases) assert.equal(translate(en), fr, en);
   assert.equal(translate('Use 8 Unknown Balls.'), undefined);
   assert.equal(translate('Defeat Invented boss in Hoenn 11 times.'), undefined);
+});
+
+test('dynamic UI translates names and duration values from finite game vocabularies', () => {
+  const {translate} = createTranslator(displayCatalog(readResources()));
+  assert.equal(translate('Fire gems'), 'Joyaux Feu');
+  assert.match(translate('00:23:45 until ripe') ?? '', /00:23:45/);
+  assert.doesNotMatch(translate('00:23:45 until ripe') ?? 'until ripe', /until ripe/);
+  assert.equal(translate('Unknown-type gems'), undefined);
 });

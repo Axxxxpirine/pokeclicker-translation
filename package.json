@@ -1,6 +1,6 @@
 {
   "name": "pokeclicker-translation",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "private": true,
   "description": "Independent PokéClicker translation userscript, starting with French",
   "type": "module",
@@ -15,7 +15,11 @@
     "test:browser": "node tools/browser-check.mjs",
     "test:compatibility": "node tools/compatibility-check.mjs",
     "test:quests": "node tools/quests-check.mjs",
-    "import:terms": "node tools/import-display-terms.mjs"
+    "import:terms": "node tools/import-display-terms.mjs",
+    "test:coverage": "node tools/coverage-check.mjs",
+    "test:dialogues": "node tools/dialogue-check.mjs",
+    "test:gameplay": "node tools/gameplay-inventory.mjs && node tools/gameplay-check.mjs",
+    "test:requirements": "node tools/requirements-check.mjs"
   },
   "dependencies": {
     "i18next": "21.10.0"

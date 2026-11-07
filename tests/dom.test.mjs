@@ -75,9 +75,37 @@ test('preserves implicit option values and player-authored trainer names', async
   await settle();
   const options = dom.window.document.querySelectorAll('option');
   assert.equal(options[0].value, 'Buy');
-  assert.equal(options[0].textContent, 'Buy');
+  assert.equal(options[0].textContent, 'Acheter');
   assert.equal(options[1].value, 'settings');
   assert.equal(options[1].textContent, 'Réglages');
   assert.equal(dom.window.document.querySelector('.trainer-name').textContent, 'Buy');
+  control.stop(); dom.window.close();
+});
+
+test('translates known help text in code but preserves unknown redemption codes', () => {
+  const {dom, control} = setup('<code>Settings</code><code>THE-GREATEST-POKEBALL</code>');
+  assert.equal(dom.window.document.querySelector('code').textContent, 'Réglages');
+  assert.equal(dom.window.document.querySelectorAll('code')[1].textContent, 'THE-GREATEST-POKEBALL');
+  control.stop(); dom.window.close();
+});
+
+
+test('implicit option values follow native changes and restore without losing selection', async () => {
+  const {dom, control} = setup('<select><option>Buy</option><option>Other</option></select>');
+  const select = dom.window.document.querySelector('select'), option = select.options[0];
+  assert.equal(select.value, 'Buy');
+  assert.equal(option.textContent, 'Acheter');
+  option.textContent = 'Settings';
+  await settle();
+  assert.equal(option.textContent, 'Réglages');
+  assert.equal(select.value, 'Settings');
+  control.setEnabled(false);
+  assert.equal(option.textContent, 'Settings');
+  assert.equal(option.hasAttribute('value'), false);
+  assert.equal(select.value, 'Settings');
+  control.setEnabled(true);
+  option.setAttribute('value', 'native-explicit-value');
+  control.setEnabled(false);
+  assert.equal(option.value, 'native-explicit-value');
   control.stop(); dom.window.close();
 });

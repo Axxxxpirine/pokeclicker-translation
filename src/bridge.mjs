@@ -1,6 +1,19 @@
 import i18next from 'i18next';
 import { flatten } from './catalog.mjs';
 
+// Translate trusted complete source lines before the game substitutes (and escapes)
+// the trainer's name. NPC data and save keys remain untouched.
+export function installTextBridge(page, translate, enabled) {
+  const merger = page.TextMerger;
+  if (typeof merger?.mergeText !== 'function') return null;
+  const original = merger.mergeText;
+  function mergeText(text) {
+    return original.call(this, enabled() ? (translate(text) ?? text) : text);
+  }
+  merger.mergeText = mergeText;
+  return { restore() { if (merger.mergeText === mergeText) merger.mergeText = original; } };
+}
+
 export function installBridge(page, resources, enabled) {
   const native = page.App?.translation;
   if (typeof native?.get !== 'function' || !page.ko?.pureComputed) return null;

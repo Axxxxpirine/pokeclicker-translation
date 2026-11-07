@@ -20,4 +20,4 @@ console.table(rows);
 const catalog = displayCatalog(resources);
 const translator = createTranslator(catalog);
 console.log(JSON.stringify({ totalEnglish: rows.reduce((n, row) => n + row.english, 0), totalTranslated: rows.reduce((n, row) => n + row.translated, 0), displayExact: translator.exactCount, displayTemplates: translator.templateCount, namedDomains: Object.keys(catalog.domains).length, ambiguous: catalog.ambiguous.length, invalidVariables: catalog.invalid, richOrUnresolved: catalog.skipped.length, note: 'Dictionary coverage is not verified in-game coverage. Live comparison only covers native namespaces, not all game text.' }, null, 2));
-if (catalog.invalid.length) process.exitCode = 1;
+if (catalog.invalid.length || rows.some(row => row.missing)) process.exitCode = 1;

@@ -1,6 +1,6 @@
 import { createTranslator } from './catalog.mjs';
 import { mountTranslation } from './dom.mjs';
-import { installBridge } from './bridge.mjs';
+import { installBridge, installTextBridge } from './bridge.mjs';
 import { catalog, resources, version } from '../.verification/payload.mjs';
 
 const storageKey = 'pokeclicker-translation.enabled';
@@ -9,7 +9,8 @@ function start() {
   if (globalThis.PokeClickerTranslation || !document.body) return;
   let active = true;
   try { active = localStorage.getItem(storageKey) !== 'false'; } catch { /* Storage may be blocked. */ }
-  const display = mountTranslation(document, createTranslator(catalog).translate);
+  const { translate } = createTranslator(catalog);
+  const display = mountTranslation(document, translate);
   display.setEnabled(active);
   const style = document.createElement('style');
   style.id = 'pokeclicker-translation-layout';
@@ -25,7 +26,7 @@ function start() {
     }
   `;
   document.head.append(style);
-  let signal = null, bridge = null, attempts = 0;
+  let signal = null, bridge = null, textBridge = null, attempts = 0;
   const button = document.createElement('button');
   button.id = 'pokeclicker-translation-toggle';
   button.type = 'button';
@@ -55,6 +56,7 @@ function start() {
     if (app?.translation && globalThis.ko?.observable) {
       signal = globalThis.ko.observable(active);
       bridge = installBridge({ App: app, ko: globalThis.ko }, resources, signal);
+      textBridge = installTextBridge({ TextMerger: typeof TextMerger !== 'undefined' ? TextMerger : globalThis.TextMerger }, translate, signal);
       return true;
     }
     return false;
@@ -65,7 +67,7 @@ function start() {
   globalThis.PokeClickerTranslation = Object.freeze({
     version, setEnabled,
     get enabled() { return active; },
-    stats: () => ({ ...display.stats(), nativeBridge: Boolean(bridge), version }),
+    stats: () => ({ ...display.stats(), nativeBridge: Boolean(bridge), textBridge: Boolean(textBridge), version }),
   });
 }
 
