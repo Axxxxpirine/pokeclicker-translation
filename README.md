@@ -2,7 +2,7 @@
 
 Traduction indépendante de PokéClicker, en commençant par le français. Dépôt privé pendant le développement, destiné à être partagé en open source. Projet non affilié aux mainteneurs du jeu.
 
-## État : préversion 0.1.0
+## État : préversion 0.2.0
 
 Le script autonome se trouve dans `dist/pokeclicker-translation.user.js`. Il embarque ses dictionnaires et ne contacte aucun service de traduction. La première cible est le navigateur avec Tampermonkey. Le client bureau reste à valider.
 
@@ -12,9 +12,9 @@ Le script autonome se trouve dans `dist/pokeclicker-translation.user.js`. Il emb
 | Dialogues des PNJ | 2 091 | 2 091 |
 | Quêtes scénarisées | 950 | 950 |
 | Interface | 1 188 | 1 188 |
-| Réglages | 182 | 274 |
+| Réglages | 274 | 274 |
 | Journal | 45 | 45 |
-| Total | 6 218 | 6 310 |
+| Total | 6 310 | 6 310 |
 
 Ces chiffres mesurent les dictionnaires récupérés, **pas un pourcentage de traduction du jeu**. Les objets, lieux, combats, succès et autres textes non exportés ne sont pas tous recensés. La présence d'une traduction ne prouve pas son affichage sur tous les écrans. La comparaison avec la version publiée 0.10.26 ne détecte aucune clé anglaise nouvelle ou modifiée dans les quatre dictionnaires natifs.
 
@@ -26,6 +26,10 @@ Ces chiffres mesurent les dictionnaires récupérés, **pas un pourcentage de tr
 4. Utiliser le bouton **FR ✓** en bas à droite pour activer ou désactiver la traduction.
 
 Le bouton conserve uniquement sa propre préférence. Désactiver le userscript puis recharger retire également la traduction. La langue native du jeu est conservée, donc l'affichage désactivé suit ce réglage. La préversion privée n'a pas de mise à jour automatique.
+
+La coexistence avec Enhanced Auto Clicker 3.6.6, Auto Navigation 1.1.3, AutoQuest 1.1.10, Auto Hatchery 3.3.4, Auto Mine 3.2.4 et Auto Farmer 1.9.6 est vérifiée sur Chromium avec les sources réelles des scripts. Dans les deux ordres de chargement, AutoQuest termine une quête native de test et encaisse sa récompense. Les valeurs des commandes et les données de planification restent identiques après changement de langue. Les actions de ferme, de mine et de pension ne sont pas exercées par ce scénario. Cela ne valide pas encore toutes les régions, les activités parallèles ni une longue partie.
+
+Un essai dans un profil Zen 1.24b vierge confirme aussi le moteur et le basculement des réglages par injection directe. **Le lancement via Tampermonkey reste non validé** : dans ce profil automatisé, Tampermonkey 5.5.0 échoue dans son propre `content.js` avant de démarrer le userscript. Ce résultat ne permet pas de conclure pour un profil personnel. Les tests Chromium ci-dessus chargent les sources directement et ne simulent pas toute l’extension.
 
 ## Fonctionnement et limites
 
@@ -53,16 +57,19 @@ Vérification sur le vrai jeu dans un navigateur isolé :
 ```sh
 npx playwright install chromium --only-shell
 npm run test:browser
+npm run test:compatibility
 ```
 
 Le test navigateur lit le dépôt `../pokeclicker` au commit fixé dans `upstream/provenance.json`, sans modifier sa branche. Un autre emplacement peut être indiqué par `POKECLICKER_SOURCE`. Il lance son propre serveur sur localhost et vérifie le démarrage, le tutoriel, les traductions natives, le basculement de langue et les clés de villes. Les captures temporaires restent dans `.verification/`, ignoré par Git.
+
+Le test de compatibilité lit les six scripts dans `../../Pokeclicker-Scripts-NEW`, ou dans le chemin indiqué par `POKECLICKER_SCRIPTS`. Il prépare une partie synthétique locale avec trois Pokémon et deux quêtes, puis laisse les vraies automatisations combattre, terminer et encaisser la première quête. Aucune progression ni sauvegarde personnelle n'est utilisée. Ces scripts externes ne sont pas intégrés au paquet de traduction.
 
 ## Traductions et provenance
 
 - `locales/en` et `locales/fr` contiennent les instantanés importés.
 - `upstream/provenance.json` conserve les branches et commits d'origine.
 - `upstream/en` contient la référence anglaise des quatre espaces natifs du jeu publié.
-- `overrides` contient les corrections locales sous forme de clés i18next plates. La correction initiale rétablit le nom du Pokémon dans la notification de capture d'un Pokémon obscur.
+- `overrides` contient les corrections locales sous forme de clés i18next plates. Elles rétablissent le nom du Pokémon dans la notification de capture d'un Pokémon obscur et complètent les 92 réglages manquants, dont 37 renvois aux libellés partagés des notifications de bureau.
 - `src` contient le moteur et le raccord au jeu. `tools` contient l'import, l'audit et la construction.
 
 L'import est une opération de maintenance : il remplace les instantanés de `locales` et `upstream`, mais conserve `overrides`. Pour réimporter depuis les branches de travail récupérées :
@@ -74,6 +81,11 @@ node tools/import-translations.mjs ../pokeclicker-translations ../pokeclicker
 Les branches `npc-dialog`, `fr-questlines` et `fr-ui` sont nécessaires. Les dépendances aux anciens dépôts concernent seulement la réimportation et le test du jeu, pas la construction du script ni son installation.
 
 ## Suite prévue
+
+1. Étendre les vérifications aux fenêtres principales, régions avancées et activités parallèles des automatisations.
+2. Compléter les adaptations d'affichage manquantes et relire les traductions récupérées.
+3. Étendre aux lieux, objets, arènes et autres systèmes, avec un comptage distinct des textes traduits, raccordés et vérifiés.
+4. Préparer les contributions et les versions publiques, puis tester le client bureau.
 
 ## Licence et crédits
 

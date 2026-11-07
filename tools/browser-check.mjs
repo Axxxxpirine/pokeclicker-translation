@@ -1,26 +1,12 @@
-import { createServer } from 'node:http';
-import { execFileSync } from 'node:child_process';
-import { readFileSync, mkdirSync } from 'node:fs';
-import { resolve, extname } from 'node:path';
+import { mkdirSync } from 'node:fs';
+import { resolve } from 'node:path';
 import assert from 'node:assert/strict';
 import { chromium } from '@playwright/test';
 import { root } from './resources.mjs';
+import { serveRelease } from './game-server.mjs';
 
-// Serve the pinned, unmodified release directly from git. Never opens the user's profile/save.
-const game = resolve(process.env.POKECLICKER_SOURCE ?? resolve(root, '../pokeclicker'));
-const provenance = JSON.parse(readFileSync(resolve(root, 'upstream/provenance.json'), 'utf8'));
-const cache = new Map();
-const types = { '.html': 'text/html', '.js': 'application/javascript', '.json': 'application/json', '.css': 'text/css', '.png': 'image/png', '.svg': 'image/svg+xml', '.ttf': 'font/ttf' };
-const server = createServer((req, res) => {
-  let path = decodeURIComponent(new URL(req.url, 'http://localhost').pathname);
-  if (path === '/') path = '/index.html';
-  if (path.includes('..') || !/^\/[\w\s./()%+&'!,:=~@\-]+$/u.test(path)) { res.writeHead(400).end(); return; }
-  try {
-    if (!cache.has(path)) cache.set(path, execFileSync('git', ['-C', game, 'show', `${provenance.game.commit}:docs${path}`], { maxBuffer: 32 * 1024 * 1024, stdio: ['ignore', 'pipe', 'ignore'] }));
-    res.writeHead(200, { 'content-type': types[extname(path)] ?? 'application/octet-stream' }); res.end(cache.get(path));
-  } catch { res.writeHead(404).end(); }
-});
-await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
+const server = await serveRelease();
+const provenance = server.provenance;
 const browser = await chromium.launch({ headless: true });
 try {
   const context = await browser.newContext({ viewport: { width: 1440, height: 1000 }, locale: 'en-US' });
@@ -29,7 +15,7 @@ try {
   const page = await context.newPage();
   const errors = [];
   page.on('pageerror', error => errors.push(error.message));
-  await page.goto(`http://127.0.0.1:${server.address().port}/`, { waitUntil: 'load' });
+  await page.goto(server.origin + '/', { waitUntil: 'load' });
   await page.addScriptTag({ path: resolve(root, 'dist/pokeclicker-translation.user.js') });
   await page.waitForFunction(() => window.PokeClickerTranslation?.stats().nativeBridge, { timeout: 30000 });
   await page.waitForTimeout(750);
@@ -89,4 +75,4 @@ try {
   assert.deepEqual(errors, []);
   console.log(JSON.stringify({ release: provenance.game.version, ...before, checks: { ...result, tutorial, npcText, disabledAfterReload: !reloaded.enabled }, pageErrors: errors }, null, 2));
   await context.close();
-} finally { await browser.close(); await new Promise(resolve => server.close(resolve)); }
+} finally { await browser.close(); await server.close(); }
