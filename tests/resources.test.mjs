@@ -4,6 +4,7 @@ import { readResources, displayCatalog } from '../tools/resources.mjs';
 import { buildCatalog, createTranslator, flatten } from '../src/catalog.mjs';
 import ko from 'knockout';
 import { installBridge } from '../src/bridge.mjs';
+import { readFileSync } from 'node:fs';
 
 test('all shipped translations preserve source interpolation variables', () => {
   assert.deepEqual(buildCatalog(readResources()).invalid, []);
@@ -51,4 +52,39 @@ test('dynamic UI translates names and duration values from finite game vocabular
   assert.match(translate('00:23:45 until ripe') ?? '', /00:23:45/);
   assert.doesNotMatch(translate('00:23:45 until ripe') ?? 'until ripe', /until ripe/);
   assert.equal(translate('Unknown-type gems'), undefined);
+});
+
+test('reviewed official names survive competing native and display catalog entries', () => {
+  const review = JSON.parse(readFileSync(new URL('../upstream/nomenclature-review.json', import.meta.url)));
+  const {translate} = createTranslator(displayCatalog(readResources()));
+  for (const {en, fr} of review.corrections) assert.equal(translate(en) ?? en, fr, en);
+  assert.equal(translate('Route 134'), 'Chenal 134');
+  assert.equal(translate('Kanto Route 19'), 'Chenal 19 (Kanto)');
+  assert.equal(translate('Unova Route 19'), 'Route 19 (Unys)');
+  assert.equal(translate('Defeat the Deep Colosseum dungeon in Orre 11 times.'), 'Termine le donjon Colosseum de Targare (Rhode) 11 fois.');
+});
+
+test('native quest directions keep distinct French towns and dungeons after name review', () => {
+  const resources = readResources(), enabled = ko.observable(true);
+  const native = {get: key => ko.pureComputed(() => key)};
+  installBridge({ko, App:{translation:native}}, resources, enabled);
+  const cases = [
+    ['Recover the Precious Egg!.step 1.0176758969', 'Littorella', 'Bonaugure'],
+    ['Recover the Precious Egg!.step 22.0487619569', 'Féli-Cité', 'Littorella'],
+    ['A Beautiful World.step 3.2004913040', 'Roche-sur-Gliffe', 'Relifac-le-Haut'],
+    ['A Beautiful World.step 7.0372545423', 'Relifac-le-Haut', 'Roche-sur-Gliffe'],
+    ['A Beautiful World.step 18.1080266809', 'Caverne Gelée', 'Grotte Coda'],
+    ['A Beautiful World.step 19.1505915052', 'Flusselles', 'Auffrac-les-Congères'],
+    ['A Beautiful World.step 17.0136284020', 'La Frescale', 'Frimapic'],
+    ['Hollow Truth and Ideals.step 1.1956916657', 'Ondes-sur-Mer', 'Pavonnay'],
+    ['Hollow Truth and Ideals.step 10.1218186736', 'Entrelasque', 'Papeloa'],
+  ];
+  for (const [key,correct,incorrect] of cases) {
+    const value = native.get(key, 'questlines')();
+    assert.ok(value.includes(correct), `${key}: ${value}`);
+    assert.ok(!value.includes(incorrect), key);
+  }
+  assert.equal(native.get('Victory Road.displayName.1200551762', 'questlines')(), 'La voie du Maître');
+  enabled(false);
+  assert.equal(native.get(cases[0][0], 'questlines')(), cases[0][0]);
 });

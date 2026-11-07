@@ -2,13 +2,13 @@
 
 Traduction française indépendante de PokéClicker. Projet personnel non affilié aux mainteneurs du jeu, privé pendant le développement et destiné à être partagé en open source.
 
-## Version 0.4.0
+## Version 0.4.1
 
 Le script autonome est `dist/pokeclicker-translation.user.js`. Il embarque tous ses dictionnaires et ne contacte aucun service de traduction. Cette version vise le jeu publié **0.10.26**, fixé dans `upstream/provenance.json`, dans un navigateur avec Tampermonkey.
 
 ### Couverture
 
-Les 14 dictionnaires contiennent **16 074 entrées françaises sur 16 074 clés anglaises recensées**, sans variable d’interpolation manquante. Ce total comprend des variantes et des doublons utiles au rendu. Il ne constitue pas un pourcentage de toutes les situations possibles à l’écran.
+Les 14 dictionnaires contiennent **16 095 entrées françaises sur 16 095 clés anglaises recensées**, sans variable d’interpolation manquante. Ce total comprend des variantes et des doublons utiles au rendu. Il ne constitue pas un pourcentage de toutes les situations possibles à l’écran.
 
 | Famille | Couverture du corpus publié contrôlée |
 |---|---:|
@@ -24,6 +24,8 @@ Les 14 dictionnaires contiennent **16 074 entrées françaises sur 16 074 clés 
 | Interface | Menus, FAQ, aides, réglages, défis, événements et phases lunaires |
 
 Les noms de lieux, champions, badges, baies et objets ont été complétés. Les références de nomenclature incluent les tables bilingues `location_names.csv` et `item_names.csv` de [PokeAPI](https://github.com/PokeAPI/pokeapi/tree/master/data/v2/csv), avec vérification des homonymes et adaptations des lieux propres à PokéClicker.
+
+La révision 0.4.1 contrôle la nomenclature des lieux, donjons, routes et arènes de Kanto à Paldea, avec les Îles Sevii, Rhode, Hisui et Magicarpe Jump. Les références et exceptions sont conservées dans `upstream/nomenclature-review.json`. Elle harmonise aussi les mentions dans les quêtes, dialogues et succès, corrige les villes interverties et distingue les chenaux par région. Les noms français attestés sont conservés même lorsqu’ils paraissent anglais, comme **Shehroz Tower**. Les lieux fusionnés ou inventés par PokéClicker gardent des noms descriptifs, sans prétendre qu’ils sont officiels. Cette revue ne couvre pas exhaustivement chaque personnage secondaire ni chaque objet.
 
 Les tests de navigateur vérifient dix panneaux réels ainsi que le démarrage, les dialogues, les quêtes et la coexistence avec six automatisations. Les inventaires contrôlent aussi les données des régions avancées qui ne sont pas accessibles dans une partie neuve. Cela ne remplace pas une partie complète ni une relecture humaine exhaustive du style.
 

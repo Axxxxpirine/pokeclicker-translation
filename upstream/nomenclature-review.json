@@ -1,0 +1,306 @@
+{
+  "reviewedAt": "2026-11-07",
+  "scope": "Locations, dungeons, routes, gyms and related named characters across Kanto through Paldea, including Sevii, Rhode, Hisui and Magikarp Jump. Compared place labels with quest/dialogue mentions. Not an exhaustive review of every minor NPC or item.",
+  "policy": "Use attested French Pokémon names. Preserve English runtime keys and the English version history. Keep descriptive qualifiers for locations invented, merged or subdivided by Pokéclicker. Official historical variants are not necessarily translation errors.",
+  "corrections": [
+    {
+      "en": "Deep Colosseum",
+      "fr": "Colosseum de Targare",
+      "source": "https://www.pokepedia.fr/Colosseum_de_Targare"
+    },
+    {
+      "en": "Pyrite Cave",
+      "fr": "Cavernes de Pyrite",
+      "source": "https://www.pokepedia.fr/Cavernes_de_Pyrite"
+    },
+    {
+      "en": "Cipher Key Lair",
+      "fr": "Repaire Ombre",
+      "source": "https://www.pokepedia.fr/Repaire_Ombre"
+    },
+    {
+      "en": "Cipher Lab",
+      "fr": "Labo Ombre",
+      "source": "https://bulbapedia.bulbagarden.net/wiki/Cipher_Lab"
+    },
+    {
+      "en": "Relic Cave",
+      "fr": "Caverne Relique",
+      "source": "https://bulbapedia.bulbagarden.net/wiki/Relic_Cave"
+    },
+    {
+      "en": "Phenac Stadium",
+      "fr": "Colisée de Phénacit",
+      "source": "https://bulbapedia.bulbagarden.net/wiki/Phenac_Stadium"
+    },
+    {
+      "en": "Realgam Colosseum",
+      "fr": "Colosseum de Titanite",
+      "source": "https://bulbapedia.bulbagarden.net/wiki/Realgam_Colosseum"
+    },
+    {
+      "en": "Snagem Hideout",
+      "fr": "Repaire Team Snatch",
+      "source": "https://www.pokepedia.fr/Repaire_Team_Snatch"
+    },
+    {
+      "en": "Canyon Entrance",
+      "fr": "Entrée Canyon",
+      "source": "https://www.pokepedia.fr/Entr%C3%A9e_Canyon"
+    },
+    {
+      "en": "Five Isle Meadow",
+      "fr": "Pré de l’Île 5",
+      "source": "https://www.pokepedia.fr/Pr%C3%A9_de_l%27%C3%8Ele_5"
+    },
+    {
+      "en": "Celio",
+      "fr": "Ciléo",
+      "source": "https://www.pokepedia.fr/Cil%C3%A9o"
+    },
+    {
+      "en": "Dakim",
+      "fr": "Dakim",
+      "source": "https://www.pokepedia.fr/Dakim"
+    },
+    {
+      "en": "Cipher Admin Dakim",
+      "fr": "Admin Ombre Dakim",
+      "source": "https://www.pokepedia.fr/Dakim"
+    },
+    {
+      "en": "Cipher Admin Lovrina",
+      "fr": "Admin Ombre Angéline",
+      "source": "https://www.pokepedia.fr/Ang%C3%A9line"
+    },
+    {
+      "en": "Cipher Admin Snattle",
+      "fr": "Admin Ombre Vamper",
+      "source": "https://www.pokepedia.fr/Vamper"
+    },
+    {
+      "en": "Professor Krane",
+      "fr": "Professeur Syrus",
+      "source": "https://www.pokepedia.fr/Professeur_Syrus"
+    },
+    {
+      "en": "Dr. Kaminko",
+      "fr": "Dr Barjok",
+      "source": "https://www.pokepedia.fr/Dr_Barjok"
+    },
+    {
+      "en": "Chobin",
+      "fr": "Darius",
+      "source": "https://bulbapedia.bulbagarden.net/wiki/Chobin"
+    },
+    {
+      "en": "Willie",
+      "fr": "Billy",
+      "source": "https://bulbapedia.bulbagarden.net/wiki/Willie"
+    },
+    {
+      "en": "Mayor Es Cade",
+      "fr": "Maire Nestor",
+      "source": "https://bulbapedia.bulbagarden.net/wiki/Es_Cade"
+    },
+    {
+      "en": "Mayor Trest",
+      "fr": "Maire Regis",
+      "source": "https://bulbapedia.bulbagarden.net/wiki/Trest"
+    },
+    {
+      "en": "Fateen's Fortune Telling",
+      "fr": "La voyance de Mira",
+      "source": "https://bulbapedia.bulbagarden.net/wiki/Fateen"
+    },
+    {
+      "en": "Grandpa Eagun",
+      "fr": "Grand-père Adelbert",
+      "source": "https://www.pokepedia.fr/Adelbert"
+    },
+    {
+      "en": "Cipher Commander Exol",
+      "fr": "Chef Ombre Tiziano",
+      "source": "https://bulbapedia.bulbagarden.net/wiki/Exol"
+    },
+    {
+      "en": "Watch Evice Escape",
+      "fr": "Regarder Nosfrat s’enfuir",
+      "source": "https://www.pokepedia.fr/Nosfrat"
+    },
+    {
+      "en": "Mr. Verich",
+      "fr": "M. Krézus",
+      "source": "https://bulbapedia.bulbagarden.net/wiki/Mr._Verich"
+    },
+    {
+      "en": "Search the S. S. Libra",
+      "fr": "Fouiller le Libra",
+      "source": "https://www.pokepedia.fr/Rhode"
+    },
+    {
+      "en": "Doken",
+      "fr": "Tank",
+      "source": "https://www.pokepedia.fr/Immeuble_de_Pyrite"
+    },
+    {
+      "en": "Pikachu Valley",
+      "fr": "Plaine des Pikachu",
+      "source": "https://www.pokepedia.fr/Plaine_des_Pikachu"
+    },
+    {
+      "en": "White Hill Station",
+      "fr": "Gare de White Hill",
+      "source": "https://www.pokepedia.fr/Route_10_(Galar)"
+    },
+    {
+      "en": "Steamdrift Way",
+      "fr": "Sentier des Sources",
+      "source": "https://www.pokepedia.fr/Route_8_(Galar)"
+    },
+    {
+      "en": "Ginkgo Landing",
+      "fr": "Plage Ginkgo",
+      "source": "https://bulbapedia.bulbagarden.net/wiki/Ginkgo_Landing"
+    },
+    {
+      "en": "Clamberclaw Cliffs",
+      "fr": "Falaise Calade",
+      "source": "https://bulbapedia.bulbagarden.net/wiki/Clamberclaw_Cliffs"
+    },
+    {
+      "en": "Energy Plant",
+      "fr": "Salle du réacteur",
+      "source": "https://www.pokepedia.fr/Salle_du_r%C3%A9acteur"
+    },
+    {
+      "en": "Rose Tower",
+      "fr": "Shehroz Tower",
+      "source": "https://www.pokepedia.fr/Shehroz_Tower"
+    },
+    {
+      "en": "Trainers' School",
+      "fr": "École de Dresseurs",
+      "source": "https://bulbapedia.bulbagarden.net/wiki/Trainers%27_School_(Alola)"
+    },
+    {
+      "en": "Thrifty Megamart",
+      "fr": "Ancien site Bradley Prix",
+      "source": "https://www.pokepedia.fr/Ancien_site_Bradley_Prix"
+    },
+    {
+      "en": "Ancient Snowpoint Temple",
+      "fr": "Temple de Frimapic d’Hisui",
+      "source": "https://www.pokepedia.fr/Hisui"
+    },
+    {
+      "en": "Rock Tunnel",
+      "fr": "Grotte Sombre",
+      "source": "https://www.pokepedia.fr/Grotte_Sombre",
+      "note": "Modern official name. Grotte was official in earlier games."
+    },
+    {
+      "en": "Team Galactic Eterna Building",
+      "fr": "Centre Galaxie de Vestigion",
+      "source": "https://www.pokepedia.fr/Centre_Galaxie_de_Vestigion"
+    },
+    {
+      "en": "Professor Hastings",
+      "fr": "Professeur Pressand",
+      "source": "https://www.pokepedia.fr/Professeur_Pressand"
+    },
+    {
+      "en": "Assistant Branch Chief Wicke",
+      "fr": "Sous-directrice Vicky",
+      "source": "https://www.pokepedia.fr/Vicky"
+    },
+    {
+      "en": "Captain Phyco",
+      "fr": "Capitaine Cym",
+      "source": "https://www.pokepedia.fr/Cym"
+    },
+    {
+      "en": "Sordward & Shielbert",
+      "fr": "Jean-Fleuret et Jean-Targe",
+      "source": "https://www.pokepedia.fr/Jean-Fleuret"
+    },
+    {
+      "en": "Mina's Houseboat",
+      "fr": "Maison flottante d’Oléa",
+      "source": "https://www.pokepedia.fr/Ol%C3%A9a",
+      "note": "Descriptive Pokéclicker label. Not claimed to be an official standalone place name."
+    }
+  ],
+  "maritimeRoutes": {
+    "Kanto": [
+      19,
+      20,
+      21
+    ],
+    "Johto": [
+      40,
+      41
+    ],
+    "Hoenn": [
+      105,
+      106,
+      107,
+      108,
+      109,
+      122,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133,
+      134
+    ],
+    "Sinnoh": [
+      220,
+      223,
+      226,
+      230
+    ],
+    "Unova": [
+      17,
+      21
+    ]
+  },
+  "routeSource": "https://www.pokepedia.fr/Route",
+  "contextualPlaceCorrections": {
+    "Sandgem Town": "Littorella",
+    "Ambrette Town": "Roche-sur-Gliffe",
+    "Cyllage City": "Relifac-le-Haut",
+    "Frost Cavern": "Caverne Gelée",
+    "Anistar City": "Flusselles",
+    "Dendemille Town": "La Frescale",
+    "Virbank City": "Ondes-sur-Mer",
+    "Lacunosa Town": "Entrelasque",
+    "Giant Chasm": "Grotte Cyclopéenne",
+    "Iki Town": "Lili’i",
+    "Jubilife City": "Féli-Cité",
+    "Moor of Icirrus": "Tourbière Flocombe",
+    "Memorial Hill": "Colline Memento"
+  },
+  "contextSources": [
+    "https://raw.githubusercontent.com/PokeAPI/pokeapi/master/data/v2/csv/location_names.csv",
+    "https://www.pokepedia.fr/Littorella",
+    "https://www.pokepedia.fr/Caverne_Gel%C3%A9e",
+    "https://www.pokepedia.fr/Lili%27i",
+    "https://www.pokepedia.fr/F%C3%A9li-Cit%C3%A9",
+    "https://www.pokepedia.fr/Tourbi%C3%A8re_Flocombe",
+    "https://www.pokepedia.fr/Colline_Memento"
+  ],
+  "exceptions": [
+    "Area Zero Depths remains Profondeurs de la Zone Zéro. Its game content is not the DLC Abîme Zéro.",
+    "Naranjuva Academy is a Pokéclicker fusion, rendered Académie Orange-Raisin.",
+    "Victory Road is a location (Route Victoire) and a distinct Paldea storyline (La voie du Maître).",
+    "Names of Orange Islands in Sevii are from the anime, not official Sevii map locations.",
+    "Doken = Tank inferred from the matching Pyrite Building trainer team in French/English references."
+  ]
+}
