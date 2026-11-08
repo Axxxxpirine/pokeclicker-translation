@@ -1,0 +1,45 @@
+name: Erreur de traduction ou de fonctionnement
+description: Signaler un texte incorrect, manquant ou un problème avec la traduction.
+title: "[Bêta] "
+body:
+  - type: markdown
+    attributes:
+      value: "Merci pour votre retour. Ne joignez pas votre sauvegarde complète ni de données personnelles."
+  - type: input
+    id: versions
+    attributes:
+      label: Versions et navigateur
+      description: Version du script, de PokéClicker, du navigateur et de Tampermonkey.
+    validations:
+      required: true
+  - type: textarea
+    id: location
+    attributes:
+      label: Écran, lieu et étapes pour reproduire
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Résultat observé
+      description: Texte exact et capture recadrée si utile.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Résultat attendu ou correction proposée
+      description: Pour un nom officiel, ajoutez une référence si possible.
+  - type: dropdown
+    id: disabled
+    attributes:
+      label: Le problème persiste-t-il avec le bouton FR désactivé ?
+      options:
+        - Pas encore testé
+        - "Oui"
+        - "Non"
+  - type: textarea
+    id: scripts
+    attributes:
+      label: Autres scripts actifs
+      description: Indiquez les scripts susceptibles de modifier cet écran.

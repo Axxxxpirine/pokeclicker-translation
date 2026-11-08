@@ -18,3 +18,28 @@ jobs:
       - run: npm run audit
       - run: npm run build
       - run: git diff --exit-code -- dist/
+  browser:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, firefox]
+    env:
+      PCT_BROWSER: ${{ matrix.browser }}
+      POKECLICKER_SOURCE: ${{ github.workspace }}/.verification/game
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Fetch the pinned game release
+        run: |
+          mkdir -p "$POKECLICKER_SOURCE"
+          git -C "$POKECLICKER_SOURCE" init
+          git -C "$POKECLICKER_SOURCE" remote add origin https://github.com/pokeclicker/pokeclicker.git
+          git -C "$POKECLICKER_SOURCE" fetch --depth=1 origin "$(node -p 'JSON.parse(require("fs").readFileSync("upstream/provenance.json")).game.commit')"
+      - run: npx playwright install --with-deps ${{ matrix.browser }}
+      - run: npm run test:browser

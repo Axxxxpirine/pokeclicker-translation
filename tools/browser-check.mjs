@@ -1,13 +1,15 @@
 import { mkdirSync } from 'node:fs';
 import { resolve } from 'node:path';
 import assert from 'node:assert/strict';
-import { chromium } from '@playwright/test';
+import { chromium, firefox } from '@playwright/test';
 import { root } from './resources.mjs';
 import { serveRelease } from './game-server.mjs';
 
 const server = await serveRelease();
 const provenance = server.provenance;
-const browser = await chromium.launch({ headless: true });
+const browserName=process.env.PCT_BROWSER ?? 'chromium';
+if(!['chromium','chrome','firefox'].includes(browserName))throw new Error(`Unsupported test browser: ${browserName}`);
+const browser = await (browserName==='firefox'?firefox:chromium).launch({ headless: true, ...(browserName==='chrome'?{channel:'chrome'}:{}) });
 try {
   const context = await browser.newContext({ viewport: { width: 1440, height: 1000 }, locale: 'en-US' });
   // Use the pinned bundled translations, even if the upstream CDN changes during this test.
@@ -17,7 +19,7 @@ try {
   page.on('pageerror', error => errors.push(error.message));
   await page.goto(server.origin + '/', { waitUntil: 'load' });
   await page.addScriptTag({ path: resolve(root, 'dist/pokeclicker-translation.user.js') });
-  await page.waitForFunction(() => window.PokeClickerTranslation?.stats().nativeBridge, { timeout: 30000 });
+  await page.waitForFunction(() => window.PokeClickerTranslation?.stats().nativeBridge, null, { timeout: 30000 });
   await page.waitForTimeout(750);
   const before = await page.evaluate(() => ({ stats: PokeClickerTranslation.stats(), button: document.querySelector('#pokeclicker-translation-toggle').textContent, body: document.body.innerText.slice(0, 900) }));
   assert.equal(before.button, 'FR ✓');
@@ -86,6 +88,6 @@ try {
   assert.equal(reloaded.enabled, false);
   assert.equal(reloaded.textNodes, 0);
   assert.deepEqual(errors, []);
-  console.log(JSON.stringify({ release: provenance.game.version, ...before, checks: { ...result, tutorial, npcText, disabledAfterReload: !reloaded.enabled }, pageErrors: errors }, null, 2));
+  console.log(JSON.stringify({ browser:browserName,browserVersion:browser.version(),release: provenance.game.version, ...before, checks: { ...result, tutorial, npcText, disabledAfterReload: !reloaded.enabled }, pageErrors: errors }, null, 2));
   await context.close();
 } finally { await browser.close(); await server.close(); }

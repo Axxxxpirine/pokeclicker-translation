@@ -12,13 +12,18 @@ writeFileSync(resolve(root, '.verification/payload.mjs'), `export const resource
 const thirdPartyLicense = readFileSync(resolve(root, 'licenses/pokeclicker-translations-MIT.txt'), 'utf8');
 const engineLicense = readFileSync(resolve(root, 'node_modules/i18next/LICENSE'), 'utf8');
 const ownLicense = readFileSync(resolve(root, 'LICENSE'), 'utf8');
+const pokeApiLicense = readFileSync(resolve(root, 'licenses/pokeapi-BSD-3-Clause.txt'), 'utf8');
 const header = `// ==UserScript==
 // @name         PokéClicker Translation — Français
 // @namespace    https://github.com/Axxxxpirine/pokeclicker-translation
 // @version      ${version}
-// @description  Traduction française indépendante, préversion. Interrupteur FR en bas à droite.
+// @description  Traduction française indépendante en bêta. Interrupteur FR en bas à droite.
 // @author       Axxxxpirine
 // @license      MIT
+// @homepageURL  https://github.com/Axxxxpirine/pokeclicker-translation
+// @supportURL   https://github.com/Axxxxpirine/pokeclicker-translation/issues
+// @downloadURL  https://raw.githubusercontent.com/Axxxxpirine/pokeclicker-translation/main/dist/pokeclicker-translation.user.js
+// @updateURL    https://raw.githubusercontent.com/Axxxxpirine/pokeclicker-translation/main/dist/pokeclicker-translation.meta.js
 // @match        https://www.pokeclicker.com/*
 // @match        https://pokeclicker.com/*
 // @run-at       document-idle
@@ -29,6 +34,8 @@ const header = `// ==UserScript==
 /* ${ownLicense.replaceAll('*/', '* /')} */
 /* Translation data: ${thirdPartyLicense.replaceAll('*/', '* /')} */
 /* i18next: ${engineLicense.replaceAll('*/', '* /')} */
+/* PokeAPI name reference data: ${pokeApiLicense.replaceAll('*/', '* /')} */
 `;
+writeFileSync(resolve(root, 'dist/pokeclicker-translation.meta.js'), header.split('// ==/UserScript==')[0]+'// ==/UserScript==\n');
 await build({ entryPoints: [resolve(root, 'src/runtime.mjs')], outfile: resolve(root, 'dist/pokeclicker-translation.user.js'), bundle: true, format: 'iife', target: ['chrome100', 'firefox102'], minify: false, legalComments: 'inline', banner: { js: header } });
-console.log(`Built dist/pokeclicker-translation.user.js (${version}). Private preview, no remote update URLs.`);
+console.log(`Built userscript and update metadata (${version}). Public beta channel: main.`);
