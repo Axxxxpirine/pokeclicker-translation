@@ -64,7 +64,9 @@ function vocabularyTrie(values) {
 
 export function createTranslator(catalog) {
   const exact = new Map(), templates = [], cache = new Map();
-  const contexts = catalog.contexts ?? [];
+  const contexts = (catalog.contexts ?? []).map(rule => ({...rule,
+    translator: rule.en.includes('{{') ? createTranslator({entries:[rule],domains:catalog.domains,formats:catalog.formats}).translate : null,
+  }));
   const duration = /^(?:\d{1,8}:\d{2}(?::\d{2})?|\d+[wdhms](?: \d+[wdhms]){0,4}|\d+|∞|Ready|-)/;
   const numeric = /^[+-]?\d[\d., \u00a0\u202f’']*%?/;
   const domains = Object.fromEntries(Object.entries(catalog.domains ?? {}).map(([name, values]) => [name, new Map(Object.entries(values))]));
@@ -150,16 +152,20 @@ export function createTranslator(catalog) {
   function translate(text, element) {
     if (typeof text !== 'string' || text.length > 10000 || !text.trim()) return undefined;
     const source = normalize(text);
+    let contextTarget;
     const context = element?.closest ? contexts.find(rule => {
-      if (rule.en !== source) return false;
+      const target = rule.en === source ? rule.fr : rule.translator?.(source);
+      if (target === undefined) return false;
       let anchor = element.closest(rule.selector);
       if (!anchor && rule.contains) {
         const tooltip = element.closest('.tooltip');
         if (tooltip?.id && /^[\w-]+$/.test(tooltip.id)) anchor = element.ownerDocument.querySelector(`[aria-describedby~="${tooltip.id}"]`)?.closest(rule.selector);
       }
-      return Boolean(anchor && (!rule.contains || anchor.matches(rule.contains) || anchor.querySelector(rule.contains)));
+      if (!anchor || (rule.contains && !anchor.matches(rule.contains) && !anchor.querySelector(rule.contains))) return false;
+      contextTarget = target;
+      return true;
     }) : undefined;
-    let target = context?.fr ?? exact.get(source);
+    let target = context ? contextTarget : exact.get(source);
     if (target === undefined) {
       if (cache.has(source)) target = cache.get(source);
       else {

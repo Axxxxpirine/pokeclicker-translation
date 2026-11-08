@@ -114,5 +114,8 @@
   "heldItemSort": "Tri :",
   "heldItemSearchFilter": "Rechercher",
   "hotkey.pokeballSelection": "Choix de la Poké Ball",
-  "discord-rp.timer": "Afficher le temps de jeu de la session en cours (24 heures max.)"
+  "discord-rp.timer": "Afficher le temps de jeu de la session en cours (24 heures max.)",
+  "shopButtons": "Boutons de quantité dans les boutiques",
+  "breedingQueueSizeSetting": "Taille de la file d’attente de la Pension",
+  "sound.Hatchery queue is empty": "La file d’attente de la Pension est vide"
 }

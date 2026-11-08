@@ -28,9 +28,10 @@ export function displayCatalog(resources) {
   const pairs = (ns, filter = key => !key.startsWith('alt.')) => Object.fromEntries(Object.keys(flatten(resources.en[ns])).filter(filter).map(key => [engine.t(key, {ns, lng:'en'}), engine.t(key, {ns, lng:'fr'})]));
   const pokemon = {...pairs('pokemon'), ...Object.fromEntries(Object.keys(flatten(resources.en.pokemon)).filter(key => !key.startsWith('alt.')).map(key => [key,engine.t(key,{ns:'pokemon',lng:'fr'})]))};
   const names = resources.en.names ? pairs('names') : {};
+  const itemNames = {...names, Upgrade:'Améliorator', 'Black Belt':'Ceinture Noire'};
   Object.assign(catalog.domains, {
     pokemonName: pokemon, pokemon, starter: pokemon,
-    itemName: names, locationName: names, town: names,
+    itemName: itemNames, locationName: names, town: names,
     keyItem: {...names, Town_map:'Carte', Teachy_tv:'TV ABC', Coin_case:'Boîte Jetons', Dungeon_ticket:'Ticket Donjon', Wailmer_pail:'Seau Wailmer', Old_rod:'Canne', Good_rod:'Super Canne', Super_rod:'Méga Canne', Explorer_kit:'Explorakit', Mystery_egg:'Œuf Mystère'},
     ballId: {Pokeball:'Poké Balls', Greatball:'Super Balls', Ultraball:'Hyper Balls', Masterball:'Master Balls', Fastball:'Speed Balls', Quickball:'Rapide Balls', Timerball:'Chrono Balls', Duskball:'Sombre Balls', Luxuryball:'Luxe Balls', Diveball:'Scuba Balls', Lureball:'Appât Balls', Nestball:'Faiblo Balls', Repeatball:'Bis Balls', Beastball:'Ultra Balls', Cherishball:'Mémoire Balls'},
     questLine: pairs('questlines', key => key.includes('displayName')),
@@ -61,6 +62,15 @@ export function displayCatalog(resources) {
   catalog.formats = Object.fromEntries(['time', 'growthDuration', 'workCycle', 'nextPayment', 'duration'].map(key => [key, 'duration']));
   // These short labels have genuinely different meanings in different panels.
   catalog.contexts = [
+    {selector:'#dungeonsShortcutModal', en:'{{number}} clears', fr:'Passages terminés : {{number}}'},
+    {selector:'#auto-mine-status', en:'Mining', fr:'Fouille en cours'},
+    {selector:'#mineModal', en:'Mining', fr:'Minage'},
+    {selector:'#help li', contains:'strong', en:'A', fr:'Le'},
+    ...Object.entries({Diamond:'Diamants', Gem:'Joyaux', Shard:'Tessons', Special:'Spéciaux'}).map(([en,fr]) => ({selector:'#mineModal',en,fr})),
+    {selector:'#showItemsModal, #heldItemModal, .shopItem', en:'Black Belt', fr:'Ceinture Noire'},
+    {selector:'#showItemsModal, .shopItem', en:'Upgrade', fr:'Améliorator'},
+    ...Object.entries(catalog.domains.color).map(([en,fr]) => ({selector:'#berryDexModal',en,fr})),
+    ...Object.entries({'Very Soft':'Très tendre', Soft:'Tendre', Hard:'Ferme', 'Very Hard':'Très ferme', 'Super Hard':'Extrêmement ferme'}).map(([en,fr]) => ({selector:'#berryDexModal',en,fr})),
     {selector:'.shopItem', contains:'img[src$="/Ultraball.png"],img[src$="/Ultraball.svg"]', en:'Ultra Ball', fr:'Hyper Ball'},
     {selector:'img[src$="/Ultraball.svg"],img[src$="/Ultraball.png"]', contains:'img', en:'Ultra Ball', fr:'Hyper Ball'},
     {selector:'#undergroundDisplay button', en:'Fire', fr:'Renvoyer'},

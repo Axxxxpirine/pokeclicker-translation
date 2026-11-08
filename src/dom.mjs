@@ -1,4 +1,4 @@
-const attributes = ['title', 'placeholder', 'aria-label', 'data-original-title', 'data-content'];
+const attributes = ['title', 'placeholder', 'aria-label', 'alt', 'data-original-title', 'data-content'];
 const excluded = 'script,style,textarea,pre,.trainer-name,[contenteditable]:not([contenteditable="false"]),[data-pct-ignore]';
 
 export function mountTranslation(document, translate) {

@@ -14,7 +14,7 @@ export function installTextBridge(page, translate, enabled) {
   return { restore() { if (merger.mergeText === mergeText) merger.mergeText = original; } };
 }
 
-export function installBridge(page, resources, enabled) {
+export function installBridge(page, resources, enabled, {translate = () => undefined, domains = {}} = {}) {
   const native = page.App?.translation;
   if (typeof native?.get !== 'function' || !page.ko?.pureComputed) return null;
   const engine = i18next.createInstance();
@@ -25,13 +25,22 @@ export function installBridge(page, resources, enabled) {
   engine.services.formatter.add('pokemon', name => engine.t(name, { ns: 'pokemon' }));
   const available = Object.fromEntries(Object.entries(resources.fr).map(([ns, values]) => [ns, flatten(values)]));
   const original = native.get, cache = new Map();
+  const logFields = {location:'locationName', item:'itemName', berry:'berry', flute:'itemName', currency:null, name:null, quest:null, reward:null};
+  function logOptions(options) {
+    const result = {...options};
+    for (const [field, domain] of Object.entries(logFields)) {
+      const value = result[field];
+      if (typeof value === 'string') result[field] = domains[domain]?.[value] ?? translate(value) ?? value;
+    }
+    return result;
+  }
   function get(key, namespace, options) {
     const fallback = original.call(this, key, namespace, options);
     if (!available[namespace]?.[key]?.trim()) return fallback;
     const cacheKey = JSON.stringify([namespace, key]);
     if (options === undefined && cache.has(cacheKey)) return cache.get(cacheKey);
     const computed = page.ko.pureComputed(() => enabled()
-      ? engine.t(key, { ...options, ns: namespace })
+      ? engine.t(key, { ...(namespace === 'logbook' ? logOptions(options) : options), ns: namespace })
       : fallback());
     if (options === undefined) cache.set(cacheKey, computed);
     return computed;

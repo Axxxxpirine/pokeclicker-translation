@@ -48,6 +48,32 @@ try {
   ];
   for (const [selector, expected] of panels) assert.ok((await page.locator(selector).textContent()).includes(expected), `${selector} must contain ${expected}`);
   assert.deepEqual(await page.evaluate(() => ({region:player.region,starter:player.regionStarters[0](),gymMessages:Object.values(GymList).map(g=>g.defeatMessage),options:[...document.querySelectorAll('select option')].map(option=>option.value)})),before);
+  await page.evaluate(() => { $('.modal').modal('hide'); $('#statisticsModal').modal('show'); });
+  await page.waitForFunction(() => document.querySelector('#statisticsModalStatsPane')?.textContent.includes('Secondes de jeu'));
+  const statisticLabels = await page.evaluate(() => [...App.game.statistics.observables,...App.game.statistics.genderStatisticGroups.map(group=>group[0])].map(key=>GameConstants.camelCaseToString(key)));
+  for (const label of statisticLabels) {
+    const french=translator.translate(label);
+    assert.ok(french && french !== label, `untranslated generated statistic: ${label}`);
+    assert.ok((await page.locator('#statisticsModalStatsPane').textContent()).includes(french));
+  }
+  // Reproduce the item and berry panels observed in Joey's Zen session, using
+  // only this disposable localhost save. Exercise native templates and updates.
+  await page.evaluate(() => {
+    App.game.statistics.selectedBerryID(BerryType.Chesto);
+    ItemList.Upgrade.gain(1);
+    ItemList.Black_Belt.gain(1);
+  });
+  await page.waitForFunction(() => document.querySelector('#berryDexModal').textContent.includes('Extrêmement ferme'));
+  assert.ok((await page.locator('#berryDexModal').textContent()).includes('Violet'));
+  assert.ok((await page.locator('#evoStones').textContent()).includes('Améliorator'));
+  assert.ok((await page.locator('#itemBag-heldItems').textContent()).includes('Ceinture Noire'));
+  await page.evaluate(() => {
+    $('.modal').modal('hide');
+    $('#showItemsModal').modal('show');
+  });
+  await page.locator('#showItemsModal a[href="#keyItems"]').click();
+  assert.ok(await page.locator('#keyItems').isVisible(), 'native inventory tabs must still switch');
+  await page.evaluate(() => $('.modal').modal('hide'));
   // The actual released game's Knockout handles player choices after labels change.
   await page.evaluate(() => {
     const fixture = document.createElement('section'); fixture.id='coverage-fixture';
@@ -74,5 +100,5 @@ try {
   await page.evaluate(() => coverageControl.setEnabled(true));
   assert.equal(await page.locator('#coverage-fixture select').inputValue(),'Buy');
   assert.deepEqual(errors,[]);
-  console.log(JSON.stringify({gameVersion:server.provenance.game.version,panels:panels.length,namedTemplates:true,durations:true,knockoutOptions:true,stableWrites:settledWrites,mountMs,totalMs:Math.round(performance.now()-startedAt),toggleRestoresEnglish:true,errors},null,2));
+  console.log(JSON.stringify({gameVersion:server.provenance.game.version,panels:panels.length,liveItemAndBerryRegression:true,inventoryTabs:true,namedTemplates:true,durations:true,knockoutOptions:true,stableWrites:settledWrites,mountMs,totalMs:Math.round(performance.now()-startedAt),toggleRestoresEnglish:true,errors},null,2));
 } finally { await browser.close(); await server.close(); }

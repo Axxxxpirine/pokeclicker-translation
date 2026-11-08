@@ -49,6 +49,19 @@ try {
   assert.equal(result.english, 'Bulbasaur');
   assert.equal(result.disabled.textNodes, 0);
   assert.equal(result.townPreserved, true);
+  const generatedLabels = await page.evaluate(() => {
+    const fixture=document.createElement('div');
+    fixture.innerHTML='<div class="pokedexEntry"><span class="attack">10</span></div><div class="badgeEntry"><p>Foudre</p></div>';
+    document.body.append(fixture);
+    const read=()=>({attack:getComputedStyle(fixture.querySelector('.attack'),'::before').content,badgeBefore:getComputedStyle(fixture.querySelector('p'),'::before').content,badgeAfter:getComputedStyle(fixture.querySelector('p'),'::after').content});
+    const french=read(); PokeClickerTranslation.setEnabled(false); const english=read();
+    PokeClickerTranslation.setEnabled(true); fixture.remove(); return {french,english};
+  });
+  assert.equal(generatedLabels.french.attack, '"Attaque : "');
+  assert.equal(generatedLabels.french.badgeBefore, '"Badge "');
+  assert.equal(generatedLabels.french.badgeAfter, '""');
+  assert.equal(generatedLabels.english.attack, '"Attack: "');
+  assert.equal(generatedLabels.english.badgeAfter, '" Badge"');
   const npcOriginal = await page.evaluate(() => {
     const npc = TownList['Pallet Town'].npcs.find(npc => npc.name === 'Mom');
     NPCController.selectedNPC(npc);

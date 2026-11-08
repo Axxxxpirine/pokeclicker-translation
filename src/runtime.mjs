@@ -15,6 +15,13 @@ function start() {
   const style = document.createElement('style');
   style.id = 'pokeclicker-translation-layout';
   style.textContent = `
+    html[data-pct-enabled="true"] .pokedexEntry span.attack::before { content: 'Attaque : '; }
+    html[data-pct-enabled="true"] .badgeEntry p::before { content: 'Badge '; }
+    html[data-pct-enabled="true"] .badgeEntry p::after { content: ''; }
+    html[data-pct-enabled="true"] #left-column:empty::after,
+    html[data-pct-enabled="true"] #middle-sort-column:empty::after,
+    html[data-pct-enabled="true"] #right-column:empty::after { content: 'DÉPLACEZ LES MODULES ICI'; }
+
     html[data-pct-enabled="true"] #dailyQuestDisplayBody .row > .col-10 {
       flex: 1 1 0; max-width: none; min-width: 0;
     }
@@ -55,7 +62,7 @@ function start() {
     const app = typeof App !== 'undefined' ? App : globalThis.App;
     if (app?.translation && globalThis.ko?.observable) {
       signal = globalThis.ko.observable(active);
-      bridge = installBridge({ App: app, ko: globalThis.ko }, resources, signal);
+      bridge = installBridge({ App: app, ko: globalThis.ko }, resources, signal, {translate, domains:catalog.domains});
       textBridge = installTextBridge({ TextMerger: typeof TextMerger !== 'undefined' ? TextMerger : globalThis.TextMerger }, translate, signal);
       return true;
     }

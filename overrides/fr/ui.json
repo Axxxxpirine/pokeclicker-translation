@@ -42,5 +42,8 @@
   "vitamins.searchPlaceholder": "Rechercher ici",
   "faq.gameplay.howToUnlock.answer": "<code>Souterrain :</code> achetez le <strong>Explorakit</strong> à <strong>Cramois’Île</strong>.<br> <code>Pension :</code> débloquée en atteignant la <strong>Route 3</strong>.<br> <code>Ferme :</code> débloquée en atteignant la <strong>Route 11</strong> et en obtenant des <strong>Baies</strong>",
   "town.mapTitle": "Carte de {{region}}",
-  "travel.subregionalTravelTo": "Voyage local ({{subregion}})"
+  "travel.subregionalTravelTo": "Voyage local ({{subregion}})",
+  "farm.help.amazeMulch": "Combinaison atténuée de Fertibérance, de Fertibondance et de Fertistantané.",
+  "farm.selectedBerryImage": "Baie sélectionnée",
+  "farm.selectedMulchImage": "Engrais sélectionné"
 }

@@ -302,5 +302,23 @@
     "Victory Road is a location (Route Victoire) and a distinct Paldea storyline (La voie du Maître).",
     "Names of Orange Islands in Sevii are from the anime, not official Sevii map locations.",
     "Doken = Tank inferred from the matching Pyrite Building trainer team in French/English references."
-  ]
+  ],
+  "itemContextReview": {
+    "reviewedAt": "2026-11-08",
+    "observedIn": "Personal Zen session, evolution items and held-item bag",
+    "corrections": [
+      {
+        "en": "Upgrade",
+        "item": "Améliorator",
+        "action": "Améliorer",
+        "source": "https://www.pokepedia.fr/Am%C3%A9liorator"
+      },
+      {
+        "en": "Black Belt",
+        "item": "Ceinture Noire",
+        "trainer": "Karatéka",
+        "source": "https://www.pokepedia.fr/Ceinture_Noire"
+      }
+    ]
+  }
 }

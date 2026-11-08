@@ -88,3 +88,17 @@ test('native quest directions keep distinct French towns and dungeons after name
   enabled(false);
   assert.equal(native.get(cases[0][0], 'questlines')(), cases[0][0]);
 });
+
+test('logbook translates embedded locations and items without mutating saved event options', () => {
+  const resources=readResources(), catalog=displayCatalog(resources), enabled=ko.observable(true);
+  const native={get:()=>ko.pureComputed(()=>'original log entry')};
+  installBridge({ko,App:{translation:native}},resources,enabled,{translate:createTranslator(catalog).translate,domains:catalog.domains});
+  const options={location:'Mt. Chimney Crater',pokemon:'Groudon (Synthetic)'};
+  const value=native.get('encounterWild','logbook',options);
+  assert.match(value(),/Cratère du Mont Chimnée/);
+  assert.match(native.get('enemyDrop','logbook',{pokemon:'Zigzagoon',item:'Revive'})(),/Rappel/);
+  assert.match(native.get('enemyDrop','logbook',{pokemon:'Zigzagoon',item:'Upgrade'})(),/Améliorator/);
+  assert.equal(options.location,'Mt. Chimney Crater');
+  assert.match(native.get('encounterWild','logbook',{location:'Unknown private place',pokemon:'Pikachu'})(),/Unknown private place/);
+  enabled(false);assert.equal(value(),'original log entry');
+});
