@@ -83,6 +83,13 @@ export function mountTranslation(document, translate) {
   }
   function schedule(node) {
     if (!enabled || stopped) return;
+    // Knockout recreates this entire template on every enemy change. Translate
+    // it in the observer microtask, before paint, to avoid an English/French flash.
+    const parent = node.nodeType === 1 ? node : node.parentElement;
+    if (parent?.closest('knockout[data-bind*="pokemonAttackTemplate"]')) {
+      scan(node);
+      return;
+    }
     pending.add(node);
     if (timer === null) timer = view.setTimeout(flush, 16);
   }

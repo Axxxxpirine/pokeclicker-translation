@@ -4,7 +4,7 @@ A community-driven open-source project that aims to make **PokéClicker availabl
 
 **French is the first available translation.** Contributors from every language are welcome to add new languages, improve translations and test them in the game. The current version installs through Tampermonkey and translates the game, help panels and settings into French. The game's version history remains in English.
 
-**Beta 0.4.5 — for PokéClicker 0.10.26.** This is an unofficial community project with no affiliation to the PokéClicker team or Pokémon rights holders. Errors and missing text are still possible.
+**Beta 0.4.6 — for PokéClicker 0.10.26.** This is an unofficial community project with no affiliation to the PokéClicker team or Pokémon rights holders. Errors and missing text are still possible.
 
 ## Languages and contributions
 

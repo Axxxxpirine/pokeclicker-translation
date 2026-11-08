@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         PokéClicker Translation — Français
 // @namespace    https://github.com/Axxxxpirine/pokeclicker-translation
-// @version      0.4.5
+// @version      0.4.6
 // @description  Independent French translation beta. FR toggle in the bottom-right corner.
 // @author       Axxxxpirine
 // @license      MIT

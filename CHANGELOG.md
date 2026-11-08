@@ -1,5 +1,11 @@
 # Userscript changelog
 
+## 0.4.6 — stable Pokémon Attack label
+
+- Prevented the Pokémon Attack label from briefly reverting to English whenever the game recreates it for a new enemy.
+- Kept live attack values and the French/English toggle working.
+- Verified stable text and positioning across repeated template updates on Chromium and Firefox.
+
 ## 0.4.5 — capture help
 
 - Fixed the Pokérus help in the Poké Ball selector so both paragraphs display in French.

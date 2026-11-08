@@ -11,6 +11,39 @@ const require = createRequire(import.meta.url);
 const knockout = readFileSync(require.resolve('knockout'), 'utf8');
 const settle = () => new Promise(resolve => setTimeout(resolve, 40));
 
+test('recreated attack templates stay French before the next paint, including number updates and language toggles', async () => {
+  const dom = new JSDOM(`<script type="text/html" id="pokemonAttackTemplate">
+    <span>Pokémon Attack: <span data-bind="text: $root.attack().toLocaleString('en-US')"></span></span>
+  </script><knockout data-bind="template: { name: 'pokemonAttackTemplate', data: enemy }"></knockout>`, {runScripts:'outside-only'});
+  dom.window.eval(knockout);
+  const ko = dom.window.ko, vm = {enemy:ko.observable({}), attack:ko.observable(1739038)};
+  ko.applyBindings(vm, dom.window.document.body);
+  const control = mountTranslation(dom.window.document, createTranslator({entries:[{en:'Pokémon Attack:',fr:'Attaque Pokémon :'}]}).translate);
+  const line = () => dom.window.document.querySelector('knockout').textContent.replace(/\s+/g, ' ').trim();
+  // Mutation observers run before rendering. A timer-delayed translation misses this deadline.
+  const beforePaint = async () => { await Promise.resolve(); await Promise.resolve(); };
+  try {
+    assert.equal(line(), 'Attaque Pokémon : 1,739,038');
+    for (const attack of [1739038, 1711111, 1888888, 999999, 1000000]) {
+      vm.enemy({}); vm.attack(attack);
+      await beforePaint();
+      assert.equal(line(), `Attaque Pokémon : ${attack.toLocaleString('en-US')}`);
+    }
+    control.setEnabled(false);
+    vm.enemy({});
+    await beforePaint();
+    assert.equal(line(), 'Pokémon Attack: 1,000,000');
+    control.setEnabled(true);
+    vm.enemy({});
+    await beforePaint();
+    assert.equal(line(), 'Attaque Pokémon : 1,000,000');
+    await settle();
+    const writes = control.stats().writes;
+    await settle();
+    assert.equal(control.stats().writes, writes, 'translations must not trigger a rewrite loop');
+  } finally { control.stop(); dom.window.close(); }
+});
+
 test('real Knockout value bindings keep implicit option identities through translation, updates and toggles', async () => {
   const dom = new JSDOM('<select data-bind="value: chosen"><option>Buy</option><option>Settings</option></select>', {runScripts:'outside-only'});
   dom.window.eval(knockout);

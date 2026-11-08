@@ -90,6 +90,31 @@ try {
   assert.equal(generatedLabels.french.badgeAfter, '""');
   assert.equal(generatedLabels.english.attack, '"Attack: "');
   assert.equal(generatedLabels.english.badgeAfter, '" Badge"');
+  const attackFrames = await page.evaluate(async () => {
+    const fixture = document.createElement('div');
+    fixture.style.cssText = 'width:300px;text-align:center';
+    fixture.innerHTML = '<knockout data-bind="template: { name: \'pokemonAttackTemplate\', data: enemy }"></knockout>';
+    document.body.append(fixture);
+    const enemy = ko.observable({});
+    ko.applyBindings({ enemy }, fixture);
+    const frames = [];
+    try {
+      for (let i = 0; i < 30; i++) {
+        enemy({});
+        await new Promise(requestAnimationFrame);
+        const range = document.createRange();
+        range.selectNodeContents(fixture.querySelector('span'));
+        const bounds = range.getBoundingClientRect();
+        frames.push({ text: fixture.textContent.replace(/\s+/g, ' ').trim(), x: bounds.x, width: bounds.width });
+      }
+    } finally { ko.cleanNode(fixture); fixture.remove(); }
+    return frames;
+  });
+  for (const frame of attackFrames) {
+    assert.match(frame.text, /^Attaque Pokémon : [\d,]+$/u, 'every rendered attack frame must stay French');
+    assert.equal(frame.x, attackFrames[0].x, 'recreating the attack template must not move the line');
+    assert.equal(frame.width, attackFrames[0].width, 'recreating the attack template must not change its width');
+  }
   const npcOriginal = await page.evaluate(() => {
     const npc = TownList['Pallet Town'].npcs.find(npc => npc.name === 'Mom');
     NPCController.selectedNPC(npc);
@@ -114,6 +139,6 @@ try {
   assert.equal(reloaded.enabled, false);
   assert.equal(reloaded.textNodes, 0);
   assert.deepEqual(errors, []);
-  console.log(JSON.stringify({ browser:browserName,browserVersion:browser.version(),release: provenance.game.version, ...before, checks: { ...result, tutorial, npcText, disabledAfterReload: !reloaded.enabled }, pageErrors: errors }, null, 2));
+  console.log(JSON.stringify({ browser:browserName,browserVersion:browser.version(),release: provenance.game.version, ...before, checks: { ...result, tutorial, npcText, stableAttackFrames: attackFrames.length, disabledAfterReload: !reloaded.enabled }, pageErrors: errors }, null, 2));
   await context.close();
 } finally { await browser.close(); await server.close(); }
