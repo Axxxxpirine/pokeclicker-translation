@@ -5797,5 +5797,22 @@
   "notification.422": "You bought {{number}} ×",
   "notification.423": "You traded for {{number}} ×",
   "notification.424": "You used {{number}} ×",
-  "notification.425": "{{number}}× {{itemName}} has been boxed up for sale. Good choice, Trainer!"
+  "notification.425": "{{number}}× {{itemName}} has been boxed up for sale. Good choice, Trainer!",
+  "keyItemName.Teachy_tv": "Teachy TV",
+  "keyItemName.Coin_case": "Coin Case",
+  "keyItemName.Pokeball_bag": "Poké Ball Bag",
+  "keyItemName.Town_map": "Town Map",
+  "keyItemName.Dungeon_ticket": "Dungeon Ticket",
+  "keyItemName.Super_rod": "Super Rod",
+  "keyItemName.Holo_caster": "Holo Caster",
+  "keyItemName.Mystery_egg": "Mystery Egg",
+  "keyItemName.Safari_ticket": "Safari Ticket",
+  "keyItemName.Wailmer_pail": "Wailmer Pail",
+  "keyItemName.Explorer_kit": "Explorer Kit",
+  "keyItemName.Eon_ticket": "Eon Ticket",
+  "keyItemName.Event_calendar": "Event Calendar",
+  "keyItemName.Gem_case": "Gem Case",
+  "keyItemName.DNA_splicers": "DNA Splicers",
+  "keyItemName.Reins_of_unity": "Reins of Unity",
+  "keyItemName.Pokerus_virus": "Pokérus Virus"
 }

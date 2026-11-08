@@ -5797,5 +5797,22 @@
   "notification.422": "Vous avez acheté {{number}} ×",
   "notification.423": "Vous avez obtenu par échange {{number}} ×",
   "notification.424": "Vous avez utilisé {{number}} ×",
-  "notification.425": "{{number}}× {{itemName}} a été emballé pour la vente. Bon choix, Dresseur !"
+  "notification.425": "{{number}}× {{itemName}} a été emballé pour la vente. Bon choix, Dresseur !",
+  "keyItemName.Teachy_tv": "TV ABC",
+  "keyItemName.Coin_case": "Boîte Jetons",
+  "keyItemName.Pokeball_bag": "Sac de Poké Balls",
+  "keyItemName.Town_map": "Carte",
+  "keyItemName.Dungeon_ticket": "Ticket Donjon",
+  "keyItemName.Super_rod": "Méga Canne",
+  "keyItemName.Holo_caster": "Holokit",
+  "keyItemName.Mystery_egg": "Œuf Mystère",
+  "keyItemName.Safari_ticket": "Ticket Safari",
+  "keyItemName.Wailmer_pail": "Wailmerrosoir",
+  "keyItemName.Explorer_kit": "Explorakit",
+  "keyItemName.Eon_ticket": "Passe Éon",
+  "keyItemName.Event_calendar": "Calendrier des évènements",
+  "keyItemName.Gem_case": "Boîte à joyaux",
+  "keyItemName.DNA_splicers": "Pointeau ADN",
+  "keyItemName.Reins_of_unity": "Rênes de l’Unité",
+  "keyItemName.Pokerus_virus": "Virus du Pokérus"
 }

@@ -11,6 +11,13 @@ assert.equal(catalog.invalid.filter(k=>k.startsWith('gameplay:')).length,0);
 assert.equal(catalog.ambiguous.filter(v=>v.keys.some(k=>k.startsWith('gameplay:'))).length,0);
 for(const [id,item]of Object.entries(inventory.items))assert.equal(en[`item.${id}.description`],item.description);
 for(const kind of ['keyItems','oakItems'])inventory[kind].forEach((item,i)=>assert.equal(en[`${kind}.${i}.description`],item.description));
+const keyItemReview=JSON.parse(readFileSync('upstream/key-item-nomenclature.json','utf8'));
+assert.deepEqual(inventory.keyItems.map(item=>item.name),keyItemReview.items.map(item=>item.en));
+for(const item of keyItemReview.items){
+ assert.equal(en[`keyItemName.${item.key}`],item.en);
+ assert.equal(translator.translate(item.en),item.fr);
+ for(const name of [item.en,item.key])assert.equal(translator.translate(`${name} needs to be obtained.`),`Obtiens ${item.fr}.`);
+}
 inventory.achievements.forEach((achievement,i)=>{assert.equal(en[`achievement.${i}.name`],achievement.name);assert.equal(en[`achievement.${i}.description`],achievement.description);});
 inventory.berries.forEach(b=>b.description.forEach((text,i)=>assert.equal(en[`berry.${b.name}.${i}`],text)));
 const document=new JSDOM('').window.document;

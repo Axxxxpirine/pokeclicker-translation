@@ -73,6 +73,26 @@ try {
   });
   await page.locator('#showItemsModal a[href="#keyItems"]').click();
   assert.ok(await page.locator('#keyItems').isVisible(), 'native inventory tabs must still switch');
+  const keyItemNames = [
+    ['Teachy TV', 'TV ABC'], ['Coin Case', 'Boîte Jetons'], ['Poké Ball Bag', 'Sac de Poké Balls'],
+    ['Town Map', 'Carte'], ['Dungeon Ticket', 'Ticket Donjon'], ['Super Rod', 'Méga Canne'],
+    ['Holo Caster', 'Holokit'], ['Mystery Egg', 'Œuf Mystère'], ['Safari Ticket', 'Ticket Safari'],
+    ['Wailmer Pail', 'Wailmerrosoir'], ['Explorer Kit', 'Explorakit'], ['Eon Ticket', 'Passe Éon'],
+    ['Event Calendar', 'Calendrier des évènements'], ['Gem Case', 'Boîte à joyaux'],
+    ['DNA Splicers', 'Pointeau ADN'], ['Reins of Unity', 'Rênes de l’Unité'], ['Pokérus Virus', 'Virus du Pokérus'],
+  ];
+  const keyItemState = await page.evaluate(() => App.game.keyItems.itemList.map(item => ({id:item.id, name:item.displayName, unlocked:item.isUnlocked()})));
+  assert.deepEqual(keyItemState.map(item=>item.name), keyItemNames.map(([en])=>en), 'audit must cover the entire released inventory');
+  const keyImages = await page.locator('#keyItems img').evaluateAll(images=>images.map(img=>img.getAttribute('src')));
+  for (const enabled of [true, false, true]) {
+    await page.evaluate(enabled=>coverageControl.setEnabled(enabled), enabled);
+    for (const [i, [en, fr]] of keyItemNames.entries()) {
+      await page.locator('#keyItems img').nth(i).hover();
+      await page.waitForFunction(expected=>document.querySelector('#keyItems .oak-item-info b span')?.textContent===expected, enabled?fr:en, {timeout:2000});
+    }
+  }
+  assert.deepEqual(await page.evaluate(() => App.game.keyItems.itemList.map(item => ({id:item.id, name:item.displayName, unlocked:item.isUnlocked()}))), keyItemState, 'translating names must not change keys or unlock items');
+  assert.deepEqual(await page.locator('#keyItems img').evaluateAll(images=>images.map(img=>img.getAttribute('src'))), keyImages);
   await page.evaluate(() => $('.modal').modal('hide'));
   // The actual released game's Knockout handles player choices after labels change.
   await page.evaluate(() => {
@@ -100,5 +120,5 @@ try {
   await page.evaluate(() => coverageControl.setEnabled(true));
   assert.equal(await page.locator('#coverage-fixture select').inputValue(),'Buy');
   assert.deepEqual(errors,[]);
-  console.log(JSON.stringify({gameVersion:server.provenance.game.version,panels:panels.length,liveItemAndBerryRegression:true,inventoryTabs:true,namedTemplates:true,durations:true,knockoutOptions:true,stableWrites:settledWrites,mountMs,totalMs:Math.round(performance.now()-startedAt),toggleRestoresEnglish:true,errors},null,2));
+  console.log(JSON.stringify({gameVersion:server.provenance.game.version,panels:panels.length,keyItemNames:keyItemNames.length,liveItemAndBerryRegression:true,inventoryTabs:true,namedTemplates:true,durations:true,knockoutOptions:true,stableWrites:settledWrites,mountMs,totalMs:Math.round(performance.now()-startedAt),toggleRestoresEnglish:true,errors},null,2));
 } finally { await browser.close(); await server.close(); }

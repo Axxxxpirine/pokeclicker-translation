@@ -164,6 +164,12 @@ if(m=s.match(/^One of Silvally's memories, obtained from (.+) on (.+)$/))return 
 if(s.startsWith('Cost: '))return s.replace('Cost: ','Coût : ').replace('/hour','/heure').replace('/hatch','/éclosion').replace('Work Speed:','Vitesse de travail :').replace('Max Energy:','Énergie maximale :').replace('Step Efficiency:','Efficacité des pas :').replace('Attack Efficiency:','Efficacité d’attaque :').replace('Efficiency:','Efficacité :');
 return known.get(s);}
 for(const kind of ['keyItems','oakItems'])data[kind].forEach((v,i)=>add(`${kind}.${i}.description`,v.description,itemDescription(v.description)));
+const keyItemReview=JSON.parse(readFileSync(resolve(root,'upstream/key-item-nomenclature.json'),'utf8'));
+for(const item of data.keyItems){
+ const reviewed=keyItemReview.items.find(entry=>entry.en===item.name);
+ if(!reviewed)throw new Error(`Unreviewed key item: ${item.name}`);
+ add(`keyItemName.${reviewed.key}`,item.name,reviewed.fr);
+}
 for(const [id,v]of Object.entries(data.items))add(`item.${id}.description`,v.description,itemDescription(v.description));
 const berryFR=`Cette Baie rouge vif est très épicée et possède une saveur intense. Ses fleurs sont délicates et jolies.
 La peau épaisse et la chair de cette Baie sont très dures et sèches en bouche. Elle est néanmoins entièrement comestible.

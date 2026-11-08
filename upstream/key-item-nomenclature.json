@@ -1,0 +1,127 @@
+{
+  "reviewedAt": "2026-11-08",
+  "gameVersion": "0.10.26",
+  "scope": "All 17 entries in the released Key Items inventory, including locked items. Official French names where attested, descriptive adaptations for PokéClicker-specific inventory functions. Wailmerrosoir is the current name, Seau Wailmer the historical Gen III name.",
+  "gameSource": "https://github.com/pokeclicker/pokeclicker/blob/f89273636070501da575c70d2a080372fbb63402/src/modules/keyItems/KeyItems.ts",
+  "items": [
+    {
+      "key": "Teachy_tv",
+      "en": "Teachy TV",
+      "fr": "TV ABC",
+      "status": "official",
+      "source": "https://www.pokepedia.fr/TV_ABC"
+    },
+    {
+      "key": "Coin_case",
+      "en": "Coin Case",
+      "fr": "Boîte Jetons",
+      "status": "official",
+      "source": "https://www.pokepedia.fr/Bo%C3%AEte_Jetons"
+    },
+    {
+      "key": "Pokeball_bag",
+      "en": "Poké Ball Bag",
+      "fr": "Sac de Poké Balls",
+      "status": "pokeclicker-adaptation",
+      "source": "https://github.com/pokeclicker/pokeclicker/blob/f89273636070501da575c70d2a080372fbb63402/src/modules/keyItems/KeyItems.ts"
+    },
+    {
+      "key": "Town_map",
+      "en": "Town Map",
+      "fr": "Carte",
+      "status": "official",
+      "source": "https://www.pokepedia.fr/Carte_%28objet%29"
+    },
+    {
+      "key": "Dungeon_ticket",
+      "en": "Dungeon Ticket",
+      "fr": "Ticket Donjon",
+      "status": "pokeclicker-adaptation",
+      "source": "https://github.com/pokeclicker/pokeclicker/blob/f89273636070501da575c70d2a080372fbb63402/src/modules/keyItems/KeyItems.ts"
+    },
+    {
+      "key": "Super_rod",
+      "en": "Super Rod",
+      "fr": "Méga Canne",
+      "status": "official",
+      "source": "https://www.pokepedia.fr/M%C3%A9ga_Canne"
+    },
+    {
+      "key": "Holo_caster",
+      "en": "Holo Caster",
+      "fr": "Holokit",
+      "status": "official",
+      "source": "https://www.pokepedia.fr/Holokit"
+    },
+    {
+      "key": "Mystery_egg",
+      "en": "Mystery Egg",
+      "fr": "Œuf Mystère",
+      "status": "official",
+      "source": "https://www.pokepedia.fr/%C5%92uf_Myst%C3%A8re"
+    },
+    {
+      "key": "Safari_ticket",
+      "en": "Safari Ticket",
+      "fr": "Ticket Safari",
+      "status": "pokeclicker-adaptation",
+      "source": "https://github.com/pokeclicker/pokeclicker/blob/f89273636070501da575c70d2a080372fbb63402/src/modules/keyItems/KeyItems.ts"
+    },
+    {
+      "key": "Wailmer_pail",
+      "en": "Wailmer Pail",
+      "fr": "Wailmerrosoir",
+      "status": "official",
+      "source": "https://www.pokepedia.fr/Wailmerrosoir"
+    },
+    {
+      "key": "Explorer_kit",
+      "en": "Explorer Kit",
+      "fr": "Explorakit",
+      "status": "official",
+      "source": "https://www.pokepedia.fr/Explorakit"
+    },
+    {
+      "key": "Eon_ticket",
+      "en": "Eon Ticket",
+      "fr": "Passe Éon",
+      "status": "official",
+      "source": "https://www.pokepedia.fr/Passe_%C3%89on"
+    },
+    {
+      "key": "Event_calendar",
+      "en": "Event Calendar",
+      "fr": "Calendrier des évènements",
+      "status": "pokeclicker-adaptation",
+      "source": "https://github.com/pokeclicker/pokeclicker/blob/f89273636070501da575c70d2a080372fbb63402/src/modules/keyItems/KeyItems.ts"
+    },
+    {
+      "key": "Gem_case",
+      "en": "Gem Case",
+      "fr": "Boîte à joyaux",
+      "status": "pokeclicker-adaptation",
+      "source": "https://github.com/pokeclicker/pokeclicker/blob/f89273636070501da575c70d2a080372fbb63402/src/modules/keyItems/KeyItems.ts"
+    },
+    {
+      "key": "DNA_splicers",
+      "en": "DNA Splicers",
+      "fr": "Pointeau ADN",
+      "status": "official",
+      "source": "https://www.pokepedia.fr/Pointeau_ADN"
+    },
+    {
+      "key": "Reins_of_unity",
+      "en": "Reins of Unity",
+      "fr": "Rênes de l’Unité",
+      "status": "official",
+      "source": "https://www.pokepedia.fr/R%C3%AAnes_de_l%27Unit%C3%A9"
+    },
+    {
+      "key": "Pokerus_virus",
+      "en": "Pokérus Virus",
+      "fr": "Virus du Pokérus",
+      "status": "pokeclicker-adaptation",
+      "source": "https://github.com/pokeclicker/pokeclicker/blob/f89273636070501da575c70d2a080372fbb63402/src/modules/keyItems/KeyItems.ts"
+    }
+  ]
+}

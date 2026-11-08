@@ -28,11 +28,13 @@ export function displayCatalog(resources) {
   const pairs = (ns, filter = key => !key.startsWith('alt.')) => Object.fromEntries(Object.keys(flatten(resources.en[ns])).filter(filter).map(key => [engine.t(key, {ns, lng:'en'}), engine.t(key, {ns, lng:'fr'})]));
   const pokemon = {...pairs('pokemon'), ...Object.fromEntries(Object.keys(flatten(resources.en.pokemon)).filter(key => !key.startsWith('alt.')).map(key => [key,engine.t(key,{ns:'pokemon',lng:'fr'})]))};
   const names = resources.en.names ? pairs('names') : {};
-  const itemNames = {...names, Upgrade:'Améliorator', 'Black Belt':'Ceinture Noire'};
+  const keyItems = JSON.parse(readFileSync(resolve(root, 'upstream/key-item-nomenclature.json'), 'utf8')).items;
+  const keyItemNames = Object.fromEntries(keyItems.flatMap(item=>[[item.en,item.fr],[item.key,item.fr]]));
+  const itemNames = {...names, ...keyItemNames, Upgrade:'Améliorator', 'Black Belt':'Ceinture Noire'};
   Object.assign(catalog.domains, {
     pokemonName: pokemon, pokemon, starter: pokemon,
     itemName: itemNames, locationName: names, town: names,
-    keyItem: {...names, Town_map:'Carte', Teachy_tv:'TV ABC', Coin_case:'Boîte Jetons', Dungeon_ticket:'Ticket Donjon', Wailmer_pail:'Seau Wailmer', Old_rod:'Canne', Good_rod:'Super Canne', Super_rod:'Méga Canne', Explorer_kit:'Explorakit', Mystery_egg:'Œuf Mystère'},
+    keyItem: {...names, ...keyItemNames, Old_rod:'Canne', Good_rod:'Super Canne'},
     ballId: {Pokeball:'Poké Balls', Greatball:'Super Balls', Ultraball:'Hyper Balls', Masterball:'Master Balls', Fastball:'Speed Balls', Quickball:'Rapide Balls', Timerball:'Chrono Balls', Duskball:'Sombre Balls', Luxuryball:'Luxe Balls', Diveball:'Scuba Balls', Lureball:'Appât Balls', Nestball:'Faiblo Balls', Repeatball:'Bis Balls', Beastball:'Ultra Balls', Cherishball:'Mémoire Balls'},
     questLine: pairs('questlines', key => key.includes('displayName')),
     battleName: {...names, ...pairs('dialogue-extra', key => key.startsWith('battleName.'))},

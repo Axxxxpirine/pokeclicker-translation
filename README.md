@@ -2,13 +2,13 @@
 
 Traduction française indépendante de PokéClicker. Projet personnel non affilié aux mainteneurs du jeu, privé pendant le développement et destiné à être partagé en open source.
 
-## Version 0.4.2 — vérification en situation réelle dans Zen
+## Version 0.4.3 — noms des objets rares vérifiés dans Zen
 
 Le script autonome est `dist/pokeclicker-translation.user.js`. Il embarque tous ses dictionnaires et ne contacte aucun service de traduction. Cette version vise le jeu publié **0.10.26**, fixé dans `upstream/provenance.json`, dans un navigateur avec Tampermonkey.
 
 ### Couverture
 
-Les 14 dictionnaires contiennent **16 277 entrées françaises sur 16 277 clés anglaises recensées**, sans variable d’interpolation manquante. Ce total comprend des variantes et des doublons utiles au rendu. Il ne constitue pas un pourcentage de toutes les situations possibles à l’écran.
+Les 14 dictionnaires contiennent **16 294 entrées françaises sur 16 294 clés anglaises recensées**, sans variable d’interpolation manquante. Ce total comprend des variantes et des doublons utiles au rendu. Il ne constitue pas un pourcentage de toutes les situations possibles à l’écran.
 
 | Famille | Couverture du corpus publié contrôlée |
 |---|---:|
@@ -33,7 +33,7 @@ Les tests de navigateur vérifient dix panneaux réels ainsi que le démarrage, 
 
 Parcours réel : écran principal, objets d’évolution et sac, ferme et aide, Baiedex et fiche Maron, Souterrain et aide/experts/trésors, Pension et aide, quêtes quotidiennes et scénarisées, Prof. Seko, Chambre de Purification, listes de donjons et d’arènes de Hoenn, navigation automatique, réglages Affichage/Jeu/Notifications, FAQ, Pokédex, badges, événements, journal, succès et statistiques. Les contrôles ont porté sur les écrans et échantillons accessibles, sans forcer la progression ni lancer d’achat, de combat ou de purification.
 
-49 tests unitaires et sept suites d’intégration ont réussi pendant cette révision. Les contrôles navigateur, panneaux et compatibilité ont été relancés après les derniers changements. Le test des panneaux vérifie aussi toutes les statistiques générées, les objets, les baies et les onglets natifs. Le test navigateur vérifie le retour à l’anglais des textes CSS.
+49 tests unitaires et six suites d’intégration ont été relancés avec succès pour 0.4.3 : navigateur, panneaux, compatibilité, dialogues, gameplay et conditions. Les 17 noms sont vérifiés au survol dans le jeu publié, en français, puis en anglais et de nouveau en français, sans changer les identifiants, les images ou les déblocages. Le test des panneaux vérifie aussi toutes les statistiques générées, les objets, les baies et les onglets natifs. Le test navigateur vérifie le retour à l’anglais des textes CSS.
 
 ### Installer
 
