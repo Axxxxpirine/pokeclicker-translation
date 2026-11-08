@@ -33,8 +33,6 @@ Les tests de navigateur vérifient dix panneaux réels ainsi que le démarrage, 
 
 Parcours réel : écran principal, objets d’évolution et sac, ferme et aide, Baiedex et fiche Maron, Souterrain et aide/experts/trésors, Pension et aide, quêtes quotidiennes et scénarisées, Prof. Seko, Chambre de Purification, listes de donjons et d’arènes de Hoenn, navigation automatique, réglages Affichage/Jeu/Notifications, FAQ, Pokédex, badges, événements, journal, succès et statistiques. Les contrôles ont porté sur les écrans et échantillons accessibles, sans forcer la progression ni lancer d’achat, de combat ou de purification.
 
-**Limite observée :** l’onglet « Objets rares » ne s’est pas ouvert dans la session personnelle, y compris avec le bouton FR désactivé. Le même onglet fonctionne dans le test isolé de la version publiée. La cause dans la session personnelle reste à isoler. Les régions avancées non parcourues, les longues sessions et tous les panneaux des scripts tiers restent hors de cette validation réelle.
-
 49 tests unitaires et sept suites d’intégration ont réussi pendant cette révision. Les contrôles navigateur, panneaux et compatibilité ont été relancés après les derniers changements. Le test des panneaux vérifie aussi toutes les statistiques générées, les objets, les baies et les onglets natifs. Le test navigateur vérifie le retour à l’anglais des textes CSS.
 
 ### Installer
