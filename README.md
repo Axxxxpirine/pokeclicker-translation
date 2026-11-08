@@ -1,79 +1,77 @@
 # PokéClicker Translation 🌍
 
-Projet communautaire open source dont l’objectif est de rendre **PokéClicker accessible dans toutes les langues**, grâce aux contributions de joueurs, traducteurs et relecteurs.
+A community-driven open-source project that aims to make **PokéClicker available in every language**, with help from players, translators and reviewers.
 
-**Le français est la première traduction disponible.** La communauté est invitée à contribuer aux autres langues, à améliorer les traductions et à les vérifier en jeu. La version actuelle s’installe avec Tampermonkey et couvre en français le jeu, les aides et les réglages. L’historique des versions du jeu reste en anglais.
+**French is the first available translation.** Contributors from every language are welcome to add new languages, improve translations and test them in the game. The current version installs through Tampermonkey and translates the game, help panels and settings into French. The game's version history remains in English.
 
-**Contributors from every language are welcome.** PokéClicker Translation is a community open-source project aiming to make the game available in every language. French is the first available translation. Help translate, review or test your language: see [how to contribute a new language](CONTRIBUTING.md#contribute-a-new-language).
+**Beta 0.4.5 — for PokéClicker 0.10.26.** This is an unofficial community project with no affiliation to the PokéClicker team or Pokémon rights holders. Errors and missing text are still possible.
 
-**Bêta 0.4.5 — pour PokéClicker 0.10.26.** Le projet est communautaire, non officiel et sans affiliation avec l’équipe de PokéClicker ou les ayants droit de Pokémon. Des erreurs et des textes manquants restent possibles.
+## Languages and contributions
 
-## Langues et contributions
-
-| Langue | État dans ce projet |
+| Language | Status in this project |
 |---|---|
-| Français | Première traduction disponible, en bêta |
-| Autres langues | Contributions bienvenues, aucune autre langue intégrée à la version actuelle |
+| French | First available translation, in beta |
+| Other languages | Contributions welcome, no other language included in the current release |
 
-Vous pouvez proposer une nouvelle langue, traduire quelques textes, relire les noms officiels Pokémon ou tester les traductions en jeu. Consultez le [guide de contribution](CONTRIBUTING.md) pour démarrer. L’intégration et la validation de chaque langue seront réalisées avec ses contributeurs.
+You can propose a new language, translate a few strings, review official Pokémon names or test translations in the game. See the [contribution guide](CONTRIBUTING.md#contribute-a-new-language) to get started. Each language will be integrated and validated with its contributors.
 
-## Installer
+## Installation
 
-1. Exportez une sauvegarde de votre partie depuis le menu de PokéClicker.
-2. Installez [Tampermonkey depuis son site officiel](https://www.tampermonkey.net/), qui renvoie vers la boutique de votre navigateur.
-3. Cliquez sur **[Installer la traduction française](https://raw.githubusercontent.com/Axxxxpirine/pokeclicker-translation/main/dist/pokeclicker-translation.user.js)**, puis sur **Installer** dans Tampermonkey.
-4. Ouvrez ou rechargez [PokéClicker](https://www.pokeclicker.com/). Le bouton **FR ✓**, en bas à droite, permet de revenir à l’anglais à tout moment.
+1. Export a backup of your save from the PokéClicker menu.
+2. Install [Tampermonkey from its official website](https://www.tampermonkey.net/), which links to your browser's extension store.
+3. Click **[Install the French translation](https://raw.githubusercontent.com/Axxxxpirine/pokeclicker-translation/main/dist/pokeclicker-translation.user.js)**, then click **Install** in Tampermonkey.
+4. Open or reload [PokéClicker](https://www.pokeclicker.com/). The **FR ✓** button in the bottom-right corner lets you switch back to English at any time.
 
-Sur Chrome, activez **Autoriser les scripts utilisateur** dans les détails de l’extension Tampermonkey si nécessaire. [Aide officielle Tampermonkey](https://www.tampermonkey.net/faq.php#Q209).
+On Chrome, enable **Allow User Scripts** in the Tampermonkey extension details if needed. See the [official Tampermonkey help](https://www.tampermonkey.net/faq.php#Q209).
 
-Si le lien affiche du texte au lieu de proposer l’installation, ouvrez le tableau de bord Tampermonkey → **Utilitaires → Importer depuis une URL**, collez le lien d’installation ci-dessus et validez. Vérifiez que l’extension est autorisée sur `pokeclicker.com`.
+If the link displays source code instead of an installation prompt, open the Tampermonkey dashboard → **Utilities → Import from URL**, paste the installation link above and confirm. Check that the extension is allowed to run on `pokeclicker.com`.
 
-Le script n’ajoute ni ressources, ni automatisation, ni triche. Il adapte l’affichage et conserve les identifiants du jeu.
+The script does not add resources, automation or cheats. It changes the display while preserving the game's internal identifiers.
 
-## Mises à jour et désinstallation
+## Updates and removal
 
-Tampermonkey vérifie les nouvelles versions sur ce dépôt GitHub, selon la fréquence configurée dans l’extension. Vous pouvez également lancer **Vérifier les mises à jour** depuis son tableau de bord. Le canal bêta suit les versions numérotées de la branche `main`.
+Tampermonkey checks this GitHub repository for new versions at the interval configured in the extension. You can also select **Check for updates** in its dashboard. The beta channel follows numbered versions on the `main` branch.
 
-Si vous utilisiez une version privée 0.4.3 ou antérieure, ouvrez une fois le lien d’installation pour passer à la version actuelle et enregistrer les adresses de mise à jour. Le nom et l’identité du script sont conservés pour éviter un doublon.
+If you used a private version, 0.4.3 or earlier, open the installation link once to upgrade to the current version and register the update URLs. The script's name and identity remain unchanged to avoid duplicate installations.
 
-Pour désactiver temporairement la traduction, cliquez sur **FR ✓**. Pour la retirer, désactivez ou supprimez **PokéClicker Translation — Français** dans Tampermonkey, puis rechargez le jeu. Ne supprimez pas les données du site : elles contiennent votre partie.
+To temporarily disable the translation, click **FR ✓**. To remove it, disable or delete the **PokéClicker Translation** script in Tampermonkey, then reload the game. The installed script retains its original French language suffix for compatibility. Do not delete the site's data, as it contains your save.
 
-Les versions téléchargeables et leurs notes sont dans [Releases](https://github.com/Axxxxpirine/pokeclicker-translation/releases). Pour conserver une ancienne version, désactivez sa mise à jour automatique dans Tampermonkey.
+Downloads and release notes are available under [Releases](https://github.com/Axxxxpirine/pokeclicker-translation/releases). To keep an older version, disable automatic updates for that script in Tampermonkey.
 
-## Ce qui est couvert par la traduction française
+## French translation coverage
 
-- Menus, réglages, aides, dialogues, quêtes, notifications et journal.
-- Noms de Pokémon, lieux, donjons, arènes, objets, baies et badges.
-- Inventaire des 17 objets rares, dont TV ABC, Holokit, Wailmerrosoir et Pointeau ADN.
-- 16 294 entrées françaises dans 14 dictionnaires, comparées au jeu publié 0.10.26.
+- Menus, settings, help panels, dialogue, quests, notifications and the logbook.
+- Names of Pokémon, locations, dungeons, gyms, items, berries and badges.
+- All 17 Key Items, including Teachy TV, Holo Caster, Wailmer Pail and DNA Splicers.
+- 16,294 French entries across 14 dictionaries, checked against game release 0.10.26.
 
-**100 % des entrées recensées ne signifie pas 100 % des situations possibles en jeu.** Les noms officiels français sont utilisés lorsqu’ils sont attestés. Les éléments propres à PokéClicker reçoivent des traductions descriptives. Les pseudonymes, noms saisis par les joueurs et codes cadeaux sont préservés.
+**100% of catalogued entries does not mean 100% of all possible in-game situations.** Attested official French names are used where available. PokéClicker-specific elements receive descriptive translations. Usernames, player-entered names and gift codes are preserved.
 
-Les régions avancées ont été contrôlées à partir des données du jeu. Une partie complète, les longues sessions et une relecture humaine exhaustive restent à faire. Les ajouts futurs du jeu et tous les textes des scripts tiers ne sont pas couverts automatiquement.
+Later regions have been checked against the game data. A full playthrough, long sessions and an exhaustive human review are still pending. Future game additions and all third-party script text are not covered automatically.
 
-## Compatibilité et problèmes connus
+## Compatibility and known issues
 
-- Installation et utilisation réelles validées dans Zen avec Tampermonkey.
-- Installation neuve de la bêta 0.4.4 et démarrage du jeu validés avec Tampermonkey dans Google Chrome 157 (extension 5.5.1) et Firefox Nightly 159 (extension 5.5.0), sur des profils de test séparés. Introduction, tutoriel, bascule français/anglais et rechargement contrôlés. Firefox stable n’a pas fait l’objet de ce test d’installation neuf.
-- Tests automatisés du moteur également exécutés sur Chrome et Firefox. Les vérifications continues du dépôt couvrent Chromium et Firefox.
-- Le client de bureau, les navigateurs mobiles et les autres gestionnaires de scripts ne sont pas validés.
-- La coexistence avec six scripts d’automatisation a été testée. Ces scripts sont facultatifs et ne sont pas distribués avec la traduction.
-- Si l’onglet **Objets rares** ne s’ouvre pas et que vous utilisez **Debug Cheats Tools**, mettez ce dernier à jour vers **1.1.3 ou plus récent**. Une ancienne version créait un conflit avec l’inventaire natif.
+- Installation and real gameplay validated in Zen with Tampermonkey.
+- Fresh beta 0.4.4 installation and game startup validated with Tampermonkey in Google Chrome 157 (extension 5.5.1) and Firefox Nightly 159 (extension 5.5.0), using separate test profiles. Introduction, tutorial, French/English switching and reloading were checked. Stable Firefox was not included in this fresh-installation test.
+- Automated engine tests also run on Chrome and Firefox. The repository's continuous integration checks cover Chromium and Firefox.
+- The desktop client, mobile browsers and other userscript managers have not been validated.
+- Coexistence with six automation scripts has been tested. These scripts are optional and are not distributed with the translation.
+- If the **Key Items** tab does not open and you use **Debug Cheats Tools**, update that script to **1.1.3 or later**. An older version conflicted with the native inventory.
 
-Si un problème apparaît, désactivez la traduction avec le bouton FR et comparez. Après une mise à jour importante de PokéClicker, consultez les [problèmes signalés](https://github.com/Axxxxpirine/pokeclicker-translation/issues).
+If you encounter a problem, disable the translation with the FR button and compare. After a major PokéClicker update, check the [reported issues](https://github.com/Axxxxpirine/pokeclicker-translation/issues).
 
-## Signaler une erreur ou participer
+## Report an issue or contribute
 
-**[Signaler un problème](https://github.com/Axxxxpirine/pokeclicker-translation/issues/new/choose)** : précisez le texte concerné, l’écran ou le lieu, la version du script, celle du jeu et votre navigateur. Une capture recadrée est utile. N’incluez pas votre sauvegarde complète ni d’informations personnelles.
+**[Report an issue](https://github.com/Axxxxpirine/pokeclicker-translation/issues/new/choose)** with the affected text, screen or location, script version, game version and browser. A cropped screenshot is helpful. Do not include your full save or personal information.
 
-Les retours de bêta sont bienvenus, notamment sur l’installation, les régions avancées et les sessions longues. Consultez [CONTRIBUTING.md](CONTRIBUTING.md) pour contribuer à une nouvelle langue, proposer une correction ou lancer les tests.
+Beta feedback is welcome, especially on installation, later regions and long sessions. See [CONTRIBUTING.md](CONTRIBUTING.md) to add a new language, propose a correction or run the tests.
 
-## Confidentialité
+## Privacy
 
-Le code de traduction ne transmet pas votre partie et ne fait appel à aucun service de traduction en ligne. Les dictionnaires sont embarqués. Sa seule préférence enregistrée est l’activation du bouton FR, dans le stockage local du site. Les vérifications et téléchargements de mises à jour sont effectués par Tampermonkey auprès de GitHub. Le jeu et l’extension ont leurs propres politiques de confidentialité.
+The translation code does not transmit your save or contact any online translation service. Dictionaries are bundled with the script. Its only stored preference is whether the FR button is enabled, saved in the site's local storage. Tampermonkey checks for and downloads updates from GitHub. The game and extension have their own privacy policies.
 
-## Licence et crédits
+## License and credits
 
-Le nouveau code est sous licence [MIT](LICENSE). Les traductions reprises de [pokeclicker-translations](https://github.com/pokeclicker/pokeclicker-translations) conservent leur [notice MIT](licenses/pokeclicker-translations-MIT.txt). Les notices MIT d’i18next et [BSD de PokeAPI](licenses/pokeapi-BSD-3-Clause.txt) sont également embarquées dans le script.
+New code is released under the [MIT license](LICENSE). Translations imported from [pokeclicker-translations](https://github.com/pokeclicker/pokeclicker-translations) retain their [MIT notice](licenses/pokeclicker-translations-MIT.txt). The i18next MIT notice and [PokeAPI BSD notice](licenses/pokeapi-BSD-3-Clause.txt) are also bundled with the script.
 
-Les noms ont été recoupés avec les tables bilingues de [PokeAPI](https://github.com/PokeAPI/pokeapi), Poképédia et Bulbapedia. Les références et distinctions entre noms officiels et adaptations sont consignées dans [la revue de nomenclature](upstream/nomenclature-review.json) et [la revue des objets rares](upstream/key-item-nomenclature.json). Le jeu et ses illustrations ne sont pas distribués dans ce dépôt.
+Names were cross-checked against bilingual [PokeAPI](https://github.com/PokeAPI/pokeapi) tables, Poképédia and Bulbapedia. Sources and distinctions between official names and adaptations are recorded in the [nomenclature review](upstream/nomenclature-review.json) and [Key Items review](upstream/key-item-nomenclature.json). The game and its artwork are not distributed in this repository.

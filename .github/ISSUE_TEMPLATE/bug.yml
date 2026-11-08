@@ -1,45 +1,45 @@
-name: Erreur de traduction ou de fonctionnement
-description: Signaler un texte incorrect, manquant ou un problème avec la traduction.
-title: "[Bêta] "
+name: Translation error or bug
+description: Report incorrect or missing text, or a problem with the translation.
+title: "[Beta] "
 body:
   - type: markdown
     attributes:
-      value: "Merci pour votre retour. Ne joignez pas votre sauvegarde complète ni de données personnelles."
+      value: "Thank you for your feedback. Do not attach your full save or personal information."
   - type: input
     id: versions
     attributes:
-      label: Versions et navigateur
-      description: Version du script, de PokéClicker, du navigateur et de Tampermonkey.
+      label: Versions and browser
+      description: Versions of the userscript, PokéClicker, your browser and Tampermonkey.
     validations:
       required: true
   - type: textarea
     id: location
     attributes:
-      label: Écran, lieu et étapes pour reproduire
+      label: Screen, location and steps to reproduce
     validations:
       required: true
   - type: textarea
     id: actual
     attributes:
-      label: Résultat observé
-      description: Texte exact et capture recadrée si utile.
+      label: Actual result
+      description: Include the exact text and a cropped screenshot if useful.
     validations:
       required: true
   - type: textarea
     id: expected
     attributes:
-      label: Résultat attendu ou correction proposée
-      description: Pour un nom officiel, ajoutez une référence si possible.
+      label: Expected result or proposed correction
+      description: For an official name, add a reference if possible.
   - type: dropdown
     id: disabled
     attributes:
-      label: Le problème persiste-t-il avec le bouton FR désactivé ?
+      label: Does the issue persist with the FR button disabled?
       options:
-        - Pas encore testé
-        - "Oui"
-        - "Non"
+        - Not tested yet
+        - "Yes"
+        - "No"
   - type: textarea
     id: scripts
     attributes:
-      label: Autres scripts actifs
-      description: Indiquez les scripts susceptibles de modifier cet écran.
+      label: Other active scripts
+      description: List any scripts that may change this screen.

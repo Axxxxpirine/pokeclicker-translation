@@ -1,37 +1,37 @@
-# Notes de version du script
+# Userscript changelog
 
-## 0.4.5 — aides de capture
+## 0.4.5 — capture help
 
-- Correction de l’aide Pokérus du sélecteur de Poké Balls : ses deux paragraphes s’affichent en français.
-- Prise en compte des anciens sauts de ligne HTML dans la préparation des traductions.
-- Traduction des commandes des bulles d’aide, dont « Done » → « Terminer ».
-- Vérification des aides Pokérus et Pokémon Obscurs, de la navigation et du retour à l’anglais dans le jeu publié.
+- Fixed the Pokérus help in the Poké Ball selector so both paragraphs display in French.
+- Added support for legacy HTML line breaks when preparing translations.
+- Translated help popover controls, including the Done button.
+- Verified Pokérus and Shadow Pokémon help, navigation and switching back to English against the released game.
 
-## 0.4.4 — bêta publique
+## 0.4.4 — public beta
 
-- Installation directe avec Tampermonkey et métadonnées de mise à jour automatique depuis GitHub.
-- Guide d’installation, désactivation, dépannage et formulaire de signalement.
-- Installation Tampermonkey et démarrage du jeu vérifiés dans des profils neufs de Google Chrome 157 et Firefox Nightly 159.
-- Vérifications automatisées du moteur sur Chrome et Firefox, et intégration continue sur Chromium et Firefox.
-- Traduction française de 16 294 entrées pour PokéClicker 0.10.26.
+- Direct installation through Tampermonkey and automatic update metadata pointing to GitHub.
+- Installation, disabling and troubleshooting guides, plus an issue report form.
+- Tampermonkey installation and game startup checked in fresh Google Chrome 157 and Firefox Nightly 159 profiles.
+- Automated engine checks on Chrome and Firefox, with continuous integration on Chromium and Firefox.
+- French translation of 16,294 entries for PokéClicker 0.10.26.
 
-Cette bêta conserve les corrections des versions précédentes. Les longues sessions, toutes les régions en situation réelle et tous les scripts tiers ne sont pas validés exhaustivement.
+This beta includes the fixes from previous versions. Long sessions, real gameplay in every region and all third-party scripts have not been exhaustively validated.
 
 ## 0.4.3
 
-- Revue des 17 noms de l’onglet Objets rares, dont TV ABC, Holokit, Wailmerrosoir et Pointeau ADN.
-- Noms cohérents dans les conditions de déblocage et le dialogue de Primo.
+- Reviewed all 17 Key Item names, including Teachy TV, Holo Caster, Wailmer Pail and DNA Splicers.
+- Made names consistent across unlock requirements and Primo's dialogue.
 
 ## 0.4.2
 
-- Corrections issues d’un parcours réel : homonymes d’objets, baies, statistiques, journal, notifications et commandes.
-- Le conflit qui empêchait l’ouverture d’Objets rares est corrigé séparément dans Debug Cheats Tools 1.1.3.
+- Fixed issues found during a real playthrough: ambiguous item names, berries, statistics, logbook entries, notifications and controls.
+- The conflict preventing the Key Items tab from opening was fixed separately in Debug Cheats Tools 1.1.3.
 
 ## 0.4.1
 
-- Revue des noms de lieux, donjons, routes et arènes, avec harmonisation des quêtes et dialogues.
+- Reviewed location, dungeon, route and gym names, with matching updates to quests and dialogue.
 
 ## 0.4.0
 
-- Corpus français du jeu, des aides et des réglages complété.
-- Interrupteur FR réversible, dictionnaires embarqués et conservation des données du jeu.
+- Completed the French text corpus for the game, help panels and settings.
+- Reversible FR toggle, bundled dictionaries and preservation of game data.

@@ -1,8 +1,8 @@
 blank_issues_enabled: true
 contact_links:
-  - name: Installation et dépannage
-    url: https://github.com/Axxxxpirine/pokeclicker-translation#installer
-    about: Consultez les étapes d’installation et les limites de la bêta.
-  - name: Contribute a new language / Contribuer à une nouvelle langue
+  - name: Installation and troubleshooting
+    url: https://github.com/Axxxxpirine/pokeclicker-translation#installation
+    about: Read the installation steps and beta limitations.
+  - name: Contribute a new language
     url: https://github.com/Axxxxpirine/pokeclicker-translation/blob/main/CONTRIBUTING.md#contribute-a-new-language
     about: Help translate, review or test PokéClicker in your language. French is the first available translation.
