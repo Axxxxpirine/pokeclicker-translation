@@ -2,7 +2,7 @@ import { mkdirSync } from 'node:fs';
 import { resolve } from 'node:path';
 import assert from 'node:assert/strict';
 import { chromium, firefox } from '@playwright/test';
-import { root } from './resources.mjs';
+import { root, readResources } from './resources.mjs';
 import { serveRelease } from './game-server.mjs';
 
 const server = await serveRelease();
@@ -24,6 +24,32 @@ try {
   const before = await page.evaluate(() => ({ stats: PokeClickerTranslation.stats(), button: document.querySelector('#pokeclicker-translation-toggle').textContent, body: document.body.innerText.slice(0, 900) }));
   assert.equal(before.button, 'FR ✓');
   assert.ok(before.stats.textNodes > 100, 'released game UI should actually translate');
+  // Exercise the real Intro.js renderer, including its legacy </br> parsing.
+  const help = readResources().en['requirements-extra'];
+  await page.evaluate(intros => Information.show({ steps: intros.map(intro => ({
+    element: document.getElementById('pokeballSelector'), intro,
+  })) }), [help['intro.pokerus'], help['intro.shadow']]);
+  await page.waitForFunction(() => document.querySelector('.introjs-tooltiptext')?.textContent.includes('Vous pouvez désormais choisir'));
+  const pokerusHelp = await page.locator('.introjs-tooltiptext').innerText();
+  assert.match(pokerusHelp, /Remarque :/);
+  assert.doesNotMatch(pokerusHelp, /You can now|Note:/);
+  assert.equal(await page.locator('.introjs-tooltiptext br').count(), 2);
+  assert.equal(await page.locator('.introjs-nextbutton').innerText(), 'Suivant →');
+  await page.evaluate(() => PokeClickerTranslation.setEnabled(false));
+  assert.match(await page.locator('.introjs-tooltiptext').innerText(), /You can now choose/);
+  assert.equal(await page.locator('.introjs-nextbutton').innerText(), 'Next →');
+  await page.evaluate(() => PokeClickerTranslation.setEnabled(true));
+  await page.locator('.introjs-nextbutton').click();
+  await page.waitForFunction(() => document.querySelector('.introjs-tooltiptext')?.textContent.includes('Vous pouvez désormais capturer'));
+  assert.match(await page.locator('.introjs-tooltiptext').innerText(), /Nouveau Pokémon Obscur/);
+  assert.equal(await page.locator('.introjs-prevbutton').innerText(), '← Précédent');
+  assert.equal(await page.locator('.introjs-donebutton').innerText(), 'Terminer');
+  await page.locator('.introjs-prevbutton').click();
+  await page.waitForFunction(() => document.querySelector('.introjs-tooltiptext')?.textContent.includes('Vous pouvez désormais choisir'));
+  await page.locator('.introjs-nextbutton').click();
+  await page.waitForFunction(() => document.querySelector('.introjs-donebutton')?.textContent === 'Terminer');
+  await page.locator('.introjs-donebutton').click();
+  await page.locator('.introjs-tooltip').waitFor({ state: 'detached' });
   await page.getByText('Nouvelle sauvegarde', { exact: true }).click();
   await page.waitForFunction(() => Boolean(App.game));
   await page.waitForTimeout(750);

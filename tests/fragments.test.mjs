@@ -12,3 +12,9 @@ test('does not align text across changed markup or moved interpolation variables
   const result = extractFragments({ en: { ui: { a: 'Welcome <a>here</a>', b: 'Level <b>{{level}}</b>' } }, fr: { ui: { a: '<a>Bienvenue</a> ici', b: 'Niveau {{level}} <b>atteint</b>' } } });
   assert.deepEqual(result, { en: {}, fr: {} });
 });
+
+test('preserves browser line breaks from legacy closing br tags when aligning help text', () => {
+  const result = extractFragments({ en: { help: { legacy: 'First paragraph.</br></br>Second paragraph.' } }, fr: { help: { legacy: 'Premier paragraphe.</br></br>Second paragraphe.' } } });
+  assert.deepEqual(Object.values(result.en), ['First paragraph.', 'Second paragraph.']);
+  assert.deepEqual(Object.values(result.fr), ['Premier paragraphe.', 'Second paragraphe.']);
+});

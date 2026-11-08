@@ -8,7 +8,9 @@ export function extractFragments(resources) {
   const window = new JSDOM('').window, result = { en: {}, fr: {} };
   function parse(html) {
     const template = window.document.createElement('template');
-    template.innerHTML = html;
+    // Browsers render legacy </br> as a break in a div (Intro.js tooltips).
+    // The template fragment parser otherwise drops it and merges both text nodes.
+    template.innerHTML = html.replace(/<\/br\s*>/gi, '<br>');
     const texts = [];
     function shape(node) {
       if (node.nodeType === 3) {

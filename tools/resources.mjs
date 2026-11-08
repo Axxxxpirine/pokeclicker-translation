@@ -64,6 +64,10 @@ export function displayCatalog(resources) {
   catalog.formats = Object.fromEntries(['time', 'growthDuration', 'workCycle', 'nextPayment', 'duration'].map(key => [key, 'duration']));
   // These short labels have genuinely different meanings in different panels.
   catalog.contexts = [
+    {selector:'.introjs-donebutton', en:'Done', fr:'Terminer'},
+    {selector:'.introjs-nextbutton', en:'Next →', fr:'Suivant →'},
+    {selector:'.introjs-prevbutton', en:'← Back', fr:'← Précédent'},
+    {selector:'.introjs-skipbutton', en:'Skip', fr:'Passer'},
     {selector:'#dungeonsShortcutModal', en:'{{number}} clears', fr:'Passages terminés : {{number}}'},
     {selector:'#auto-mine-status', en:'Mining', fr:'Fouille en cours'},
     {selector:'#mineModal', en:'Mining', fr:'Minage'},

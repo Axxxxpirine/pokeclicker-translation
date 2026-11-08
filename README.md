@@ -6,7 +6,7 @@ Projet communautaire open source dont l’objectif est de rendre **PokéClicker 
 
 **Contributors from every language are welcome.** PokéClicker Translation is a community open-source project aiming to make the game available in every language. French is the first available translation. Help translate, review or test your language: see [how to contribute a new language](CONTRIBUTING.md#contribute-a-new-language).
 
-**Bêta 0.4.4 — pour PokéClicker 0.10.26.** Le projet est communautaire, non officiel et sans affiliation avec l’équipe de PokéClicker ou les ayants droit de Pokémon. Des erreurs et des textes manquants restent possibles.
+**Bêta 0.4.5 — pour PokéClicker 0.10.26.** Le projet est communautaire, non officiel et sans affiliation avec l’équipe de PokéClicker ou les ayants droit de Pokémon. Des erreurs et des textes manquants restent possibles.
 
 ## Langues et contributions
 
@@ -34,7 +34,7 @@ Le script n’ajoute ni ressources, ni automatisation, ni triche. Il adapte l’
 
 Tampermonkey vérifie les nouvelles versions sur ce dépôt GitHub, selon la fréquence configurée dans l’extension. Vous pouvez également lancer **Vérifier les mises à jour** depuis son tableau de bord. Le canal bêta suit les versions numérotées de la branche `main`.
 
-Si vous utilisiez une version privée 0.4.3 ou antérieure, ouvrez une fois le lien d’installation pour passer à 0.4.4 et enregistrer les adresses de mise à jour. Le nom et l’identité du script sont conservés pour éviter un doublon.
+Si vous utilisiez une version privée 0.4.3 ou antérieure, ouvrez une fois le lien d’installation pour passer à la version actuelle et enregistrer les adresses de mise à jour. Le nom et l’identité du script sont conservés pour éviter un doublon.
 
 Pour désactiver temporairement la traduction, cliquez sur **FR ✓**. Pour la retirer, désactivez ou supprimez **PokéClicker Translation — Français** dans Tampermonkey, puis rechargez le jeu. Ne supprimez pas les données du site : elles contiennent votre partie.
 

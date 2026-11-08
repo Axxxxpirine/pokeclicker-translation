@@ -1,5 +1,12 @@
 # Notes de version du script
 
+## 0.4.5 — aides de capture
+
+- Correction de l’aide Pokérus du sélecteur de Poké Balls : ses deux paragraphes s’affichent en français.
+- Prise en compte des anciens sauts de ligne HTML dans la préparation des traductions.
+- Traduction des commandes des bulles d’aide, dont « Done » → « Terminer ».
+- Vérification des aides Pokérus et Pokémon Obscurs, de la navigation et du retour à l’anglais dans le jeu publié.
+
 ## 0.4.4 — bêta publique
 
 - Installation directe avec Tampermonkey et métadonnées de mise à jour automatique depuis GitHub.

@@ -60,3 +60,33 @@ test('current corpus leaves native French output stable, including named and dur
   }
   assert.ok(checked > 10000, `expected representative complete corpus, got ${checked}`);
 });
+
+test('dynamically opened Pokerus help translates both paragraphs and closes without replacing controls', async () => {
+  const resources = readResources();
+  const dom = new JSDOM('<div id="pokeballSelector"></div>');
+  const { document } = dom.window;
+  const control = mountTranslation(document, createTranslator(displayCatalog(resources)).translate);
+  try {
+    const tooltip = document.createElement('div');
+    tooltip.className = 'introjs-tooltip';
+    tooltip.innerHTML = '<div class="introjs-tooltiptext"></div><a class="introjs-button introjs-donebutton">Done</a>';
+    tooltip.firstChild.innerHTML = resources.en['requirements-extra']['intro.pokerus'];
+    const original = tooltip.firstChild.textContent, breaks = [...tooltip.querySelectorAll('br')];
+    const done = tooltip.lastChild;
+    done.addEventListener('click', () => tooltip.remove());
+    document.body.append(tooltip);
+    await settle();
+    assert.match(tooltip.firstChild.textContent, /Vous pouvez désormais choisir/);
+    assert.match(tooltip.firstChild.textContent, /Remarque :/);
+    assert.doesNotMatch(tooltip.textContent, /You can now|Note:|Done/);
+    assert.equal(done.textContent, 'Terminer');
+    assert.deepEqual([...tooltip.querySelectorAll('br')], breaks);
+    control.setEnabled(false);
+    assert.equal(tooltip.firstChild.textContent, original);
+    assert.equal(done.textContent, 'Done');
+    control.setEnabled(true);
+    assert.match(tooltip.firstChild.textContent, /Vous pouvez désormais choisir/);
+    done.click();
+    assert.equal(tooltip.isConnected, false);
+  } finally { control.stop(); dom.window.close(); }
+});
