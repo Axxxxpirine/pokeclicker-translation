@@ -1,8 +1,21 @@
-# PokéClicker en français 🇫🇷
+# PokéClicker Translation 🌍
 
-Traduction française indépendante de **PokéClicker**, à installer avec Tampermonkey. Le jeu, les aides et les réglages sont traduits. L’historique des versions du jeu reste en anglais.
+Projet communautaire open source dont l’objectif est de rendre **PokéClicker accessible dans toutes les langues**, grâce aux contributions de joueurs, traducteurs et relecteurs.
+
+**Le français est la première traduction disponible.** La communauté est invitée à contribuer aux autres langues, à améliorer les traductions et à les vérifier en jeu. La version actuelle s’installe avec Tampermonkey et couvre en français le jeu, les aides et les réglages. L’historique des versions du jeu reste en anglais.
+
+**Contributors from every language are welcome.** PokéClicker Translation is a community open-source project aiming to make the game available in every language. French is the first available translation. Help translate, review or test your language: see [how to contribute a new language](CONTRIBUTING.md#contribute-a-new-language).
 
 **Bêta 0.4.4 — pour PokéClicker 0.10.26.** Le projet est communautaire, non officiel et sans affiliation avec l’équipe de PokéClicker ou les ayants droit de Pokémon. Des erreurs et des textes manquants restent possibles.
+
+## Langues et contributions
+
+| Langue | État dans ce projet |
+|---|---|
+| Français | Première traduction disponible, en bêta |
+| Autres langues | Contributions bienvenues, aucune autre langue intégrée à la version actuelle |
+
+Vous pouvez proposer une nouvelle langue, traduire quelques textes, relire les noms officiels Pokémon ou tester les traductions en jeu. Consultez le [guide de contribution](CONTRIBUTING.md) pour démarrer. L’intégration et la validation de chaque langue seront réalisées avec ses contributeurs.
 
 ## Installer
 
@@ -27,7 +40,7 @@ Pour désactiver temporairement la traduction, cliquez sur **FR ✓**. Pour la r
 
 Les versions téléchargeables et leurs notes sont dans [Releases](https://github.com/Axxxxpirine/pokeclicker-translation/releases). Pour conserver une ancienne version, désactivez sa mise à jour automatique dans Tampermonkey.
 
-## Ce qui est couvert
+## Ce qui est couvert par la traduction française
 
 - Menus, réglages, aides, dialogues, quêtes, notifications et journal.
 - Noms de Pokémon, lieux, donjons, arènes, objets, baies et badges.
@@ -53,7 +66,7 @@ Si un problème apparaît, désactivez la traduction avec le bouton FR et compar
 
 **[Signaler un problème](https://github.com/Axxxxpirine/pokeclicker-translation/issues/new/choose)** : précisez le texte concerné, l’écran ou le lieu, la version du script, celle du jeu et votre navigateur. Une capture recadrée est utile. N’incluez pas votre sauvegarde complète ni d’informations personnelles.
 
-Les retours de bêta sont bienvenus, notamment sur l’installation, les régions avancées et les sessions longues. Consultez [CONTRIBUTING.md](CONTRIBUTING.md) pour proposer une correction ou lancer les tests.
+Les retours de bêta sont bienvenus, notamment sur l’installation, les régions avancées et les sessions longues. Consultez [CONTRIBUTING.md](CONTRIBUTING.md) pour contribuer à une nouvelle langue, proposer une correction ou lancer les tests.
 
 ## Confidentialité
 

@@ -1,6 +1,24 @@
 # Contribuer
 
-Les corrections de traduction et les retours de bêta sont bienvenus. Le projet est indépendant du jeu officiel.
+PokéClicker Translation vise à rendre le jeu accessible dans toutes les langues grâce à la communauté. Le français est la première traduction disponible. Les nouvelles langues, corrections, relectures et retours de bêta sont bienvenus. Le projet est indépendant du jeu officiel.
+
+## Contribuer à une nouvelle langue
+
+1. Ouvrez une issue en indiquant la langue et, si nécessaire, sa variante régionale. Précisez si vous souhaitez traduire, relire ou tester. Les échanges peuvent se faire en français ou en anglais.
+2. Utilisez les clés et textes anglais de `locales/en` comme référence. Le français de `locales/fr` fournit un exemple de traduction, pas une obligation de traduire depuis le français.
+3. Proposez un premier ensemble de textes dans une pull request, sous `locales/<code-langue>/`, en conservant les noms de fichiers et les clés. Une contribution partielle est bienvenue si son périmètre et les textes restant à traduire sont indiqués.
+4. Conservez les variables `{{...}}`, les références `[[...]]` et les balises utiles. Employez les noms officiels Pokémon de la langue cible lorsqu’ils existent, avec leurs sources. Préservez les identifiants internes et les noms des joueurs.
+5. Faites relire les textes et participez aux essais en jeu avant la publication de cette langue.
+
+La version 0.4.4 et ses outils de construction et de vérification ciblent actuellement le français. Ajouter un dossier de traduction ne suffit donc pas à activer une autre langue : son intégration au moteur, aux textes d’affichage et aux tests doit accompagner la contribution. Le guide décrit comment commencer, sans annoncer de prise en charge déjà disponible.
+
+## Contribute a new language
+
+Our goal is to make PokéClicker available in every language through community contributions. French is the first available translation. Translators, native-language reviewers and players who can test in-game text are welcome.
+
+Open an issue naming your language and regional variant, if relevant. Use the English keys and text in `locales/en` as your source, and submit a small first batch under `locales/<language-code>/` in a pull request. Keep file names, keys, placeholders, references and necessary markup intact. Partial contributions are welcome when their scope and missing text are clearly identified. Use official Pokémon names in your language where available and cite sources.
+
+Version 0.4.4 currently builds and tests French only. Adding translation files alone does not enable a new language: runtime integration, display adaptations, review and in-game tests are also needed before release. You can contribute translations or review without handling all of that yourself. Issues and pull requests in English or French are welcome.
 
 ## Proposer une correction
 
